@@ -38,7 +38,7 @@
   function markerSrc(item, size) {
     const name = localName((item.localPhotos || [])[0] || "");
     if (onThisMachine() && name) return "photos/" + encodeURIComponent(name) + "?w=" + size;
-    return thumbUrl(item, size) || item.coaImageUrl || "";
+    return thumbUrl(item, size) || "";
   }
 
   function parseCsv(text) {
@@ -157,11 +157,6 @@
     if (onThisMachine() && rel) {
       return "coats/" + rel.split("/").map(function (part) { return encodeURIComponent(part); }).join("/");
     }
-    const driveId = state.coatFiles[item.coaPath || ""];
-    const svg = String(item.coaPath || "").toLowerCase().endsWith(".svg");
-    if (driveId && !svg) {
-      return "https://drive.google.com/thumbnail?id=" + encodeURIComponent(driveId) + "&sz=w480";
-    }
     return item.coaWiki || "";
   }
 
@@ -245,6 +240,7 @@
       if (part && placeParts.indexOf(part) < 0 && part !== (item.name || "").trim()) placeParts.push(part);
     });
     const many = slides.length > 1;
+    const showCoat = coat && (item.placeOnly || slides.length);
     els.detail.innerHTML =
       '<div class="detail-tools"><button type="button" class="detail-close" aria-label="Закрыть">×</button></div>' +
       (slides.length
@@ -254,8 +250,8 @@
             '<button type="button" class="nav next" ' + (many ? "" : "hidden") + " aria-label=\"Следующее фото\">›</button>" +
             '<span class="counter"></span>' +
           "</div>"
-        : "") +
-      (coat ? '<img class="coat" src="' + escapeAttr(coat) + '" data-wiki="' + escapeAttr(item.coaWiki || "") + '" alt="Герб">' : "") +
+        : (item.placeOnly ? "" : '<p class="file">Фото нет</p>')) +
+      (showCoat ? '<img class="coat" src="' + escapeAttr(coat) + '" data-wiki="' + escapeAttr(item.coaWiki || "") + '" alt="Герб">' : "") +
       "<h2>" + escapeHtml(item.name || "Без названия") + "</h2>" +
       '<p class="meta"><span class="badge ' + (missing ? "missing" : "") + '">' + status + "</span>" +
       (placeParts.length ? " · " + escapeHtml(placeParts.join(" · ")) : "") +

@@ -496,42 +496,26 @@ def collect_jobs(items, places, progress):
                 continue
             seen.add(key)
             jobs.append({"kind": "photo", "name": name})
-    paths = []
-    for item in list(items) + list(places):
-        path = item.get("coaPath") or ""
-        if path and path not in paths:
-            paths.append(path)
-    for path in paths:
-        key = "coat:" + path
-        if path in progress["coats"] or key in skip or key in seen:
-            continue
-        file, _rel = coat_disk_file(path)
-        if file is None:
-            progress["skip"].append(key)
-            skip.add(key)
-            continue
-        seen.add(key)
-        jobs.append({"kind": "coat", "name": path})
     return jobs
 
 
-def upload_file(kind, drive_name, data_bytes):
+def upload_file(kind, drive_name, data_bytes=None):
     config = load_upload_config()
     url = (config.get("uploadUrl") or "").strip()
     secret = (config.get("uploadSecret") or "").strip()
     if not url or not secret:
         raise ValueError("Сначала впишите адрес скрипта Google в data/upload.local.json.")
-    mime = FILE_MIME.get(Path(drive_name).suffix.lower(), "application/octet-stream")
-    payload = json.dumps({
-        "secret": secret,
-        "kind": kind,
-        "name": drive_name,
-        "mime": mime,
-        "base64": base64.b64encode(data_bytes).decode("ascii"),
-    }).encode("utf-8")
+    payload_data = {"secret": secret, "kind": kind, "name": drive_name}
+    if data_bytes is None:
+        payload_data["lookup"] = True
+    else:
+        payload_data["mime"] = FILE_MIME.get(Path(drive_name).suffix.lower(), "application/octet-stream")
+        payload_data["base64"] = base64.b64encode(data_bytes).decode("ascii")
+    payload = json.dumps(payload_data).encode("utf-8")
     request = urllib.request.Request(url, data=payload, headers={"Content-Type": "application/json"})
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
     try:
-        with urllib.request.urlopen(request, timeout=180) as response:
+        with opener.open(request, timeout=180) as response:
             body = response.read().decode("utf-8")
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", "replace")[:300]
@@ -544,6 +528,8 @@ def upload_file(kind, drive_name, data_bytes):
         raise ValueError("Скрипт Google вернул страницу вместо ответа. Проверьте адрес, он должен кончаться на /exec, и доступ «Все».") from error
     if result.get("error"):
         raise ValueError(str(result["error"]))
+    if result.get("missing"):
+        return ""
     if not result.get("id"):
         raise ValueError("Диск не вернул ссылку на файл")
     return result["id"]
@@ -598,16 +584,22 @@ def publish_step():
         return {"done": True, "message": "На Диске всё, что нужно."}
     job = jobs[0]
     if job["kind"] == "photo":
-        data = (PHOTOS / job["name"]).read_bytes()
-        file_id = upload_file("photo", job["name"], data)
+        file_id = upload_file("photo", job["name"])
+        label = "Фото уже в папке"
+        if not file_id:
+            file_id = upload_file("photo", job["name"], (PHOTOS / job["name"]).read_bytes())
+            label = "Новое фото"
         progress["photos"][job["name"]] = file_id
-        label = "Фото"
         shown = job["name"]
     else:
         file, rel = coat_disk_file(job["name"])
-        file_id = upload_file("coat", rel.replace("/", "__"), file.read_bytes())
+        drive_name = rel.replace("/", "__")
+        file_id = upload_file("coat", drive_name)
+        label = "Герб уже в папке"
+        if not file_id:
+            file_id = upload_file("coat", drive_name, file.read_bytes())
+            label = "Герб"
         progress["coats"][job["name"]] = file_id
-        label = "Герб"
         shown = rel
     progress["since_flush"] = int(progress.get("since_flush") or 0) + 1
     save_progress(progress)
