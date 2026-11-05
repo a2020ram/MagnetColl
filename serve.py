@@ -37,12 +37,13 @@ FILE_MIME = {
 DIVISIONS = Path(r"C:\CoA-site\data\divisions.json")
 COUNTRIES = Path(r"C:\CoA-site\data\countries.json")
 SEARCH_INDEX = Path(r"C:\CoA-site\public\search-index.json")
+COAT_SOURCES = Path(r"C:\CoA-site\data\coat-sources.jsonl")
 CENTERS = Path(r"C:\pc-spool\magnetcoll\place-centers.json")
 CRIMEA_LAT = 45.3
 CRIMEA_LNG = 34.1
 LOCK = threading.Lock()
 REGION_CACHE = {}
-COAT_INDEX = {"ready": False, "slug": {}, "city": {}, "division": {}, "division_wiki": {}}
+COAT_INDEX = {"ready": False, "slug": {}, "city": {}, "division": {}, "division_wiki": {}, "wiki_by_path": {}}
 COAT_TYPES = {
     ".png": "image/png",
     ".gif": "image/gif",
@@ -206,7 +207,27 @@ def ensure_coat_index():
                 key = (code, fold(name))
                 if key[1]:
                     division_wiki.setdefault(key, wiki)
-    COAT_INDEX.update(ready=True, slug=slug, city=city, division=division, division_wiki=division_wiki)
+    wiki_by_path = {}
+    if COAT_SOURCES.is_file():
+        for line in COAT_SOURCES.read_text(encoding="utf-8").splitlines():
+            if not line.strip():
+                continue
+            row = json.loads(line)
+            rel = row.get("relPath") or ""
+            source = row.get("sourceUrl") or ""
+            if "commons.wikimedia.org" not in source and "upload.wikimedia.org" not in source:
+                continue
+            wiki = wiki_file(source) or wiki_file("File:" + (row.get("commonsFile") or ""))
+            if rel.startswith("/media/coats/") and wiki:
+                wiki_by_path[rel] = wiki
+    COAT_INDEX.update(
+        ready=True,
+        slug=slug,
+        city=city,
+        division=division,
+        division_wiki=division_wiki,
+        wiki_by_path=wiki_by_path,
+    )
 
 
 def pick_coat(entries, region):
@@ -218,6 +239,24 @@ def pick_coat(entries, region):
             if wanted in entry["parents"]:
                 return entry["path"]
     return entries[0]["path"]
+
+
+def wiki_for_path(path):
+    ensure_coat_index()
+    found = COAT_INDEX["wiki_by_path"].get(path or "")
+    if found:
+        return found
+    rel = path[len("/media/coats/"):] if (path or "").startswith("/media/coats/") else ""
+    if not rel:
+        return ""
+    meta_path = COATS / (rel + ".meta.json")
+    if not meta_path.is_file():
+        return ""
+    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    source = meta.get("source") or ""
+    if "commons.wikimedia.org" not in source and "upload.wikimedia.org" not in source:
+        return ""
+    return wiki_file(source) or wiki_file("File:" + (meta.get("file") or ""))
 
 
 def specific_coat(country_code, region, city):
@@ -320,7 +359,7 @@ def apply_place(magnet, country_code, region, city, previous_code):
     path, wiki = specific_coat(country_code, region, city) if (region or city) else ("", "")
     if path:
         magnet["coaPath"] = path
-        magnet["coaWiki"] = wiki or place.get("coaWiki") or ""
+        magnet["coaWiki"] = wiki or wiki_for_path(path) or place.get("coaWiki") or ""
     elif country_code != previous_code or not (region or city):
         magnet["coaPath"] = place.get("coaPath") or ""
         magnet["coaWiki"] = place.get("coaWiki") or ""
