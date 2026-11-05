@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магниты</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="stage">
+    <main id="map"></main>
+    <p id="map-note" class="map-note" hidden></p>
+  </div>
+  <aside id="panel">
+    <header class="panel-head">
+      <div class="title-row">
+        <h1>Магниты</h1>
+        <button type="button" id="add-btn" class="text-btn" hidden>Новый</button>
+      </div>
+      <input id="q" type="search" placeholder="Название" autocomplete="off">
+      <div class="row">
+        <select id="sort" aria-label="Сортировка">
+          <option value="name">По алфавиту</option>
+          <option value="added">По дате добавления</option>
+        </select>
+        <select id="status" aria-label="Фильтр">
+          <option value="all">Все</option>
+          <option value="owned">Есть</option>
+          <option value="missing">Нет</option>
+        </select>
+        <select id="view" aria-label="Вид">
+          <option value="list">Список</option>
+          <option value="tree">Дерево</option>
+        </select>
+      </div>
+      <p id="count" class="count"></p>
+      <p id="lan" class="count" hidden></p>
+      <button type="button" id="git-btn" class="text-btn git-btn" hidden>Загрузить в сеть</button>
+    </header>
+    <section id="detail" class="detail" hidden></section>
+    <div id="list" class="list"></div>
+  </aside>
+  <button type="button" id="panel-toggle" class="panel-toggle">Список</button>
+  <script src="js/config.js"></script>
+  <script src="js/app.js?v=8"></script>
+</body>
+</html>

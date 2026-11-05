@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; font: 16px/1.4 "Segoe UI", sans-serif; background: #f7f4ef; color: #1c1915; }
+    form { max-width: 520px; margin: 0 auto; padding: 16px; display: grid; gap: 10px; }
+    h1 { font-size: 22px; margin: 0; }
+    label { display: grid; gap: 4px; font-size: 13px; color: #6b645c; }
+    input, select, button { font: inherit; padding: 10px; border-radius: 8px; border: 1px solid #e4ddd4; }
+    button { background: #1a56c4; color: #fff; border: 0; }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    #msg { min-height: 1.2em; }
+  </style>
+</head>
+<body>
+  <form id="card">
+    <h1>Новый магнит</h1>
+    <label>Фото<input id="photo" type="file" accept="image/*" capture="environment"></label>
+    <label>Название<input name="name" required placeholder="Казань"></label>
+    <label>Статус
+      <select name="status">
+        <option value="owned">Есть</option>
+        <option value="missing">Нет</option>
+      </select>
+    </label>
+    <div class="row">
+      <label>Часть света<input name="continent" placeholder="Европа"></label>
+      <label>Страна<input name="country" placeholder="Россия"></label>
+      <label>Регион<input name="region" placeholder="Татарстан"></label>
+      <label>Город<input name="city" placeholder="Казань"></label>
+    </div>
+    <label>Ссылка на герб<input name="coaImageUrl" placeholder="необязательно"></label>
+    <label>Заметка<input name="notes"></label>
+    <button type="button" id="geo">Где я</button>
+    <input type="hidden" name="lat">
+    <input type="hidden" name="lng">
+    <button type="submit">Положить на Диск и в таблицу</button>
+    <p id="msg"></p>
+  </form>
+  <script>
+    var form = document.getElementById("card");
+    var msg = document.getElementById("msg");
+    document.getElementById("geo").onclick = function () {
+      navigator.geolocation.getCurrentPosition(function (pos) {
+        form.lat.value = pos.coords.latitude.toFixed(6);
+        form.lng.value = pos.coords.longitude.toFixed(6);
+        msg.textContent = "Точка: " + form.lat.value + ", " + form.lng.value;
+      }, function () { msg.textContent = "Геолокация недоступна — точку можно дописать в таблице."; });
+    };
+    form.onsubmit = function (event) {
+      event.preventDefault();
+      var data = Object.fromEntries(new FormData(form).entries());
+      var file = document.getElementById("photo").files[0];
+      msg.textContent = "Загружаю…";
+      var send = function (payload) {
+        google.script.run
+          .withSuccessHandler(function () {
+            form.reset();
+            msg.textContent = "Готово. На карте появится после обновления страницы.";
+          })
+          .withFailureHandler(function (err) { msg.textContent = err.message || String(err); })
+          .submitCard(payload);
+      };
+      if (!file) { send(data); return; }
+      var reader = new FileReader();
+      reader.onload = function () {
+        data.photoBase64 = String(reader.result).split(",")[1];
+        data.photoType = file.type;
+        data.photoName = file.name;
+        send(data);
+      };
+      reader.readAsDataURL(file);
+    };
+  </script>
+</body>
+</html>
