@@ -153,10 +153,6 @@
   }
 
   function coatSrc(item) {
-    const rel = String(item.coaPath || "").replace(/^\/media\/coats\//, "").replace(/^\/+/, "");
-    if (onThisMachine() && rel) {
-      return "coats/" + rel.split("/").map(function (part) { return encodeURIComponent(part); }).join("/");
-    }
     return item.coaWiki || "";
   }
 
@@ -443,13 +439,13 @@
       ? '<img src="' + escapeAttr(src) + '" alt="">'
       : '<span class="ph">' + (normStatus(item) === "missing" ? "нет" : "") + "</span>";
     const where = hierarchy(item).join(" · ");
-    const count = (item.localPhotos || []).length;
+    const count = gallery(item).length;
     btn.innerHTML = img + "<span><b>" + escapeHtml(item.name || "Без названия") + "</b>" +
       (where ? "<small>" + escapeHtml(where) + "</small>" : "") +
       (count > 1 ? "<small>" + count + " фото</small>" : "") + "</span>";
     btn.addEventListener("click", function () {
       select(item.id);
-      if (window.matchMedia("(max-width: 800px)").matches) els.panel.classList.remove("open");
+      syncToggle();
     });
     return btn;
   }
@@ -656,7 +652,16 @@
   [els.sort, els.status, els.view].forEach(function (el) {
     el.addEventListener("change", renderList);
   });
-  els.toggle.addEventListener("click", function () { els.panel.classList.toggle("open"); });
+  function syncToggle() {
+    const mobile = window.matchMedia("(max-width: 800px)").matches;
+    const open = els.panel.classList.contains("open");
+    els.toggle.textContent = mobile && open ? "Карта" : "Список";
+  }
+  els.toggle.addEventListener("click", function () {
+    els.panel.classList.toggle("open");
+    syncToggle();
+  });
+  syncToggle();
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape" && !els.detail.hidden) {
       event.preventDefault();
@@ -770,6 +775,7 @@
     els.detail.hidden = false;
     els.detail.classList.add("editor-open");
     els.panel.classList.add("open");
+    syncToggle();
     const knownCenter = !card.id && !card.lat && !card.lng ? countryCenter(countryValue) : null;
     if (knownCenter) {
       card.lat = knownCenter.lat;

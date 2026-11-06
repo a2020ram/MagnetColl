@@ -356,13 +356,15 @@ def apply_place(magnet, country_code, region, city, previous_code):
     magnet["continent"] = place.get("continent") or ""
     magnet["country"] = place.get("name") or ""
     magnet["countryCode"] = place.get("countryCode") or ""
-    path, wiki = specific_coat(country_code, region, city) if (region or city) else ("", "")
-    if path:
-        magnet["coaPath"] = path
-        magnet["coaWiki"] = wiki or wiki_for_path(path) or place.get("coaWiki") or ""
-    elif country_code != previous_code or not (region or city):
+    if not (region or city):
         magnet["coaPath"] = place.get("coaPath") or ""
         magnet["coaWiki"] = place.get("coaWiki") or ""
+        return
+    path, _wiki = specific_coat(country_code, region, city)
+    if path:
+        magnet["coaPath"] = path
+    elif country_code != previous_code:
+        magnet["coaPath"] = ""
 
 
 def blank_magnet(name):
