@@ -11689,8 +11689,7 @@
     "driveFileId": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd",
     "resourceKey": "",
     "localPhotos": [
-      "Macau 2.jpg",
-      "Macau 2.jpg"
+      "Macau.jpg"
     ],
     "continent": "Азия",
     "country": "Макао",
@@ -11704,7 +11703,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Regional_Emblem_of_Macau.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Macau 2.jpg",
+        "name": "Macau.jpg",
         "id": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd"
       }
     ]
