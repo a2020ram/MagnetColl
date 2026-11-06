@@ -6284,14 +6284,15 @@
     "notes": "",
     "crimea": false,
     "countryCode": "NL",
-    "coaPath": "/media/coats/europe/nl/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/State_coat_of_arms_of_the_Netherlands.svg?width=480",
+    "coaPath": "/media/coats/europe/nl/zuid-holland/coat.svg",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Den_Haag_wapen.svg",
     "drivePhotos": [
       {
         "name": "Den Haag.jpg",
         "id": "1m9ni0ah4KZdYsEPOFL7hk58exKjRTbSs"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "dominicana",
