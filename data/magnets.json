@@ -7512,7 +7512,7 @@
     "driveFileId": "1yNQO_-tgivJ7o7snoAQkMkadRLZ3F-XL",
     "resourceKey": "",
     "localPhotos": [
-      "Munich 2.jpg",
+      "Munich.jpg",
       "Munich 2.jpg"
     ],
     "continent": "Европа",
@@ -11038,27 +11038,6 @@
     ]
   },
   {
-    "id": "фарерские-о-ва",
-    "name": "Фарерские о-ва",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 61.892635,
-    "lng": -6.911806,
-    "driveFileId": "",
-    "resourceKey": "",
-    "localPhotos": [],
-    "continent": "Европа",
-    "country": "Фарерские острова",
-    "region": "",
-    "city": "",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "FO",
-    "coaPath": "/media/coats/europe/fo/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Faroe_Islands.svg?width=480"
-  },
-  {
     "id": "вале",
     "name": "Вале",
     "status": "owned",
@@ -12833,29 +12812,30 @@
     "name": "Merkid",
     "status": "owned",
     "addedAt": "",
-    "lat": null,
-    "lng": null,
+    "lat": 61.8926,
+    "lng": -6.9118,
     "driveFileId": "1YpSVi0PrwXj4u4lLA3IUwTEF1PHwo4J4",
     "resourceKey": "",
     "localPhotos": [
       "Merkid.jpg"
     ],
-    "continent": "",
-    "country": "",
+    "continent": "Европа",
+    "country": "Фарерские острова",
     "region": "",
     "city": "",
     "coaImageUrl": "",
     "notes": "нет точки на карте",
     "crimea": false,
-    "countryCode": "",
-    "coaPath": "",
-    "coaWiki": "",
+    "countryCode": "FO",
+    "coaPath": "/media/coats/europe/fo/coat.svg",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_arms_of_the_Faroe_Islands.svg",
     "drivePhotos": [
       {
         "name": "Merkid.jpg",
         "id": "1YpSVi0PrwXj4u4lLA3IUwTEF1PHwo4J4"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "york",
