@@ -74,7 +74,7 @@
   function loadData() {
     const url = cfg.sheetCsvUrl
       ? cfg.sheetCsvUrl + (cfg.sheetCsvUrl.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now()
-      : (cfg.dataUrl || "data/magnets.json") + "?v=18";
+      : (cfg.dataUrl || "data/magnets.json") + "?v=20";
     const magnets = fetch(url).then(function (res) {
       if (!res.ok) throw new Error("data " + res.status);
       return cfg.sheetCsvUrl ? res.text().then(parseCsv) : res.json();
