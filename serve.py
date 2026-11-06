@@ -332,7 +332,7 @@ def apply_place(magnet, country_code, region, city, previous_code):
     city = (city or "").strip()
     if country_code == "CRIMEA":
         magnet["crimea"] = True
-        magnet["continent"] = ""
+        magnet["continent"] = "Европа"
         magnet["country"] = ""
         magnet["countryCode"] = ""
         magnet["region"] = ""
@@ -423,7 +423,13 @@ def save_card(data):
         current["notes"] = (data.get("notes") or "").strip()
         current["lat"] = number_or_none(data.get("lat"))
         current["lng"] = number_or_none(data.get("lng"))
+        previous_wiki = (current.get("coaWiki") or "").strip()
+        typed_coat = (data.get("coaWiki") or "").strip() if "coaWiki" in data else None
         apply_place(current, (data.get("countryCode") or "").strip(), data.get("region"), data.get("city"), previous)
+        if typed_coat is not None and (typed_coat or incoming_id):
+            current["coaWiki"] = typed_coat
+            if typed_coat != previous_wiki:
+                current["coaSource"] = ""
         photos = current.setdefault("localPhotos", [])
         for payload in data.get("photos") or []:
             photos.append(store_photo(payload))

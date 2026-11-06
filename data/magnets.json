@@ -49,7 +49,7 @@
     "crimea": false,
     "countryCode": "HR",
     "coaPath": "/media/coats/europe/hr/grad-zagreb/zagreb/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Croatia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Zagreb.svg?width=480",
     "drivePhotos": [
       {
         "name": "Zagreb.jpg",
@@ -185,7 +185,7 @@
     "localPhotos": [
       "Алушта.jpg"
     ],
-    "continent": "",
+    "continent": "Европа",
     "country": "",
     "region": "",
     "city": "Алушта",
@@ -1210,7 +1210,7 @@
     "localPhotos": [
       "Евпатория.jpg"
     ],
-    "continent": "",
+    "continent": "Европа",
     "country": "",
     "region": "",
     "city": "Евпатория",
@@ -1877,7 +1877,7 @@
     "localPhotos": [
       "Керчь.jpg"
     ],
-    "continent": "",
+    "continent": "Европа",
     "country": "",
     "region": "",
     "city": "Керчь",
@@ -2351,7 +2351,7 @@
     "localPhotos": [
       "Крым.jpg"
     ],
-    "continent": "",
+    "continent": "Европа",
     "country": "",
     "region": "",
     "city": "",
@@ -3785,20 +3785,21 @@
     ],
     "continent": "Европа",
     "country": "Россия",
-    "region": "Ростов-на-Дону",
+    "region": "Ростовская область",
     "city": "Ростов-на-Дону",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/rostovskaja-oblast/rostov-on-don/rostov-on-don/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coats_of_Arms_of_Rostov.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Rostov-on-Don.svg?width=480",
     "drivePhotos": [
       {
         "name": "Ростов на Дону_1.jpg",
         "id": "0B4sMW1qgoxAnZlh2aGQyVkN5TFE"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "рязань",
@@ -4137,7 +4138,7 @@
       "Севастополь.jpg",
       "Севастополь2.jpg"
     ],
-    "continent": "",
+    "continent": "Европа",
     "country": "",
     "region": "",
     "city": "Севастополь",
@@ -4156,7 +4157,8 @@
         "name": "Севастополь2.jpg",
         "id": "1ueHOOFvZfWCDGpY_PN9n3IZ6_gHuUC4W"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/s/3309"
   },
   {
     "id": "североморск",
@@ -4257,7 +4259,7 @@
     "localPhotos": [
       "Симферополь.jpg"
     ],
-    "continent": "",
+    "continent": "Европа",
     "country": "",
     "region": "",
     "city": "Симферополь",
@@ -4810,20 +4812,21 @@
     ],
     "continent": "Европа",
     "country": "Россия",
-    "region": "Томск",
+    "region": "Томская область",
     "city": "Томск",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/tomskaja-oblast/tomskiy/coat.jpg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Tomsk.png?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B5%D1%80%D0%B1%20%D0%A2%D0%BE%D0%BC%D1%81%D0%BA%D0%B0%202019.png?width=480",
     "drivePhotos": [
       {
         "name": "Томск.jpg",
         "id": "1eaEQfptECKkDVcY3WtgwTpelB8bwt2yD"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "томская-обл",
@@ -5156,7 +5159,7 @@
     "localPhotos": [
       "Феодосия.jpg"
     ],
-    "continent": "",
+    "continent": "Европа",
     "country": "",
     "region": "",
     "city": "Феодосия",
@@ -5533,7 +5536,7 @@
     "localPhotos": [
       "Ялта.jpg"
     ],
-    "continent": "",
+    "continent": "Европа",
     "country": "",
     "region": "",
     "city": "Ялта",
@@ -5658,7 +5661,7 @@
     "crimea": false,
     "countryCode": "NL",
     "coaPath": "/media/coats/europe/nl/noord-holland/amsterdam/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/State_coat_of_arms_of_the_Netherlands.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Amsterdam.svg?width=480",
     "drivePhotos": [
       {
         "name": "Amsterdam.jpg",
@@ -5977,7 +5980,7 @@
     "crimea": false,
     "countryCode": "BE",
     "coaPath": "/media/coats/europe/be/bruxelles-capitale-region-de/brussels/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_coat_of_arms_of_Belgium.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Brussels.svg?width=480",
     "drivePhotos": [
       {
         "name": "Brussels.jpg",
@@ -6006,7 +6009,7 @@
     "crimea": false,
     "countryCode": "HU",
     "coaPath": "/media/coats/europe/hu/budapest/budapest/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Hungary.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Budapest.svg?width=480",
     "drivePhotos": [
       {
         "name": "Budapest.jpg",
@@ -6058,19 +6061,20 @@
     "continent": "Северная Америка",
     "country": "Куба",
     "region": "Camagüey",
-    "city": "Camagüey",
+    "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "CU",
     "coaPath": "/media/coats/north-america/cu/camaguey/camagueey/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_city_of_Camag%C3%BCey%2C_Cuba.svg?width=480",
+    "coaWiki": "",
     "drivePhotos": [
       {
         "name": "Camaguey.jpg",
         "id": "1jisZf6s6G5ALcOypMCMvPhHIcbhmQwW1"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "ceska-republika",
@@ -6151,13 +6155,14 @@
     "crimea": false,
     "countryCode": "CN",
     "coaPath": "/media/coats/asia/cn/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_the_People%27s_Republic_of_China.svg?width=480",
+    "coaWiki": "长安",
     "drivePhotos": [
       {
         "name": "Chang'an.jpg",
         "id": "1K_Q-n9eOZ6TjMPQbJdFj43kA0xg83v27"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "china",
@@ -6289,8 +6294,8 @@
     ],
     "continent": "Европа",
     "country": "Нидерланды",
-    "region": "",
-    "city": "",
+    "region": "Zuid-Holland",
+    "city": "Den Haag",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
@@ -6354,7 +6359,7 @@
     "crimea": false,
     "countryCode": "IE",
     "coaPath": "/media/coats/europe/ie/dublin/dublin/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ireland.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Dublin.svg?width=480",
     "drivePhotos": [
       {
         "name": "Dublin 2.jpg",
@@ -6592,7 +6597,7 @@
     "crimea": false,
     "countryCode": "CH",
     "coaPath": "/media/coats/europe/ch/geneve/geneva/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Switzerland.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Geneva.svg?width=480",
     "drivePhotos": [
       {
         "name": "Geneve.jpg",
@@ -6690,7 +6695,8 @@
         "name": "Goteborg.jpg",
         "id": "17N-0ocNBV5teOwmOx84UMT16TwrXqCR_"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/i/%D0%93%D0%B5%D1%82%D0%B5%D0%B1%D0%BE%D1%80%D0%B3%20(%D0%A8%D0%B2%D0%B5%D1%86%D0%B8%D1%8F)"
   },
   {
     "id": "great-britain",
@@ -6742,13 +6748,14 @@
     "crimea": false,
     "countryCode": "NL",
     "coaPath": "/media/coats/europe/nl/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/State_coat_of_arms_of_the_Netherlands.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Wapen%20Haarlem.svg?width=480",
     "drivePhotos": [
       {
         "name": "Haarlem.jpg",
         "id": "13GyXyt2Ki-xB1hrajNKT43xrYMotwZjr"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "hamburg",
@@ -6772,7 +6779,7 @@
     "crimea": false,
     "countryCode": "DE",
     "coaPath": "/media/coats/europe/de/hamburg/hamburg/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Germany.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Hamburg.svg?width=480",
     "drivePhotos": [
       {
         "name": "Hamburg2.jpg",
@@ -6836,7 +6843,8 @@
         "name": "Helsinki.jpg",
         "id": "1e8U3yNNi62AXqtmJ920rbmBRxeR5WAzo"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/s/14657"
   },
   {
     "id": "hungary",
@@ -7174,22 +7182,23 @@
     "localPhotos": [
       "Las_Villas.jpg"
     ],
-    "continent": "Европа",
-    "country": "Испания",
-    "region": "Granada",
-    "city": "Benalúa de las Villas",
+    "continent": "Северная Америка",
+    "country": "Куба",
+    "region": "Las Villas",
+    "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
-    "countryCode": "ES",
+    "countryCode": "CU",
     "coaPath": "/media/coats/europe/es/granada/benalua-de-las-villas/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Benal%C3%BAa_de_las_Villas_%28Granada%29.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo%20de%20Las%20Villas.png?width=480",
     "drivePhotos": [
       {
         "name": "Las_Villas.jpg",
         "id": "120R3GpzekHbTZA6AYoQcwcUSLnB19kdl"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "latvija",
@@ -7270,13 +7279,14 @@
     "crimea": false,
     "countryCode": "CN",
     "coaPath": "/media/coats/asia/cn/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_the_People%27s_Republic_of_China.svg?width=480",
+    "coaWiki": "临沂",
     "drivePhotos": [
       {
         "name": "Linyi.jpg",
         "id": "1rDhs2f2O9apDnwlkwjrm_aWQ7ck35f98"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "lisbon",
@@ -7299,7 +7309,7 @@
     "crimea": false,
     "countryCode": "PT",
     "coaPath": "/media/coats/europe/pt/lisboa/lisbon/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Portugal.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Lisbon.svg?width=480",
     "drivePhotos": [
       {
         "name": "Lisbon.jpg",
@@ -7357,7 +7367,7 @@
     "crimea": false,
     "countryCode": "ES",
     "coaPath": "/media/coats/europe/es/madrid/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_la_Provincia_de_Madrid_hasta_1983.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Madrid%20City.svg?width=480",
     "drivePhotos": [
       {
         "name": "Madrid.jpg",
@@ -7380,19 +7390,20 @@
     "continent": "Европа",
     "country": "Мальта",
     "region": "",
-    "city": "Валлетта",
+    "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "MT",
     "coaPath": "/media/coats/europe/mt/valletta/valletta/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Insigne_Valettae_coronatum.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20the%20Sovereign%20Military%20Order%20of%20Malta.svg?width=480",
     "drivePhotos": [
       {
         "name": "Malta_knights.jpg",
         "id": "1ABjyS1ICfEyUAWtHx5T3duEdAewpXEJl"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "maroc-agadir",
@@ -7610,22 +7621,23 @@
     "localPhotos": [
       "Oriente.jpg"
     ],
-    "continent": "Южная Америка",
-    "country": "Бразилия",
-    "region": "São Paulo",
-    "city": "Oriente",
+    "continent": "Северная Америка",
+    "country": "Куба",
+    "region": "Oriente",
+    "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
-    "countryCode": "BR",
-    "coaPath": "/media/coats/south-america/br/sao-paulo/oriente/coat.jpg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Bras%C3%A3o_Oriente_SP.jpg?width=480",
+    "countryCode": "CU",
+    "coaPath": "",
+    "coaWiki": "",
     "drivePhotos": [
       {
         "name": "Oriente.jpg",
         "id": "1a8ePuN5AFWeGRFlfv_84_xP6l0vKBrZc"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "paris",
@@ -7764,7 +7776,7 @@
     "crimea": false,
     "countryCode": "CZ",
     "coaPath": "/media/coats/europe/cz/praha-hlavni-mesto/prague/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Czech_Republic.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Prague.svg?width=480",
     "drivePhotos": [
       {
         "name": "Praha.jpg",
@@ -7822,13 +7834,14 @@
     "crimea": false,
     "countryCode": "LV",
     "coaPath": "/media/coats/europe/lv/riga/riga/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Latvia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Riga.svg?width=480",
     "drivePhotos": [
       {
         "name": "Riga.jpg",
         "id": "14WDNpBxHBsWwhWGGL-OO3gZ1u-rl-bhQ"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "rimini",
@@ -7938,13 +7951,14 @@
     "crimea": false,
     "countryCode": "AT",
     "coaPath": "/media/coats/europe/at/salzburg-stadt/salzburg/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Salzburg_Tennengau.png?width=480",
+    "coaWiki": "",
     "drivePhotos": [
       {
         "name": "Salzburg.jpg",
         "id": "1q9Rp_4MaUvXqeJaUuLY8SM9d3oyJcd0j"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "san-marino",
@@ -8182,7 +8196,8 @@
         "name": "Stockholm.jpg",
         "id": "0B4sMW1qgoxAnZ2NUVVpXN0tyWEE"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/g/132/g1163_stockholm_city.gif"
   },
   {
     "id": "swanage",
@@ -8292,7 +8307,7 @@
     "crimea": false,
     "countryCode": "EE",
     "coaPath": "/media/coats/europe/ee/harjumaa/tallinn/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Estonia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Tallinn.svg?width=480",
     "drivePhotos": [
       {
         "name": "Tallinn.JPG",
@@ -8460,19 +8475,20 @@
     "continent": "Европа",
     "country": "Италия",
     "region": "Venezia",
-    "city": "",
+    "city": "Венеция",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "IT",
     "coaPath": "/media/coats/europe/it/venezia/coat.wikimedia.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Italy.svg?width=480",
+    "coaWiki": "",
     "drivePhotos": [
       {
         "name": "Venezia.jpg",
         "id": "1QsxvoQmVVyzY5VDGQ_EN7xP3h4eeZSLS"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "vienna",
@@ -8553,7 +8569,7 @@
     "crimea": false,
     "countryCode": "LT",
     "coaPath": "/media/coats/europe/lt/vilniaus-apskritis/vilnius/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Lithuania.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Vilnius.svg?width=480",
     "drivePhotos": [
       {
         "name": "Vilnius.jpg",
@@ -8575,7 +8591,7 @@
     ],
     "continent": "Европа",
     "country": "Бельгия",
-    "region": "",
+    "region": "Vlaanderen",
     "city": "",
     "coaImageUrl": "",
     "notes": "",
@@ -8611,7 +8627,7 @@
     "crimea": false,
     "countryCode": "PL",
     "coaPath": "/media/coats/europe/pl/cities/warsaw/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Herb_Polski.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Warsaw.png?width=480",
     "drivePhotos": [
       {
         "name": "Warszawa.jpg",
@@ -8669,13 +8685,14 @@
     "crimea": false,
     "countryCode": "CN",
     "coaPath": "/media/coats/asia/cn/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_the_People%27s_Republic_of_China.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Xi%27an%20%28Chinese%20characters%29.svg?width=480",
     "drivePhotos": [
       {
         "name": "Xi'an.jpg",
         "id": "1KYJkDDuc-cq6oLeiGmAb67p-47EdpkQz"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "yerevan",
@@ -8698,7 +8715,7 @@
     "crimea": false,
     "countryCode": "AM",
     "coaPath": "/media/coats/asia/am/erevan/yerevan/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Armenia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Yerevan.svg?width=480",
     "drivePhotos": [
       {
         "name": "Yerevan.jpg",
@@ -8819,7 +8836,7 @@
     "crimea": false,
     "countryCode": "DE",
     "coaPath": "/media/coats/europe/de/bremen/bremen/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Germany.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Bremen.svg?width=480",
     "drivePhotos": [
       {
         "name": "Bremen.jpg",
@@ -8906,7 +8923,7 @@
     "crimea": false,
     "countryCode": "BE",
     "coaPath": "/media/coats/europe/be/antwerpen/antwerp/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_coat_of_arms_of_Belgium.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Antwerp%20%28City%29.svg?width=480",
     "drivePhotos": [
       {
         "name": "Antwerpen.jpg",
@@ -8941,7 +8958,8 @@
         "name": "Bern.jpg",
         "id": "1IccOscFSCFnfUZNYiKRUpCj6Q9WFhCJu"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/i/%D0%91%D0%B5%D1%80%D0%BD%20(%D0%A8%D0%B2%D0%B5%D0%B9%D1%86%D0%B0%D1%80%D0%B8%D1%8F)"
   },
   {
     "id": "дрезден",
@@ -9110,13 +9128,14 @@
     "crimea": false,
     "countryCode": "CN",
     "coaPath": "/media/coats/asia/cn/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_the_People%27s_Republic_of_China.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Jinan%20%28Chinese%20characters%29.svg?width=480",
     "drivePhotos": [
       {
         "name": "JiNan.jpg",
         "id": "1fnSBuVxdYkvAIY_R0jm-wIBwivhfsCDy"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "циндао",
@@ -9139,13 +9158,14 @@
     "crimea": false,
     "countryCode": "CN",
     "coaPath": "/media/coats/asia/cn/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_the_People%27s_Republic_of_China.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Qingdao%20%28Chinese%20characters%29.svg?width=480",
     "drivePhotos": [
       {
         "name": "QingDao.jpg",
         "id": "1lquH6i8wEisPfnsaY9o9twI9SsaDrEP6"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "шанхай",
@@ -9371,13 +9391,14 @@
     "crimea": false,
     "countryCode": "CN",
     "coaPath": "/media/coats/asia/cn/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_the_People%27s_Republic_of_China.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou%20%28Chinese%20characters%29.svg?width=480",
     "drivePhotos": [
       {
         "name": "Suzhou.jpg",
         "id": "1F2hMLvSlFm797X6t4zlvG7qmmCFb-Zup"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "паттайя",
@@ -9835,7 +9856,7 @@
     "crimea": false,
     "countryCode": "BO",
     "coaPath": "/media/coats/south-america/bo/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Bolivia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Oruro.png?width=480",
     "drivePhotos": [
       {
         "name": "Oruro.jpg",
@@ -9928,7 +9949,8 @@
         "name": "Brugge.jpg",
         "id": "1Ir-QqGhwHHb2zNM3Avjnqo40fm1Quk_w"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/i/%D0%91%D1%80%D1%8E%D0%B3%D0%B3%D0%B5%20(%D0%91%D0%B5%D0%BB%D1%8C%D0%B3%D0%B8%D1%8F)"
   },
   {
     "id": "цюрих",
@@ -10015,7 +10037,8 @@
         "name": "Ljubljana.jpg",
         "id": "1stVFJ4U3C09yjUiClJx2Do8zG_HRj_YC"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/s/14925"
   },
   {
     "id": "копер",
@@ -10044,7 +10067,8 @@
         "name": "Koper.jpg",
         "id": "1SwYtnsahuXMxBAfGLgHoIa1VJqsLOwOh"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/s/27871"
   },
   {
     "id": "любек",
@@ -10125,7 +10149,7 @@
     "crimea": false,
     "countryCode": "SK",
     "coaPath": "/media/coats/europe/sk/banskobystricky-kraj/banska-bystrica/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovakia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Bansk%C3%A1%20Bystrica.svg?width=480",
     "drivePhotos": [
       {
         "name": "Banska_Bystrica.jpg",
@@ -10154,7 +10178,7 @@
     "crimea": false,
     "countryCode": "SK",
     "coaPath": "/media/coats/europe/sk/nitriansky-kraj/nitra/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovakia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Nitra.svg?width=480",
     "drivePhotos": [
       {
         "name": "Nitra.jpg",
@@ -10276,7 +10300,8 @@
         "name": "Bath.jpg",
         "id": "1jE0NNJkYJA_dYUMq5cqit0mr63Iu-39N"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/i/%D0%91%D0%B0%D1%82%20(%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F)"
   },
   {
     "id": "портсмут",
@@ -10415,7 +10440,7 @@
     "crimea": false,
     "countryCode": "SK",
     "coaPath": "/media/coats/europe/sk/trnavsky-kraj/piestany/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovakia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Pie%C5%A1%C5%A5any.svg?width=480",
     "drivePhotos": [
       {
         "name": "Piestany.jpg",
@@ -10467,7 +10492,7 @@
     "continent": "Европа",
     "country": "Португалия",
     "region": "",
-    "city": "",
+    "city": "Порту",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
@@ -10508,7 +10533,8 @@
         "name": "Killarney.jpg",
         "id": "1Wft_bLr-KyWeifOEuIefn7oNuIVpd2HT"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/i/%D0%9A%D0%B8%D0%BB%D0%BB%D0%B0%D1%80%D0%BD%D0%B8%20(%D0%98%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F)"
   },
   {
     "id": "наварра",
@@ -10740,7 +10766,8 @@
         "name": "Cork.jpg",
         "id": "1L9FQYm-d0hsY0ONgbL4XvycdC-a5IV1C"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/i/%D0%9A%D0%BE%D1%80%D0%BA%20(%D0%98%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F)"
   },
   {
     "id": "страна-басков",
@@ -10885,7 +10912,8 @@
         "name": "Belgrade.jpg",
         "id": "14Oo-hbhg8_G4n7W493WpoNoW9vjbvJhD"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/s/6316"
   },
   {
     "id": "лазурный-берег",
@@ -10966,13 +10994,14 @@
     "crimea": false,
     "countryCode": "FR",
     "coaPath": "/media/coats/europe/fr/provence-alpes-cote-d-azur/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Blason_r%C3%A9gion_fr_Provence-Alpes-C%C3%B4te_d%27Azur.svg?width=480",
+    "coaWiki": "",
     "drivePhotos": [
       {
         "name": "Provence.jpg",
         "id": "1dDnZgC7vYsyLEV6uU8pSWB83e9L0AJav"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "шотландия",
@@ -11068,13 +11097,14 @@
     "crimea": false,
     "countryCode": "CH",
     "coaPath": "/media/coats/europe/ch/valais/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Switzerland.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Wappen%20Wallis%20matt.svg?width=480",
     "drivePhotos": [
       {
         "name": "Valais.jpg",
         "id": "13bH0PQ4fZMVXvAMvramqAZ7NAF_SYHb0"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "граубюнден",
@@ -11422,7 +11452,8 @@
         "name": "Tbilisi.jpg",
         "id": "1weAJ1QHDPEk3tCtv5ON3toQ1WxRzhXgP"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/s/19587"
   },
   {
     "id": "вроцлав",
@@ -11503,13 +11534,14 @@
     "crimea": false,
     "countryCode": "PL",
     "coaPath": "/media/coats/europe/pl/cities/poznan/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Herb_Polski.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/POL%20Pozna%C5%84%20COA.svg?width=480",
     "drivePhotos": [
       {
         "name": "Poznan.jpg",
         "id": "1ECpkkaCIEJTbBdmeb0irfIYC7ix8Vwmm"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "торунь",
@@ -11532,13 +11564,14 @@
     "crimea": false,
     "countryCode": "PL",
     "coaPath": "/media/coats/europe/pl/kujawsko-pomorskie/torun/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Herb_Polski.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/POL%20Toru%C5%84%20COA.svg?width=480",
     "drivePhotos": [
       {
         "name": "Torun.jpg",
         "id": "1XnaxFVhiVK51UL7paPYgwkW5BQCrejJe"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "львов",
@@ -11568,27 +11601,6 @@
         "id": "1O5BmAderYvqYsx5xzvuNc32YNStFHI9-"
       }
     ]
-  },
-  {
-    "id": "торунь-2",
-    "name": "Торунь",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 53.0137902,
-    "lng": 18.5984437,
-    "driveFileId": "",
-    "resourceKey": "",
-    "localPhotos": [],
-    "continent": "Европа",
-    "country": "Польша",
-    "region": "",
-    "city": "Торунь",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "PL",
-    "coaPath": "/media/coats/europe/pl/kujawsko-pomorskie/torun/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Herb_Polski.svg?width=480"
   },
   {
     "id": "колумбия",
@@ -11923,7 +11935,7 @@
     "crimea": false,
     "countryCode": "FR",
     "coaPath": "/media/coats/europe/fr/pyrenees-atlantiques/pau/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Arms_of_the_French_Republic.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Pau.svg?width=480",
     "drivePhotos": [
       {
         "name": "Pau.jpg",
@@ -11958,7 +11970,8 @@
         "name": "Galway.jpg",
         "id": "1W1OE2M8JrFfsNnqpAtIU96Wrc9Sz-EMe"
       }
-    ]
+    ],
+    "coaSource": "https://geraldika.ru/i/%D0%93%D0%BE%D0%BB%D1%83%D1%8D%D0%B9%20(%D0%98%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F)"
   },
   {
     "id": "гданьск",
@@ -11981,13 +11994,14 @@
     "crimea": false,
     "countryCode": "PL",
     "coaPath": "/media/coats/europe/pl/pomorskie/gdansk/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Herb_Polski.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/POL%20Gda%C5%84sk%20COA.svg?width=480",
     "drivePhotos": [
       {
         "name": "Gdansk.jpg",
         "id": "1AjI7p6zh2WYqnSQDJH-Cqaxo7iAH95Fh"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "ирак",
@@ -12068,13 +12082,14 @@
     "crimea": false,
     "countryCode": "AE",
     "coaPath": "/media/coats/asia/ae/abu-zaby/abu-dhabi/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Abu_Dhabi_Logo.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem%20of%20Abu%20Dhabi.svg?width=480",
     "drivePhotos": [
       {
         "name": "Abu Dhabi.jpg",
         "id": "1kfJXXqPRXmsoY0KnJ50VhGlxtSDugqwc"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "катар",

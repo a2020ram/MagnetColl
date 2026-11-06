@@ -88,11 +88,52 @@
   }
 
   function hierarchy(item) {
-    const parts = [item.continent, item.country, item.region, item.city]
-      .map(function (s) { return (s || "").trim(); })
-      .filter(Boolean);
+    const parts = [];
+    const continent = (item.continent || "").trim();
+    const country = (item.country || "").trim();
+    const region = (item.region || "").trim();
+    const city = (item.city || "").trim();
+    if (continent) parts.push(continent);
+    if (item.crimea) parts.push("Крым");
+    else if (country) parts.push(country);
+    if (region) parts.push(region);
+    if (city) parts.push(city);
     if (parts.length === 1 && parts[0] === (item.name || "").trim()) return [];
     return parts;
+  }
+
+  function coatValue(item) {
+    return (item && item.coaWiki || "").trim();
+  }
+
+  function coatIsImage(value) {
+    return /^https?:\/\//i.test(value || "");
+  }
+
+  function coatPage(url) {
+    return String(url || "").replace("/wiki/Special:FilePath/", "/wiki/File:").split("?")[0];
+  }
+
+  function sourceHtml(item) {
+    const custom = (item && item.coaSource || "").trim();
+    const wiki = coatValue(item);
+    let href = "";
+    let label = "";
+    if (custom) {
+      href = custom;
+      label = /geraldika\.ru/i.test(custom) ? "Геральдика" : "Источник";
+    } else if (coatIsImage(wiki)) {
+      href = coatPage(wiki);
+      label = "Викисклад";
+    }
+    if (!href) return "";
+    return '<a class="coat-source" href="' + escapeAttr(href) + '" target="_blank" rel="noopener">' + escapeHtml(label) + "</a>";
+  }
+
+  function coatHtml(value) {
+    if (!value) return "";
+    if (coatIsImage(value)) return '<img class="coat" src="' + escapeAttr(value) + '" alt="Герб">';
+    return '<p class="coat-text">' + escapeHtml(value) + "</p>";
   }
 
   function visibleItems() {
@@ -153,7 +194,8 @@
   }
 
   function coatSrc(item) {
-    return item.coaWiki || "";
+    const value = coatValue(item);
+    return coatIsImage(value) ? value : "";
   }
 
   function gallery(item) {
@@ -226,17 +268,11 @@
     const slides = gallery(item);
     let index = state.slide[item.id] || 0;
     if (index >= slides.length) index = 0;
-    const coat = coatSrc(item);
     const missing = normStatus(item) === "missing";
     const status = missing ? "Нет" : "Есть";
-    const placeParts = [];
-    if (item.crimea) placeParts.push("Крым");
-    [item.continent, item.country, item.region, item.city].forEach(function (part) {
-      part = (part || "").trim();
-      if (part && placeParts.indexOf(part) < 0 && part !== (item.name || "").trim()) placeParts.push(part);
-    });
+    const placeParts = hierarchy(item);
     const many = slides.length > 1;
-    const showCoat = coat && (item.placeOnly || slides.length);
+    const showCoat = !!coatValue(item) && (item.placeOnly || slides.length);
     els.detail.innerHTML =
       '<div class="detail-tools"><button type="button" class="detail-close" aria-label="Закрыть">×</button></div>' +
       (slides.length
@@ -247,7 +283,8 @@
             '<span class="counter"></span>' +
           "</div>"
         : (item.placeOnly ? "" : '<p class="file">Фото нет</p>')) +
-      (showCoat ? '<img class="coat" src="' + escapeAttr(coat) + '" data-wiki="' + escapeAttr(item.coaWiki || "") + '" alt="Герб">' : "") +
+      (showCoat ? coatHtml(coatValue(item)) : "") +
+      sourceHtml(item) +
       "<h2>" + escapeHtml(item.name || "Без названия") + "</h2>" +
       '<p class="meta"><span class="badge ' + (missing ? "missing" : "") + '">' + status + "</span>" +
       (placeParts.length ? " · " + escapeHtml(placeParts.join(" · ")) : "") +
@@ -399,12 +436,13 @@
     });
     const opened = !!els.q.value.trim();
     els.list.innerHTML = "";
-    const crimea = magnets.filter(function (item) { return item.crimea; });
-    if (crimea.length) {
-      els.list.appendChild(branch("Крым", crimea.slice().sort(function (a, b) {
+    const crimeaItems = magnets.filter(function (item) { return item.crimea; });
+    const crimeaBranch = crimeaItems.length
+      ? branch("Крым", crimeaItems.slice().sort(function (a, b) {
         return byRu(a.name || "", b.name || "");
-      }).map(row), opened));
-    }
+      }).map(row), opened)
+      : null;
+    let crimeaPlaced = false;
     Array.from(continents.keys()).sort(function (a, b) {
       return continents.get(a).order - continents.get(b).order || byRu(a, b);
     }).forEach(function (name) {
@@ -423,8 +461,13 @@
         if (node.item && !children.length) return branch(countryName, [], opened, node.item);
         return branch(countryName, children, opened);
       });
+      if (name === "Европа" && crimeaBranch) {
+        countries.unshift(crimeaBranch);
+        crimeaPlaced = true;
+      }
       els.list.appendChild(branch(name, countries, opened));
     });
+    if (crimeaBranch && !crimeaPlaced) els.list.appendChild(crimeaBranch);
     const loose = magnets.filter(function (item) { return !item.crimea && !item.country; });
     if (loose.length) els.list.appendChild(branch("Без места", loose.map(row), opened));
   }
@@ -561,8 +604,8 @@
         pin.style.top = (point.y - 21) + "px";
       });
     }
-    function zoomBy(delta, anchor) {
-      const next = Math.max(2, Math.min(16, view.zoom + delta));
+    function zoomTo(next, anchor) {
+      next = Math.max(2, Math.min(16, Math.round(next)));
       if (next === view.zoom) return;
       const box = size();
       const ax = anchor ? anchor.x : box.w / 2;
@@ -576,6 +619,7 @@
       tiles.innerHTML = "";
       draw();
     }
+    function zoomBy(delta, anchor) { zoomTo(view.zoom + delta, anchor); }
     controls.addEventListener("click", function (event) {
       const button = event.target.closest("button");
       if (button) zoomBy(Number(button.dataset.z));
@@ -585,19 +629,55 @@
       const rect = els.map.getBoundingClientRect();
       zoomBy(event.deltaY < 0 ? 1 : -1, { x: event.clientX - rect.left, y: event.clientY - rect.top });
     }, { passive: false });
+    const pointers = new Map();
     let drag = null;
+    let pinch = null;
+    function pointerPoint(event) {
+      const rect = els.map.getBoundingClientRect();
+      return { x: event.clientX - rect.left, y: event.clientY - rect.top };
+    }
+    function pinchSpan() {
+      const pts = Array.from(pointers.values());
+      return {
+        dist: Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) || 1,
+        cx: (pts[0].x + pts[1].x) / 2,
+        cy: (pts[0].y + pts[1].y) / 2
+      };
+    }
     els.map.addEventListener("pointerdown", function (event) {
-      if (event.target.closest(".magnet-pin, .map-controls, .map-credit")) return;
+      if (event.target.closest(".map-controls, .map-credit")) return;
+      if (event.target.closest(".magnet-pin")) return;
+      pointers.set(event.pointerId, pointerPoint(event));
+      if (pointers.size >= 2) {
+        drag = null;
+        const span = pinchSpan();
+        pinch = { dist: span.dist, zoom: view.zoom, cx: span.cx, cy: span.cy };
+        return;
+      }
       drag = { x: event.clientX, y: event.clientY, vx: view.x, vy: view.y, id: event.pointerId };
-      els.map.setPointerCapture(event.pointerId);
     });
     els.map.addEventListener("pointermove", function (event) {
+      if (!pointers.has(event.pointerId)) return;
+      pointers.set(event.pointerId, pointerPoint(event));
+      if (pointers.size >= 2 && pinch) {
+        const span = pinchSpan();
+        const ratio = span.dist / pinch.dist;
+        if (ratio >= 1.28 || ratio <= 0.78) {
+          zoomBy(ratio >= 1.28 ? 1 : -1, { x: span.cx, y: span.cy });
+          pinch.dist = span.dist;
+        }
+        return;
+      }
       if (!drag || event.pointerId !== drag.id) return;
       view.x = drag.vx - (event.clientX - drag.x);
       view.y = drag.vy - (event.clientY - drag.y);
       draw();
     });
-    function endDrag(event) { if (drag && event.pointerId === drag.id) drag = null; }
+    function endDrag(event) {
+      pointers.delete(event.pointerId);
+      pinch = null;
+      if (drag && event.pointerId === drag.id) drag = null;
+    }
     els.map.addEventListener("pointerup", endDrag);
     els.map.addEventListener("pointercancel", endDrag);
     window.addEventListener("resize", draw);
@@ -796,6 +876,8 @@
         '<label>Страна<select name="country">' + countryOptions(countryValue) + "</select></label>" +
         '<label>Регион<select name="region"></select></label>' +
         '<label>Город<input name="city" value="' + escapeAttr(card.city || "") + '"></label>' +
+        '<label>Официальный герб<input name="coat" value="' + escapeAttr(card.coaWiki || "") + '" placeholder="Ссылка или текст"></label>' +
+        '<div class="coat-preview"></div>' +
         '<label>Заметка<textarea name="notes" rows="2">' + escapeHtml(card.notes || "") + "</textarea></label>" +
         '<div class="pair">' +
           '<label>Широта<input name="lat" inputmode="decimal" value="' + escapeAttr(card.lat || "") + '"></label>' +
@@ -812,6 +894,20 @@
         '<p class="count form-msg"></p>' +
       "</form>";
     const form = els.detail.querySelector("form");
+    const coatPreview = els.detail.querySelector(".coat-preview");
+    function drawCoatPreview() {
+      const value = form.coat.value.trim();
+      coatPreview.innerHTML = "";
+      if (!value) return;
+      if (coatIsImage(value)) {
+        const img = document.createElement("img");
+        img.alt = "";
+        img.src = value;
+        coatPreview.appendChild(img);
+      } else coatPreview.textContent = value;
+    }
+    form.coat.addEventListener("input", drawCoatPreview);
+    drawCoatPreview();
     els.detail.querySelector(".detail-close").addEventListener("click", closeCard);
     const region = form.region;
     fillRegions(region, countryValue, card.region || "");
@@ -929,6 +1025,7 @@
           region: form.region.value,
           city: form.city.value.trim(),
           notes: form.notes.value.trim(),
+          coaWiki: form.coat.value.trim(),
           lat: form.lat.value.trim(),
           lng: form.lng.value.trim(),
           photos: encodedPhotos
