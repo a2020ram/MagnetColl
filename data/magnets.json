@@ -2401,13 +2401,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/tatarstan-respublika/laishevo/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Laishev_rayon_(Tatarstan).png",
     "drivePhotos": [
       {
         "name": "Лаишево.jpg",
         "id": "0B4sMW1qgoxAndnNRbXdHcVFqYm8"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "лениногорск",
