@@ -9,7 +9,7 @@
     "driveFileId": "0B4sMW1qgoxAnZVJJbWxRVV8xLWs",
     "resourceKey": "0-a1gPowHDDBZAKb4bfovmeg",
     "localPhotos": [
-      "Абхазия (1).jpg"
+      "Абхазия.jpg"
     ],
     "continent": "Азия",
     "country": "Абхазия",
@@ -23,7 +23,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Abkhazia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Абхазия (1).jpg",
+        "name": "Абхазия.jpg",
         "id": "0B4sMW1qgoxAnZVJJbWxRVV8xLWs"
       }
     ]
@@ -67,7 +67,7 @@
     "driveFileId": "1EIQ-mDD3QlmRcMM3sKGYla6E9fSlc225",
     "resourceKey": "",
     "localPhotos": [
-      "Абхазия.jpg"
+      "Абхазия 2.jpg"
     ],
     "continent": "Азия",
     "country": "Абхазия",
@@ -81,7 +81,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Abkhazia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Абхазия.jpg",
+        "name": "Абхазия 2.jpg",
         "id": "1EIQ-mDD3QlmRcMM3sKGYla6E9fSlc225"
       }
     ]
@@ -212,7 +212,7 @@
     "driveFileId": "0B4sMW1qgoxAnRFdEX19QSGVibms",
     "resourceKey": "0-GfwCbAH8W321UQSv0jqTnA",
     "localPhotos": [
-      "Альметьевск1.jpg"
+      "Альметьевск.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -226,7 +226,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B5%D1%80%D0%B1_%D0%90%D0%9C%D0%A0%282%29.png?width=480",
     "drivePhotos": [
       {
-        "name": "Альметьевск1.jpg",
+        "name": "Альметьевск.jpg",
         "id": "0B4sMW1qgoxAnRFdEX19QSGVibms"
       }
     ]
@@ -387,7 +387,7 @@
     "resourceKey": "0--ulGK0_1F6kr82uRgFhMbA",
     "localPhotos": [
       "Башкортостан.JPG",
-      "Башкортстан.jpg"
+      "Башкортостан 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -405,7 +405,7 @@
         "id": "0B4sMW1qgoxAndmhHNUdNMW1iQ3c"
       },
       {
-        "name": "Башкортстан.jpg",
+        "name": "Башкортостан 2.jpg",
         "id": "1pGQ-7442FCHuRlC2Ms7n5AMZS7Ul8G3P"
       }
     ]
@@ -1058,8 +1058,8 @@
     "driveFileId": "1YO1a643ZamXDauDdTrJBWrcMGIMY6FfJ",
     "resourceKey": "",
     "localPhotos": [
-      "Гатчина (1).jpg",
-      "Гатчина.jpg"
+      "Гатчина 2.jpg",
+      "Гатчина 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -1073,11 +1073,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Gatchina_%28v._1%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Гатчина (1).jpg",
+        "name": "Гатчина 2.jpg",
         "id": "1YO1a643ZamXDauDdTrJBWrcMGIMY6FfJ"
       },
       {
-        "name": "Гатчина.jpg",
+        "name": "Гатчина 2.jpg",
         "id": "1Q1VxUj6eAqoUi0AmakDGz-48UbP09HUw"
       }
     ]
@@ -1556,7 +1556,7 @@
     "driveFileId": "0B4sMW1qgoxAna1J6a2hNRzFwTHc",
     "resourceKey": "0-CC-G_juOJyyJdMAMRsiy0Q",
     "localPhotos": [
-      "ИвановоОбл.jpg"
+      "Ивановская область.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -1570,7 +1570,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Ivanovo_Oblast.svg?width=480",
     "drivePhotos": [
       {
-        "name": "ИвановоОбл.jpg",
+        "name": "Ивановская область.jpg",
         "id": "0B4sMW1qgoxAna1J6a2hNRzFwTHc"
       }
     ]
@@ -1788,7 +1788,7 @@
     "driveFileId": "1xQSalCODIewzklDZZEfwsI180N_bqUBV",
     "resourceKey": "",
     "localPhotos": [
-      "Калининградская обл.jpg"
+      "Калининградская область.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -1802,7 +1802,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Kaliningrad_Oblast_%28Latest_version%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Калининградская обл.jpg",
+        "name": "Калининградская область.jpg",
         "id": "1xQSalCODIewzklDZZEfwsI180N_bqUBV"
       }
     ]
@@ -1962,8 +1962,8 @@
     "driveFileId": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS",
     "resourceKey": "",
     "localPhotos": [
-      "Киров (1).jpg",
-      "Киров.jpg"
+      "Киров 2.jpg",
+      "Киров 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -1977,11 +1977,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kirov.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Киров (1).jpg",
+        "name": "Киров 2.jpg",
         "id": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS"
       },
       {
-        "name": "Киров.jpg",
+        "name": "Киров 2.jpg",
         "id": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS"
       }
     ]
@@ -2141,8 +2141,8 @@
     "driveFileId": "11z2G-VlkNhHiqj8CiyuZWVdU1B6aCdyz",
     "resourceKey": "",
     "localPhotos": [
-      "Коми (1).jpg",
-      "Коми.jpg"
+      "Коми 2.jpg",
+      "Коми 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -2156,11 +2156,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Komi_%28large%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Коми (1).jpg",
+        "name": "Коми 2.jpg",
         "id": "11z2G-VlkNhHiqj8CiyuZWVdU1B6aCdyz"
       },
       {
-        "name": "Коми.jpg",
+        "name": "Коми 2.jpg",
         "id": "1bQkXQUCJNjsLEi75MWaRUxfPNrLl6gsc"
       }
     ]
@@ -2552,8 +2552,8 @@
     "driveFileId": "1GKhxSlShL8YB8GTqJTrPnOmnnqvmDX31",
     "resourceKey": "",
     "localPhotos": [
-      "Ломоносов-Ораниенбаум.jpg",
-      "Ораниенбаум.jpg"
+      "Ломоносов.jpg",
+      "Ломоносов 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -2567,11 +2567,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Ломоносов-Ораниенбаум.jpg",
+        "name": "Ломоносов.jpg",
         "id": "1GKhxSlShL8YB8GTqJTrPnOmnnqvmDX31"
       },
       {
-        "name": "Ораниенбаум.jpg",
+        "name": "Ломоносов 2.jpg",
         "id": "1H4NjwWW07iCiYdyv0wcHgPw4P-S9FMkk"
       }
     ]
@@ -2644,7 +2644,7 @@
     "driveFileId": "0B4sMW1qgoxAnQjFGY3g4S3JjVUk",
     "resourceKey": "0-YSdxllkF6Bxw1_Dv4-6wLQ",
     "localPhotos": [
-      "Мари_.jpg"
+      "Мари.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -2658,7 +2658,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Mari_El.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Мари_.jpg",
+        "name": "Мари.jpg",
         "id": "0B4sMW1qgoxAnQjFGY3g4S3JjVUk"
       }
     ]
@@ -2761,7 +2761,7 @@
     "resourceKey": "",
     "localPhotos": [
       "Мордовия.jpg",
-      "Мордовия2.jpg"
+      "Мордовия 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -2779,7 +2779,7 @@
         "id": "1U92CNJvSZmvxs1IBsuCM6JSHmROmunvW"
       },
       {
-        "name": "Мордовия2.jpg",
+        "name": "Мордовия 2.jpg",
         "id": "0B4sMW1qgoxAncWNoWWRzSkg2ejg"
       }
     ]
@@ -3084,7 +3084,7 @@
     "driveFileId": "0B4sMW1qgoxAnV2ZTUDNBMFJkclE",
     "resourceKey": "0-woJsD_0UVCBmAfi5lZkVgg",
     "localPhotos": [
-      "нижний новгород2.jpg"
+      "Нижегородская область.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -3098,7 +3098,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Nizhny%20Novgorod%20Oblast%20%28large%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "нижний новгород2.jpg",
+        "name": "Нижегородская область.jpg",
         "id": "0B4sMW1qgoxAnV2ZTUDNBMFJkclE"
       }
     ]
@@ -3171,7 +3171,7 @@
     "driveFileId": "0B4sMW1qgoxAnUDlkN2xkQ1FwSms",
     "resourceKey": "0-a90sZYa2Z-_Bi7fDwSuHyA",
     "localPhotos": [
-      "Новокуйбышевск2_.jpg"
+      "Новокуйбышевск.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -3185,7 +3185,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Novokuybyshevsk.gif?width=480",
     "drivePhotos": [
       {
-        "name": "Новокуйбышевск2_.jpg",
+        "name": "Новокуйбышевск.jpg",
         "id": "0B4sMW1qgoxAnUDlkN2xkQ1FwSms"
       }
     ]
@@ -3200,7 +3200,7 @@
     "driveFileId": "0B4sMW1qgoxAnbTlBRndVREUzYm8",
     "resourceKey": "0-fZP7zaXBwkANNdtXNJ40Og",
     "localPhotos": [
-      "Новороссийск2.jpg"
+      "Новороссийск.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -3214,7 +3214,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Novorossiysk.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Новороссийск2.jpg",
+        "name": "Новороссийск.jpg",
         "id": "0B4sMW1qgoxAnbTlBRndVREUzYm8"
       }
     ]
@@ -3316,8 +3316,8 @@
     "driveFileId": "1BfDbCSKRNjv_gNsNxG27Hesw_sZOnKZh",
     "resourceKey": "",
     "localPhotos": [
-      "Орёл 2.jpg",
-      "Орел.jpg"
+      "Орел 2.jpg",
+      "Орел 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -3331,7 +3331,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Oryol.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Орёл 2.jpg",
+        "name": "Орел 2.jpg",
         "id": "1BfDbCSKRNjv_gNsNxG27Hesw_sZOnKZh"
       }
     ]
@@ -3375,35 +3375,6 @@
     "driveFileId": "0B4sMW1qgoxAnRFZMNURtNVN0M3c",
     "resourceKey": "0-e9y1jHzJ5FS_CRrkZTJMjQ",
     "localPhotos": [
-      "Пенза (1).jpg"
-    ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Пенза",
-    "city": "Пенза",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/penzenskaja-oblast/penza/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Penza_%28Penza_oblast%29_%282001%29.png?width=480",
-    "drivePhotos": [
-      {
-        "name": "Пенза (1).jpg",
-        "id": "0B4sMW1qgoxAnRFZMNURtNVN0M3c"
-      }
-    ]
-  },
-  {
-    "id": "пенза-2",
-    "name": "Пенза",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 53.1951,
-    "lng": 45.0183,
-    "driveFileId": "106ZMpcGtH_mk_YAUzAjRec3dOyEAOu3z",
-    "resourceKey": "",
-    "localPhotos": [
       "Пенза.jpg"
     ],
     "continent": "Европа",
@@ -3419,6 +3390,35 @@
     "drivePhotos": [
       {
         "name": "Пенза.jpg",
+        "id": "0B4sMW1qgoxAnRFZMNURtNVN0M3c"
+      }
+    ]
+  },
+  {
+    "id": "пенза-2",
+    "name": "Пенза",
+    "status": "owned",
+    "addedAt": "",
+    "lat": 53.1951,
+    "lng": 45.0183,
+    "driveFileId": "106ZMpcGtH_mk_YAUzAjRec3dOyEAOu3z",
+    "resourceKey": "",
+    "localPhotos": [
+      "Пенза 2.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Пенза",
+    "city": "Пенза",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/penzenskaja-oblast/penza/coat.geraldika.gif",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Penza_%28Penza_oblast%29_%282001%29.png?width=480",
+    "drivePhotos": [
+      {
+        "name": "Пенза 2.jpg",
         "id": "106ZMpcGtH_mk_YAUzAjRec3dOyEAOu3z"
       }
     ]
@@ -3898,8 +3898,8 @@
     "driveFileId": "18os2SLCL884eXDt50BdqzbAb_JPeKQ2H",
     "resourceKey": "",
     "localPhotos": [
-      "Саранск (1).jpg",
-      "Саранск.jpg"
+      "Саранск 2.jpg",
+      "Саранск 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -3913,11 +3913,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Saransk.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Саранск (1).jpg",
+        "name": "Саранск 2.jpg",
         "id": "18os2SLCL884eXDt50BdqzbAb_JPeKQ2H"
       },
       {
-        "name": "Саранск.jpg",
+        "name": "Саранск 2.jpg",
         "id": "0B4sMW1qgoxAndXBnTGhLQlVUNk0"
       }
     ]
@@ -4077,35 +4077,6 @@
     "driveFileId": "11a1NvnxLPvzgEN7USOxLJolhc6QGI8YI",
     "resourceKey": "",
     "localPhotos": [
-      "Свияжск (1).jpg"
-    ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Зеленодольский",
-    "city": "Свияжск",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/tatarstan-respublika/sviyazhsk/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Sviyazhsk_%28Tatarstan%29.png?width=480",
-    "drivePhotos": [
-      {
-        "name": "Свияжск (1).jpg",
-        "id": "11a1NvnxLPvzgEN7USOxLJolhc6QGI8YI"
-      }
-    ]
-  },
-  {
-    "id": "свияжск-2",
-    "name": "Свияжск",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 55.7732,
-    "lng": 48.662,
-    "driveFileId": "1AT0aKoP0qsIkAY0X85ZDxrHmz747ETqj",
-    "resourceKey": "",
-    "localPhotos": [
       "Свияжск.jpg"
     ],
     "continent": "Европа",
@@ -4121,6 +4092,35 @@
     "drivePhotos": [
       {
         "name": "Свияжск.jpg",
+        "id": "11a1NvnxLPvzgEN7USOxLJolhc6QGI8YI"
+      }
+    ]
+  },
+  {
+    "id": "свияжск-2",
+    "name": "Свияжск",
+    "status": "owned",
+    "addedAt": "",
+    "lat": 55.7732,
+    "lng": 48.662,
+    "driveFileId": "1AT0aKoP0qsIkAY0X85ZDxrHmz747ETqj",
+    "resourceKey": "",
+    "localPhotos": [
+      "Свияжск 2.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Зеленодольский",
+    "city": "Свияжск",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/tatarstan-respublika/sviyazhsk/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Sviyazhsk_%28Tatarstan%29.png?width=480",
+    "drivePhotos": [
+      {
+        "name": "Свияжск 2.jpg",
         "id": "1AT0aKoP0qsIkAY0X85ZDxrHmz747ETqj"
       }
     ]
@@ -4136,7 +4136,7 @@
     "resourceKey": "",
     "localPhotos": [
       "Севастополь.jpg",
-      "Севастополь2.jpg"
+      "Севастополь 2.jpg"
     ],
     "continent": "Европа",
     "country": "",
@@ -4154,7 +4154,7 @@
         "id": "1YZWRSMwy79LHpL3YeCAeOm1eFbGcK6Ep"
       },
       {
-        "name": "Севастополь2.jpg",
+        "name": "Севастополь 2.jpg",
         "id": "1ueHOOFvZfWCDGpY_PN9n3IZ6_gHuUC4W"
       }
     ],
@@ -4373,35 +4373,6 @@
     "driveFileId": "1a2RMA8NKJcFRrcMkIbLfCfAjY1sJoDRM",
     "resourceKey": "",
     "localPhotos": [
-      "Ставрополь.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Ставрополь",
-    "city": "Ставрополь",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/stavropol-skij-kraj/stavropol-urban-okrug/stavropol/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Stavropol%20%282021%29.jpeg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Ставрополь.jpg",
-        "id": "1a2RMA8NKJcFRrcMkIbLfCfAjY1sJoDRM"
-      }
-    ]
-  },
-  {
-    "id": "ставрополь",
-    "name": "Ставрополь",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 45.0445,
-    "lng": 41.9691,
-    "driveFileId": "0B4sMW1qgoxAnQllQYTRVb2ZWRlE",
-    "resourceKey": "0-P9aNaqSxljRxop4wqcvmlA",
-    "localPhotos": [
       "Ставрополь 2.jpg"
     ],
     "continent": "Европа",
@@ -4417,6 +4388,35 @@
     "drivePhotos": [
       {
         "name": "Ставрополь 2.jpg",
+        "id": "1a2RMA8NKJcFRrcMkIbLfCfAjY1sJoDRM"
+      }
+    ]
+  },
+  {
+    "id": "ставрополь",
+    "name": "Ставрополь",
+    "status": "owned",
+    "addedAt": "",
+    "lat": 45.0445,
+    "lng": 41.9691,
+    "driveFileId": "0B4sMW1qgoxAnQllQYTRVb2ZWRlE",
+    "resourceKey": "0-P9aNaqSxljRxop4wqcvmlA",
+    "localPhotos": [
+      "Ставрополь.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Ставрополь",
+    "city": "Ставрополь",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/stavropol-skij-kraj/stavropol-urban-okrug/stavropol/coat.gif",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Stavropol%20%282021%29.jpeg?width=480",
+    "drivePhotos": [
+      {
+        "name": "Ставрополь.jpg",
         "id": "0B4sMW1qgoxAnQllQYTRVb2ZWRlE"
       }
     ]
@@ -4634,35 +4634,6 @@
     "driveFileId": "0B4sMW1qgoxAnNDJDZi1zS0dLdUU",
     "resourceKey": "0-YSAO-G4eqPbP7tT45FThmQ",
     "localPhotos": [
-      "Татарстан (1).jpg"
-    ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Республика Татарстан",
-    "city": "",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/tatarstan-respublika/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Tatarstan.svg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Татарстан (1).jpg",
-        "id": "0B4sMW1qgoxAnNDJDZi1zS0dLdUU"
-      }
-    ]
-  },
-  {
-    "id": "татарстан-2",
-    "name": "Татарстан",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 55.1802,
-    "lng": 50.9944,
-    "driveFileId": "10nHKWIgltHm1cax9Rohk8ysTQURFAH_U",
-    "resourceKey": "",
-    "localPhotos": [
       "Татарстан.jpg"
     ],
     "continent": "Европа",
@@ -4678,6 +4649,35 @@
     "drivePhotos": [
       {
         "name": "Татарстан.jpg",
+        "id": "0B4sMW1qgoxAnNDJDZi1zS0dLdUU"
+      }
+    ]
+  },
+  {
+    "id": "татарстан-2",
+    "name": "Татарстан",
+    "status": "owned",
+    "addedAt": "",
+    "lat": 55.1802,
+    "lng": 50.9944,
+    "driveFileId": "10nHKWIgltHm1cax9Rohk8ysTQURFAH_U",
+    "resourceKey": "",
+    "localPhotos": [
+      "Татарстан 2.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Республика Татарстан",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/tatarstan-respublika/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Tatarstan.svg?width=480",
+    "drivePhotos": [
+      {
+        "name": "Татарстан 2.jpg",
         "id": "10nHKWIgltHm1cax9Rohk8ysTQURFAH_U"
       }
     ]
@@ -4838,7 +4838,7 @@
     "driveFileId": "1xqJMu-WGW08OYptWFsEbk2gcauu_5pXj",
     "resourceKey": "",
     "localPhotos": [
-      "Томская обл.jpg"
+      "Томская область.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -4852,7 +4852,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Tomsk%20Oblast.png?width=480",
     "drivePhotos": [
       {
-        "name": "Томская обл.jpg",
+        "name": "Томская область.jpg",
         "id": "1xqJMu-WGW08OYptWFsEbk2gcauu_5pXj"
       }
     ]
@@ -5737,35 +5737,6 @@
     "driveFileId": "0B4sMW1qgoxAncGI5M2RmZ3YydDQ",
     "resourceKey": "0-lEcjw8WNJlrMY_P6p8iR7Q",
     "localPhotos": [
-      "Austria2.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Австрия",
-    "region": "",
-    "city": "",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "AT",
-    "coaPath": "/media/coats/europe/at/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Austria.svg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Austria2.jpg",
-        "id": "0B4sMW1qgoxAncGI5M2RmZ3YydDQ"
-      }
-    ]
-  },
-  {
-    "id": "austria2",
-    "name": "Austria2",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 47.5162,
-    "lng": 14.5501,
-    "driveFileId": "0B4sMW1qgoxAnbmNoVl8wVnJ3eUE",
-    "resourceKey": "0-Zq-TGE0wk7LSD21mLv04lw",
-    "localPhotos": [
       "Austria_.jpg"
     ],
     "continent": "Европа",
@@ -5781,6 +5752,35 @@
     "drivePhotos": [
       {
         "name": "Austria_.jpg",
+        "id": "0B4sMW1qgoxAncGI5M2RmZ3YydDQ"
+      }
+    ]
+  },
+  {
+    "id": "austria2",
+    "name": "Austria2",
+    "status": "owned",
+    "addedAt": "",
+    "lat": 47.5162,
+    "lng": 14.5501,
+    "driveFileId": "0B4sMW1qgoxAnbmNoVl8wVnJ3eUE",
+    "resourceKey": "0-Zq-TGE0wk7LSD21mLv04lw",
+    "localPhotos": [
+      "Austria2.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Австрия",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "AT",
+    "coaPath": "/media/coats/europe/at/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Austria.svg?width=480",
+    "drivePhotos": [
+      {
+        "name": "Austria2.jpg",
         "id": "0B4sMW1qgoxAnbmNoVl8wVnJ3eUE"
       }
     ]
@@ -6144,7 +6144,7 @@
     "driveFileId": "1K_Q-n9eOZ6TjMPQbJdFj43kA0xg83v27",
     "resourceKey": "",
     "localPhotos": [
-      "Chang'an.jpg"
+      "Chang_an.jpg"
     ],
     "continent": "Азия",
     "country": "Китай",
@@ -6158,7 +6158,7 @@
     "coaWiki": "长安",
     "drivePhotos": [
       {
-        "name": "Chang'an.jpg",
+        "name": "Chang_an.jpg",
         "id": "1K_Q-n9eOZ6TjMPQbJdFj43kA0xg83v27"
       }
     ],
@@ -6435,9 +6435,9 @@
     "driveFileId": "0B4sMW1qgoxAnLUxCaXh2ZGkwbkE",
     "resourceKey": "0-2UP_NSKl2VYRc8RsuUZL5A",
     "localPhotos": [
-      "Egypt.jpg",
-      "Egypt_.jpg",
-      "Egypt_1.jpg"
+      "Egypt_1 3.jpg",
+      "Egypt_1 2.jpg",
+      "Egypt_1 3.jpg"
     ],
     "continent": "Африка",
     "country": "Египет",
@@ -6451,11 +6451,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Egypt_%28Official%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Egypt.jpg",
+        "name": "Egypt_1 3.jpg",
         "id": "0B4sMW1qgoxAnLUxCaXh2ZGkwbkE"
       },
       {
-        "name": "Egypt_.jpg",
+        "name": "Egypt_1 2.jpg",
         "id": "1Mm8rNQFsMd7krGuANa2U4u4nrZI7AzML"
       }
     ]
@@ -6616,7 +6616,7 @@
     "resourceKey": "",
     "localPhotos": [
       "Georgia.jpg",
-      "Georgia2.jpg"
+      "Georgia 2.jpg"
     ],
     "continent": "Азия",
     "country": "Грузия",
@@ -6634,7 +6634,7 @@
         "id": "1tw5k6NfvgwLVVVmMVfSxkL6HhcD9Rtd9"
       },
       {
-        "name": "Georgia2.jpg",
+        "name": "Georgia 2.jpg",
         "id": "1TQEWyhfvPofLJom41jHwHJmROd2IzhJ_"
       }
     ]
@@ -6649,7 +6649,7 @@
     "driveFileId": "1bcRB4i8PCjTBJjrzZZ42IaRqJ5hckCMQ",
     "resourceKey": "",
     "localPhotos": [
-      "Germany (1).jpg"
+      "Germany.jpg"
     ],
     "continent": "Европа",
     "country": "Германия",
@@ -6663,7 +6663,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Germany.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Germany (1).jpg",
+        "name": "Germany.jpg",
         "id": "1bcRB4i8PCjTBJjrzZZ42IaRqJ5hckCMQ"
       }
     ]
@@ -6767,8 +6767,8 @@
     "driveFileId": "1d9qJWULfO24Sa3RTPCTO0G7DgBv03tC4",
     "resourceKey": "",
     "localPhotos": [
-      "Hamburg (1).jpg",
-      "Hamburg2.jpg"
+      "Hamburg 3.jpg",
+      "Hamburg 2.jpg"
     ],
     "continent": "Европа",
     "country": "Германия",
@@ -6782,11 +6782,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Hamburg.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Hamburg (1).jpg",
+        "name": "Hamburg 3.jpg",
         "id": "1d9qJWULfO24Sa3RTPCTO0G7DgBv03tC4"
       },
       {
-        "name": "Hamburg2.jpg",
+        "name": "Hamburg 2.jpg",
         "id": "1d9qJWULfO24Sa3RTPCTO0G7DgBv03tC4"
       }
     ]
@@ -6801,7 +6801,7 @@
     "driveFileId": "1srXXSKnIu1fNWZhI_YVl-X_LuBkvh-0V",
     "resourceKey": "",
     "localPhotos": [
-      "Hamburg.jpg"
+      "Hamburg 3.jpg"
     ],
     "continent": "Европа",
     "country": "Германия",
@@ -6815,7 +6815,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Middle%20Coat%20of%20arms%20of%20Hamburg.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Hamburg.jpg",
+        "name": "Hamburg 3.jpg",
         "id": "1srXXSKnIu1fNWZhI_YVl-X_LuBkvh-0V"
       }
     ]
@@ -6976,8 +6976,8 @@
     "driveFileId": "1iYwqY7CZFv--6s00wNi18o1QOHZam-wL",
     "resourceKey": "",
     "localPhotos": [
-      "Jerusalem (1).jpg",
-      "Jerusalem.jpg"
+      "Jerusalem 2.jpg",
+      "Jerusalem 2.jpg"
     ],
     "continent": "Азия",
     "country": "Палестина",
@@ -6991,11 +6991,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem_emblem.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Jerusalem (1).jpg",
+        "name": "Jerusalem 2.jpg",
         "id": "1iYwqY7CZFv--6s00wNi18o1QOHZam-wL"
       },
       {
-        "name": "Jerusalem.jpg",
+        "name": "Jerusalem 2.jpg",
         "id": "1i0G_o-FVWGz2EOsR_KQr52utkSQDISwN"
       }
     ]
@@ -7126,7 +7126,7 @@
     "driveFileId": "0B4sMW1qgoxAnczY4SEVsWVBYSEk",
     "resourceKey": "0-zUaxkWsrLLDGXlEioJ1cyQ",
     "localPhotos": [
-      "L'Aquila.jpg"
+      "L_Aquila.jpg"
     ],
     "continent": "Европа",
     "country": "Италия",
@@ -7140,7 +7140,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/L%27Aquila-Stemma.svg?width=480",
     "drivePhotos": [
       {
-        "name": "L'Aquila.jpg",
+        "name": "L_Aquila.jpg",
         "id": "0B4sMW1qgoxAnczY4SEVsWVBYSEk"
       }
     ]
@@ -7535,8 +7535,8 @@
     "driveFileId": "1yNQO_-tgivJ7o7snoAQkMkadRLZ3F-XL",
     "resourceKey": "",
     "localPhotos": [
-      "Munchen.jpg",
-      "Munich.jpg"
+      "Munich 2.jpg",
+      "Munich 2.jpg"
     ],
     "continent": "Европа",
     "country": "Германия",
@@ -7550,7 +7550,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/DEU_M%C3%BCnchen_COA.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Munchen.jpg",
+        "name": "Munich 2.jpg",
         "id": "1yNQO_-tgivJ7o7snoAQkMkadRLZ3F-XL"
       }
     ]
@@ -7594,7 +7594,7 @@
     "driveFileId": "1o-sGNwrfcH_EvCq5fU8fiRF3hkRJBJ1V",
     "resourceKey": "",
     "localPhotos": [
-      "Nurnberg .jpg"
+      "Nurnberg.jpg"
     ],
     "continent": "Европа",
     "country": "Германия",
@@ -7608,7 +7608,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/DEU_N%C3%BCrnberg_COA_%28klein%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Nurnberg .jpg",
+        "name": "Nurnberg.jpg",
         "id": "1o-sGNwrfcH_EvCq5fU8fiRF3hkRJBJ1V"
       }
     ]
@@ -8062,7 +8062,7 @@
     "resourceKey": "",
     "localPhotos": [
       "Sicilia.jpg",
-      "Sicilia2.jpg"
+      "Sicilia 2.jpg"
     ],
     "continent": "Европа",
     "country": "Италия",
@@ -8092,7 +8092,7 @@
     "resourceKey": "",
     "localPhotos": [
       "Slovenija.jpg",
-      "Slovenija2.jpg"
+      "Slovenija 2.jpg"
     ],
     "continent": "Европа",
     "country": "Словения",
@@ -8110,7 +8110,7 @@
         "id": "1otka3PdKSeYkK0CApSvfnqDXD3bg4MZ-"
       },
       {
-        "name": "Slovenija2.jpg",
+        "name": "Slovenija 2.jpg",
         "id": "1zAprRNJDNFDs4_pLtcF6RwxyfB6d7EPw"
       }
     ]
@@ -8678,7 +8678,7 @@
     "driveFileId": "1KYJkDDuc-cq6oLeiGmAb67p-47EdpkQz",
     "resourceKey": "",
     "localPhotos": [
-      "Xi'an.jpg"
+      "Xi_an.jpg"
     ],
     "continent": "Азия",
     "country": "Китай",
@@ -8692,7 +8692,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Xi%27an%20%28Chinese%20characters%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Xi'an.jpg",
+        "name": "Xi_an.jpg",
         "id": "1KYJkDDuc-cq6oLeiGmAb67p-47EdpkQz"
       }
     ],
@@ -8737,7 +8737,7 @@
     "driveFileId": "11K2P8Yp8It2VFIg-cDp2fppF7N2eFhs4",
     "resourceKey": "",
     "localPhotos": [
-      "Нарьян Мар.jpg"
+      "Нарьян-Мар.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -8751,7 +8751,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Naryan-Mar.png?width=480",
     "drivePhotos": [
       {
-        "name": "Нарьян Мар.jpg",
+        "name": "Нарьян-Мар.jpg",
         "id": "11K2P8Yp8It2VFIg-cDp2fppF7N2eFhs4"
       }
     ]
@@ -8766,7 +8766,7 @@
     "driveFileId": "12KiWFTE5BUF3NrP4Vq4aRAH3SgxKcU8e",
     "resourceKey": "",
     "localPhotos": [
-      "Костромская обл.jpg"
+      "Костромская область.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -8780,7 +8780,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kostroma_Oblast.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Костромская обл.jpg",
+        "name": "Костромская область.jpg",
         "id": "12KiWFTE5BUF3NrP4Vq4aRAH3SgxKcU8e"
       }
     ]
@@ -8796,7 +8796,7 @@
     "resourceKey": "",
     "localPhotos": [
       "Несвиж.jpg",
-      "Нясвиж.jpg"
+      "Несвиж 2.jpg"
     ],
     "continent": "Европа",
     "country": "Беларусь",
@@ -8814,7 +8814,7 @@
         "id": "15_24uu3aKD4rfnGn1jw-2Y3TKMeG7X9W"
       },
       {
-        "name": "Нясвиж.jpg",
+        "name": "Несвиж 2.jpg",
         "id": "18hX91k4vPYmoKi10N7KuzpdtPQ2chhi-"
       }
     ]
@@ -8887,7 +8887,7 @@
     "driveFileId": "1x-7irprzIPQynoUfkNJsuFrRqySH8GyX",
     "resourceKey": "",
     "localPhotos": [
-      "Gent.jpg"
+      "Гент.jpg"
     ],
     "continent": "Европа",
     "country": "Бельгия",
@@ -8901,7 +8901,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Wapen_van_Gent.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Gent.jpg",
+        "name": "Гент.jpg",
         "id": "1x-7irprzIPQynoUfkNJsuFrRqySH8GyX"
       }
     ]
@@ -8916,7 +8916,7 @@
     "driveFileId": "109d9rjWKj1m779-OIFw9kzsF0_xHZW31",
     "resourceKey": "",
     "localPhotos": [
-      "Antwerpen.jpg"
+      "Антверпен.jpg"
     ],
     "continent": "Европа",
     "country": "Бельгия",
@@ -8930,7 +8930,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Antwerp%20%28City%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Antwerpen.jpg",
+        "name": "Антверпен.jpg",
         "id": "109d9rjWKj1m779-OIFw9kzsF0_xHZW31"
       }
     ]
@@ -8945,7 +8945,7 @@
     "driveFileId": "1IccOscFSCFnfUZNYiKRUpCj6Q9WFhCJu",
     "resourceKey": "",
     "localPhotos": [
-      "Bern.jpg"
+      "Берн.jpg"
     ],
     "continent": "Европа",
     "country": "Швейцария",
@@ -8959,7 +8959,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Switzerland.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Bern.jpg",
+        "name": "Берн.jpg",
         "id": "1IccOscFSCFnfUZNYiKRUpCj6Q9WFhCJu"
       }
     ],
@@ -8975,7 +8975,7 @@
     "driveFileId": "1KmAtGffuWxytpPfojo2NNqn2mETMAV7s",
     "resourceKey": "",
     "localPhotos": [
-      "Dresden.jpg"
+      "Дрезден.jpg"
     ],
     "continent": "Европа",
     "country": "Германия",
@@ -8989,7 +8989,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Dresden_Stadtwappen.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Dresden.jpg",
+        "name": "Дрезден.jpg",
         "id": "1KmAtGffuWxytpPfojo2NNqn2mETMAV7s"
       }
     ]
@@ -9091,8 +9091,8 @@
     "driveFileId": "1AQTkFNLGHDaS-hsifBxG6zYVr2j73ONC",
     "resourceKey": "",
     "localPhotos": [
-      "Сыктывкар (1).jpg",
-      "Сыктывкар.jpg"
+      "Сыктывкар 2.jpg",
+      "Сыктывкар 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -9106,11 +9106,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Syktyvkar_%28Komi%29_%282008%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Сыктывкар (1).jpg",
+        "name": "Сыктывкар 2.jpg",
         "id": "1AQTkFNLGHDaS-hsifBxG6zYVr2j73ONC"
       },
       {
-        "name": "Сыктывкар.jpg",
+        "name": "Сыктывкар 2.jpg",
         "id": "1AQTkFNLGHDaS-hsifBxG6zYVr2j73ONC"
       }
     ]
@@ -9125,7 +9125,7 @@
     "driveFileId": "1fnSBuVxdYkvAIY_R0jm-wIBwivhfsCDy",
     "resourceKey": "",
     "localPhotos": [
-      "JiNan.jpg"
+      "Цзинань.jpg"
     ],
     "continent": "Азия",
     "country": "Китай",
@@ -9139,7 +9139,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Jinan%20%28Chinese%20characters%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "JiNan.jpg",
+        "name": "Цзинань.jpg",
         "id": "1fnSBuVxdYkvAIY_R0jm-wIBwivhfsCDy"
       }
     ],
@@ -9155,7 +9155,7 @@
     "driveFileId": "1lquH6i8wEisPfnsaY9o9twI9SsaDrEP6",
     "resourceKey": "",
     "localPhotos": [
-      "QingDao.jpg"
+      "Циндао.jpg"
     ],
     "continent": "Азия",
     "country": "Китай",
@@ -9169,7 +9169,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Qingdao%20%28Chinese%20characters%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "QingDao.jpg",
+        "name": "Циндао.jpg",
         "id": "1lquH6i8wEisPfnsaY9o9twI9SsaDrEP6"
       }
     ],
@@ -9185,7 +9185,7 @@
     "driveFileId": "1SS4kheiey2vmMSN1h0wIiNA-oMzZbxin",
     "resourceKey": "",
     "localPhotos": [
-      "Shanghai.jpg"
+      "Шанхай.jpg"
     ],
     "continent": "Азия",
     "country": "Китай",
@@ -9199,7 +9199,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Shanghai_%28Chinese_characters%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Shanghai.jpg",
+        "name": "Шанхай.jpg",
         "id": "1SS4kheiey2vmMSN1h0wIiNA-oMzZbxin"
       }
     ]
@@ -9214,7 +9214,7 @@
     "driveFileId": "12OMTITXM2QMTfr57dm-xv9m-qtJrhVQp",
     "resourceKey": "",
     "localPhotos": [
-      "Shandong.jpg"
+      "Шаньдун.jpg"
     ],
     "continent": "Азия",
     "country": "Китай",
@@ -9228,7 +9228,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_the_People%27s_Republic_of_China.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Shandong.jpg",
+        "name": "Шаньдун.jpg",
         "id": "12OMTITXM2QMTfr57dm-xv9m-qtJrhVQp"
       }
     ]
@@ -9243,7 +9243,7 @@
     "driveFileId": "1_iqlx0WZ28AqXuBkBrxTgWEANAPNSzUS",
     "resourceKey": "",
     "localPhotos": [
-      " Дружинино.jpg"
+      "Дружинино.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -9257,7 +9257,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Sverdlovsk_oblast.svg?width=480",
     "drivePhotos": [
       {
-        "name": " Дружинино.jpg",
+        "name": "Дружинино.jpg",
         "id": "1_iqlx0WZ28AqXuBkBrxTgWEANAPNSzUS"
       }
     ]
@@ -9272,7 +9272,7 @@
     "driveFileId": "1SGh3cGDJtFKu32ZxcqOViQ32QYRYQS9t",
     "resourceKey": "",
     "localPhotos": [
-      "New_Brunswick.jpg"
+      "Нью-Брунсвик.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Канада",
@@ -9286,7 +9286,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_New_Brunswick%2C_Canada.svg?width=480",
     "drivePhotos": [
       {
-        "name": "New_Brunswick.jpg",
+        "name": "Нью-Брунсвик.jpg",
         "id": "1SGh3cGDJtFKu32ZxcqOViQ32QYRYQS9t"
       }
     ]
@@ -9301,7 +9301,7 @@
     "driveFileId": "1bvURXxvAgTR4q5rR78ZKR_vj0_zncR8C",
     "resourceKey": "",
     "localPhotos": [
-      "Cape_Breton.jpg"
+      "остров Кейп-Бретон.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Канада",
@@ -9315,7 +9315,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Nova_Scotia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Cape_Breton.jpg",
+        "name": "остров Кейп-Бретон.jpg",
         "id": "1bvURXxvAgTR4q5rR78ZKR_vj0_zncR8C"
       }
     ]
@@ -9330,7 +9330,7 @@
     "driveFileId": "1WTjQ5Fd4hzuqO7VK2s2lyupjvO4VDgcy",
     "resourceKey": "",
     "localPhotos": [
-      "Nova_Scotia.jpg"
+      "Новая Шотландия.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Канада",
@@ -9344,7 +9344,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Nova_Scotia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Nova_Scotia.jpg",
+        "name": "Новая Шотландия.jpg",
         "id": "1WTjQ5Fd4hzuqO7VK2s2lyupjvO4VDgcy"
       }
     ]
@@ -9359,7 +9359,7 @@
     "driveFileId": "1eqIsD72IgpH0YkGFlwrJrW4TNBDyzAz9",
     "resourceKey": "",
     "localPhotos": [
-      "Virginia.jpg"
+      "Вирджиния.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Соединённые Штаты Америки",
@@ -9373,7 +9373,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Seal_of_Virginia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Virginia.jpg",
+        "name": "Вирджиния.jpg",
         "id": "1eqIsD72IgpH0YkGFlwrJrW4TNBDyzAz9"
       }
     ]
@@ -9388,7 +9388,7 @@
     "driveFileId": "1F2hMLvSlFm797X6t4zlvG7qmmCFb-Zup",
     "resourceKey": "",
     "localPhotos": [
-      "Suzhou.jpg"
+      "Сучжоу.jpg"
     ],
     "continent": "Азия",
     "country": "Китай",
@@ -9402,7 +9402,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzhou%20%28Chinese%20characters%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Suzhou.jpg",
+        "name": "Сучжоу.jpg",
         "id": "1F2hMLvSlFm797X6t4zlvG7qmmCFb-Zup"
       }
     ],
@@ -9418,7 +9418,7 @@
     "driveFileId": "1ymeKZ7rCqmaFA4E3nxvpcISjOfyWUorx",
     "resourceKey": "",
     "localPhotos": [
-      "Pattaya.jpg"
+      "Паттайя.jpg"
     ],
     "continent": "Азия",
     "country": "Таиланд",
@@ -9432,7 +9432,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Thailand.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Pattaya.jpg",
+        "name": "Паттайя.jpg",
         "id": "1ymeKZ7rCqmaFA4E3nxvpcISjOfyWUorx"
       }
     ]
@@ -9447,7 +9447,7 @@
     "driveFileId": "1Vq4nPy-GPDMIe58PIAxR6B8H8offE5u1",
     "resourceKey": "",
     "localPhotos": [
-      " Елец.jpg"
+      "Елец.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -9461,7 +9461,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Yelets.svg?width=480",
     "drivePhotos": [
       {
-        "name": " Елец.jpg",
+        "name": "Елец.jpg",
         "id": "1Vq4nPy-GPDMIe58PIAxR6B8H8offE5u1"
       }
     ]
@@ -9505,7 +9505,7 @@
     "driveFileId": "1RoWX-YZqvksvdnMTCh1nayRtEeNNzCin",
     "resourceKey": "",
     "localPhotos": [
-      "Peru.jpg"
+      "Перу.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Перу",
@@ -9519,7 +9519,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_nacional_del_Per%C3%BA.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Peru.jpg",
+        "name": "Перу.jpg",
         "id": "1RoWX-YZqvksvdnMTCh1nayRtEeNNzCin"
       }
     ]
@@ -9534,7 +9534,7 @@
     "driveFileId": "1bBAWyZyeI_J2jrIx6ip-2ORkjdG9YnLj",
     "resourceKey": "",
     "localPhotos": [
-      "Mongolia.jpg"
+      "Монголия.jpg"
     ],
     "continent": "Азия",
     "country": "Монголия",
@@ -9548,7 +9548,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/State_emblem_of_Mongolia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Mongolia.jpg",
+        "name": "Монголия.jpg",
         "id": "1bBAWyZyeI_J2jrIx6ip-2ORkjdG9YnLj"
       }
     ]
@@ -9563,7 +9563,7 @@
     "driveFileId": "16YutwaIcJbBc47vGEDsLr9gqpCTnesjx",
     "resourceKey": "",
     "localPhotos": [
-      "Ecuador.jpg"
+      "Эквадор.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Эквадор",
@@ -9577,7 +9577,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ecuador.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Ecuador.jpg",
+        "name": "Эквадор.jpg",
         "id": "16YutwaIcJbBc47vGEDsLr9gqpCTnesjx"
       }
     ]
@@ -9592,7 +9592,7 @@
     "driveFileId": "1N9aRUj0Y5uP1dEzW8z6Sl2gbJgL1s3Yl",
     "resourceKey": "",
     "localPhotos": [
-      "Potosi.jpg"
+      "Потоси.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -9606,7 +9606,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Third_Coat_of_Arms_of_Potosi.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Potosi.jpg",
+        "name": "Потоси.jpg",
         "id": "1N9aRUj0Y5uP1dEzW8z6Sl2gbJgL1s3Yl"
       }
     ]
@@ -9621,7 +9621,7 @@
     "driveFileId": "1o3DZyRteIdMWYlpFLzewEF-S0YDnAp6Y",
     "resourceKey": "",
     "localPhotos": [
-      "Pando.jpg"
+      "Пандо.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -9635,7 +9635,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/ESCUDO_DEL_DEPARTAMENTO_DE_PANDO_-_BOLIVIA.png?width=480",
     "drivePhotos": [
       {
-        "name": "Pando.jpg",
+        "name": "Пандо.jpg",
         "id": "1o3DZyRteIdMWYlpFLzewEF-S0YDnAp6Y"
       }
     ]
@@ -9650,7 +9650,7 @@
     "driveFileId": "1kswoxlvF7_RuO78ShVAkuChYjJfa4KyG",
     "resourceKey": "",
     "localPhotos": [
-      "Santa Cruz.jpg"
+      "Санта-Круз.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -9664,7 +9664,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Santa_Cruz_de_la_Sierra.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Santa Cruz.jpg",
+        "name": "Санта-Круз.jpg",
         "id": "1kswoxlvF7_RuO78ShVAkuChYjJfa4KyG"
       }
     ]
@@ -9708,7 +9708,7 @@
     "driveFileId": "1S1tIAiTL57DDvHyKAScEDrA1d7Iuvwri",
     "resourceKey": "",
     "localPhotos": [
-      "Tarija.jpg"
+      "Тариха.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -9722,7 +9722,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/EscudoTarija.gif?width=480",
     "drivePhotos": [
       {
-        "name": "Tarija.jpg",
+        "name": "Тариха.jpg",
         "id": "1S1tIAiTL57DDvHyKAScEDrA1d7Iuvwri"
       }
     ]
@@ -9737,7 +9737,7 @@
     "driveFileId": "12846BCArVmIUkmjLwEvAgMIcKLMry1oz",
     "resourceKey": "",
     "localPhotos": [
-      "Chuquisaca.jpg"
+      "Чукисака.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -9751,7 +9751,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Chuquisiaca.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Chuquisaca.jpg",
+        "name": "Чукисака.jpg",
         "id": "12846BCArVmIUkmjLwEvAgMIcKLMry1oz"
       }
     ]
@@ -9766,7 +9766,7 @@
     "driveFileId": "13zgGHC5-51eA5IwZmJeNjcR30rUfyTb9",
     "resourceKey": "",
     "localPhotos": [
-      "Beni.jpg"
+      "Бени.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -9780,7 +9780,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Beni.JPG?width=480",
     "drivePhotos": [
       {
-        "name": "Beni.jpg",
+        "name": "Бени.jpg",
         "id": "13zgGHC5-51eA5IwZmJeNjcR30rUfyTb9"
       }
     ]
@@ -9795,7 +9795,7 @@
     "driveFileId": "1DiPsAbMpZuu2YqdrYSFGTDG3imSRjgvh",
     "resourceKey": "",
     "localPhotos": [
-      "Cochabamba.jpg"
+      "Кочабамба.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -9809,7 +9809,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Cochabamba.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Cochabamba.jpg",
+        "name": "Кочабамба.jpg",
         "id": "1DiPsAbMpZuu2YqdrYSFGTDG3imSRjgvh"
       }
     ]
@@ -9824,7 +9824,7 @@
     "driveFileId": "1Xy6iT6xQfKRWym63vp_oFvpvELE8AMNx",
     "resourceKey": "",
     "localPhotos": [
-      "La Paz.jpg"
+      "Ла-Пас.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -9838,7 +9838,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_La_Paz.svg?width=480",
     "drivePhotos": [
       {
-        "name": "La Paz.jpg",
+        "name": "Ла-Пас.jpg",
         "id": "1Xy6iT6xQfKRWym63vp_oFvpvELE8AMNx"
       }
     ]
@@ -9853,7 +9853,7 @@
     "driveFileId": "1sGjBBuBxoG0D4_ILOxBAq8YesbN73Wcx",
     "resourceKey": "",
     "localPhotos": [
-      "Oruro.jpg"
+      "Оруро.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -9867,7 +9867,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Oruro.png?width=480",
     "drivePhotos": [
       {
-        "name": "Oruro.jpg",
+        "name": "Оруро.jpg",
         "id": "1sGjBBuBxoG0D4_ILOxBAq8YesbN73Wcx"
       }
     ]
@@ -9882,7 +9882,7 @@
     "driveFileId": "1lZGESp5Fjve-ldRsXcEkzoBXYkwJgdA7",
     "resourceKey": "",
     "localPhotos": [
-      "Калмыкия.jpg"
+      "Республика Калмыкия.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -9896,7 +9896,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Kalmykia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Калмыкия.jpg",
+        "name": "Республика Калмыкия.jpg",
         "id": "1lZGESp5Fjve-ldRsXcEkzoBXYkwJgdA7"
       }
     ]
@@ -9911,7 +9911,7 @@
     "driveFileId": "1vNVAhHpF4yedlSzxnwtHRpNBeY_PXnAA",
     "resourceKey": "",
     "localPhotos": [
-      "Sachsen.jpg"
+      "Саксония.jpg"
     ],
     "continent": "Европа",
     "country": "Германия",
@@ -9925,7 +9925,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Saxony.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Sachsen.jpg",
+        "name": "Саксония.jpg",
         "id": "1vNVAhHpF4yedlSzxnwtHRpNBeY_PXnAA"
       }
     ]
@@ -9940,7 +9940,7 @@
     "driveFileId": "1Ir-QqGhwHHb2zNM3Avjnqo40fm1Quk_w",
     "resourceKey": "",
     "localPhotos": [
-      "Brugge.jpg"
+      "Брюгге.jpg"
     ],
     "continent": "Европа",
     "country": "Бельгия",
@@ -9954,7 +9954,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_coat_of_arms_of_Belgium.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Brugge.jpg",
+        "name": "Брюгге.jpg",
         "id": "1Ir-QqGhwHHb2zNM3Avjnqo40fm1Quk_w"
       }
     ],
@@ -9970,7 +9970,7 @@
     "driveFileId": "1cbR6WmPepY8BQXNc1BYHbRkrY3RjTaxN",
     "resourceKey": "",
     "localPhotos": [
-      "Zurich.jpg"
+      "Цюрих.jpg"
     ],
     "continent": "Европа",
     "country": "Швейцария",
@@ -9984,7 +9984,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/CHE_Z%C3%BCrich_COA.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Zurich.jpg",
+        "name": "Цюрих.jpg",
         "id": "1cbR6WmPepY8BQXNc1BYHbRkrY3RjTaxN"
       }
     ]
@@ -9999,7 +9999,7 @@
     "driveFileId": "1x_2s_pX0bylVZuTl4LPh2Z3LLj63ynB3",
     "resourceKey": "",
     "localPhotos": [
-      "Katowice.jpg"
+      "Катовице.jpg"
     ],
     "continent": "Европа",
     "country": "Польша",
@@ -10013,7 +10013,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Katowice_Herb.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Katowice.jpg",
+        "name": "Катовице.jpg",
         "id": "1x_2s_pX0bylVZuTl4LPh2Z3LLj63ynB3"
       }
     ]
@@ -10028,7 +10028,7 @@
     "driveFileId": "1stVFJ4U3C09yjUiClJx2Do8zG_HRj_YC",
     "resourceKey": "",
     "localPhotos": [
-      "Ljubljana.jpg"
+      "Любляна.jpg"
     ],
     "continent": "Европа",
     "country": "Словения",
@@ -10042,7 +10042,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovenia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Ljubljana.jpg",
+        "name": "Любляна.jpg",
         "id": "1stVFJ4U3C09yjUiClJx2Do8zG_HRj_YC"
       }
     ],
@@ -10058,7 +10058,7 @@
     "driveFileId": "1SwYtnsahuXMxBAfGLgHoIa1VJqsLOwOh",
     "resourceKey": "",
     "localPhotos": [
-      "Koper.jpg"
+      "Копер.jpg"
     ],
     "continent": "Европа",
     "country": "Словения",
@@ -10072,7 +10072,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovenia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Koper.jpg",
+        "name": "Копер.jpg",
         "id": "1SwYtnsahuXMxBAfGLgHoIa1VJqsLOwOh"
       }
     ],
@@ -10088,7 +10088,7 @@
     "driveFileId": "1uQqd6JcMzDQBwk-ScxeUWVzXCkGr2WjW",
     "resourceKey": "",
     "localPhotos": [
-      "Lubeck.jpg"
+      "Любек.jpg"
     ],
     "continent": "Европа",
     "country": "Германия",
@@ -10102,7 +10102,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/DEU_Luebeck_COA.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Lubeck.jpg",
+        "name": "Любек.jpg",
         "id": "1uQqd6JcMzDQBwk-ScxeUWVzXCkGr2WjW"
       }
     ]
@@ -10117,7 +10117,7 @@
     "driveFileId": "11q-Atqg9_ZAoFRQBNd_H0Dv6djKc-URm",
     "resourceKey": "",
     "localPhotos": [
-      "Liechtenstein.jpg"
+      "Лихтенштейн.jpg"
     ],
     "continent": "Европа",
     "country": "Лихтенштейн",
@@ -10131,7 +10131,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Staatswappen-Liechtensteins.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Liechtenstein.jpg",
+        "name": "Лихтенштейн.jpg",
         "id": "11q-Atqg9_ZAoFRQBNd_H0Dv6djKc-URm"
       }
     ]
@@ -10146,7 +10146,7 @@
     "driveFileId": "1vJqUcA-y_3Hg35vm79NDoLyIasJNFLAF",
     "resourceKey": "",
     "localPhotos": [
-      "Banska_Bystrica.jpg"
+      "Банска-Бистрица.jpg"
     ],
     "continent": "Европа",
     "country": "Словакия",
@@ -10160,7 +10160,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Bansk%C3%A1%20Bystrica.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Banska_Bystrica.jpg",
+        "name": "Банска-Бистрица.jpg",
         "id": "1vJqUcA-y_3Hg35vm79NDoLyIasJNFLAF"
       }
     ]
@@ -10175,7 +10175,7 @@
     "driveFileId": "1w4Yb49Dx5CZYoNqd4R6YTjqeocAF3mqY",
     "resourceKey": "",
     "localPhotos": [
-      "Nitra.jpg"
+      "Нитра.jpg"
     ],
     "continent": "Европа",
     "country": "Словакия",
@@ -10189,7 +10189,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Nitra.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Nitra.jpg",
+        "name": "Нитра.jpg",
         "id": "1w4Yb49Dx5CZYoNqd4R6YTjqeocAF3mqY"
       }
     ]
@@ -10204,7 +10204,7 @@
     "driveFileId": "1Eh-C07EMHTSoa11QjWAu2G-m9voO3Fds",
     "resourceKey": "",
     "localPhotos": [
-      "Cornwall.jpg"
+      "Корнуолл.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -10218,7 +10218,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Arms_of_Cornwall_Council.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Cornwall.jpg",
+        "name": "Корнуолл.jpg",
         "id": "1Eh-C07EMHTSoa11QjWAu2G-m9voO3Fds"
       }
     ]
@@ -10233,7 +10233,7 @@
     "driveFileId": "1QSBmzp_r3mjXJBx_8kdnXF-b8tAQX6vR",
     "resourceKey": "",
     "localPhotos": [
-      "Devon.jpg"
+      "Дэвон.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -10247,7 +10247,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Devon_County_Council.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Devon.jpg",
+        "name": "Дэвон.jpg",
         "id": "1QSBmzp_r3mjXJBx_8kdnXF-b8tAQX6vR"
       }
     ]
@@ -10262,7 +10262,7 @@
     "driveFileId": "16hwbNYJ9i1Ga4MEkbWbKNNx7GGAJ7-jg",
     "resourceKey": "",
     "localPhotos": [
-      "Weymouth.jpg"
+      "Уэймут.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -10276,7 +10276,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Arms_of_Weymouth.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Weymouth.jpg",
+        "name": "Уэймут.jpg",
         "id": "16hwbNYJ9i1Ga4MEkbWbKNNx7GGAJ7-jg"
       }
     ]
@@ -10291,7 +10291,7 @@
     "driveFileId": "1jE0NNJkYJA_dYUMq5cqit0mr63Iu-39N",
     "resourceKey": "",
     "localPhotos": [
-      "Bath.jpg"
+      "Бат.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -10305,7 +10305,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_United_Kingdom_%282022%2C_variant_2%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Bath.jpg",
+        "name": "Бат.jpg",
         "id": "1jE0NNJkYJA_dYUMq5cqit0mr63Iu-39N"
       }
     ],
@@ -10321,7 +10321,7 @@
     "driveFileId": "1HXm-GE8TCmNzWjL4-KCWyY_2qgyo2Gvr",
     "resourceKey": "",
     "localPhotos": [
-      "Portsmouth.jpg"
+      "Портсмут.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -10335,7 +10335,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Portsmouth.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Portsmouth.jpg",
+        "name": "Портсмут.jpg",
         "id": "1HXm-GE8TCmNzWjL4-KCWyY_2qgyo2Gvr"
       }
     ]
@@ -10350,7 +10350,7 @@
     "driveFileId": "1J7LyvxmV1dzW_-R5cPxywAShbdXPPLE1",
     "resourceKey": "",
     "localPhotos": [
-      "Cymru.jpg"
+      "Уэльс.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -10364,7 +10364,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Badge_of_Wales_%282024_onwards%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Cymru.jpg",
+        "name": "Уэльс.jpg",
         "id": "1J7LyvxmV1dzW_-R5cPxywAShbdXPPLE1"
       }
     ]
@@ -10379,7 +10379,7 @@
     "driveFileId": "1P-C52rxXi_LTMYPd_Arc9_V5iYjlIvDg",
     "resourceKey": "",
     "localPhotos": [
-      "England.jpg"
+      "Англия.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -10393,7 +10393,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Coat_of_Arms_of_the_United_Kingdom_%28both_variants%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "England.jpg",
+        "name": "Англия.jpg",
         "id": "1P-C52rxXi_LTMYPd_Arc9_V5iYjlIvDg"
       }
     ]
@@ -10408,7 +10408,7 @@
     "driveFileId": "19_pwY2_0LRY2xah1wOqKLuZR27URc0g3",
     "resourceKey": "",
     "localPhotos": [
-      "Slovensko.jpg"
+      "Словакия.jpg"
     ],
     "continent": "Европа",
     "country": "Словакия",
@@ -10422,7 +10422,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovakia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Slovensko.jpg",
+        "name": "Словакия.jpg",
         "id": "19_pwY2_0LRY2xah1wOqKLuZR27URc0g3"
       }
     ]
@@ -10437,7 +10437,7 @@
     "driveFileId": "1ICWVG3hQ9pk3xW8kE-6b_e6nIBrdcsZn",
     "resourceKey": "",
     "localPhotos": [
-      "Piestany.jpg"
+      "Пьештяни.jpg"
     ],
     "continent": "Европа",
     "country": "Словакия",
@@ -10451,7 +10451,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Pie%C5%A1%C5%A5any.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Piestany.jpg",
+        "name": "Пьештяни.jpg",
         "id": "1ICWVG3hQ9pk3xW8kE-6b_e6nIBrdcsZn"
       }
     ]
@@ -10466,7 +10466,7 @@
     "driveFileId": "1AV8Dqwu9J5d7D2-1SCXIZUEOPmh3fZlM",
     "resourceKey": "",
     "localPhotos": [
-      "Marin.jpg"
+      "Марин.jpg"
     ],
     "continent": "Европа",
     "country": "Испания",
@@ -10480,7 +10480,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Mar%C3%ADn.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Marin.jpg",
+        "name": "Марин.jpg",
         "id": "1AV8Dqwu9J5d7D2-1SCXIZUEOPmh3fZlM"
       }
     ]
@@ -10495,7 +10495,7 @@
     "driveFileId": "1KGCpsE1NXrlhJsv1szM7bvNx9QoiSSur",
     "resourceKey": "",
     "localPhotos": [
-      "Porto.jpg"
+      "Порту.jpg"
     ],
     "continent": "Европа",
     "country": "Португалия",
@@ -10509,7 +10509,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Portugal.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Porto.jpg",
+        "name": "Порту.jpg",
         "id": "1KGCpsE1NXrlhJsv1szM7bvNx9QoiSSur"
       }
     ]
@@ -10524,7 +10524,7 @@
     "driveFileId": "1Wft_bLr-KyWeifOEuIefn7oNuIVpd2HT",
     "resourceKey": "",
     "localPhotos": [
-      "Killarney.jpg"
+      "Килларни.jpg"
     ],
     "continent": "Европа",
     "country": "Ирландия",
@@ -10538,7 +10538,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ireland.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Killarney.jpg",
+        "name": "Килларни.jpg",
         "id": "1Wft_bLr-KyWeifOEuIefn7oNuIVpd2HT"
       }
     ],
@@ -10554,7 +10554,7 @@
     "driveFileId": "1IXLPZDh0gpMKcQnJkFhndzkZiY9QZQS3",
     "resourceKey": "",
     "localPhotos": [
-      "Navarra.jpg"
+      "Наварра.jpg"
     ],
     "continent": "Европа",
     "country": "Испания",
@@ -10568,7 +10568,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Navarra_%28oficial%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Navarra.jpg",
+        "name": "Наварра.jpg",
         "id": "1IXLPZDh0gpMKcQnJkFhndzkZiY9QZQS3"
       }
     ]
@@ -10583,7 +10583,7 @@
     "driveFileId": "1gE5VSH0DTH3q8-_0v9Krl6YscOKffib2",
     "resourceKey": "",
     "localPhotos": [
-      "Vitoria Gasteiz.jpg"
+      "Витория.jpg"
     ],
     "continent": "Европа",
     "country": "Испания",
@@ -10597,7 +10597,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Vitoria.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Vitoria Gasteiz.jpg",
+        "name": "Витория.jpg",
         "id": "1gE5VSH0DTH3q8-_0v9Krl6YscOKffib2"
       }
     ]
@@ -10612,7 +10612,7 @@
     "driveFileId": "1PGU9Htb4JOj8_tsmn07XGecyEXWccSwS",
     "resourceKey": "",
     "localPhotos": [
-      "Pamplona.jpg"
+      "Памплона.jpg"
     ],
     "continent": "Европа",
     "country": "Испания",
@@ -10626,7 +10626,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Pamplona.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Pamplona.jpg",
+        "name": "Памплона.jpg",
         "id": "1PGU9Htb4JOj8_tsmn07XGecyEXWccSwS"
       }
     ]
@@ -10641,7 +10641,7 @@
     "driveFileId": "1Y04EGQqzz6PJqeI-lorc46RKh7OPdxv3",
     "resourceKey": "",
     "localPhotos": [
-      "Malta.jpg"
+      "Мальта.jpg"
     ],
     "continent": "Европа",
     "country": "Мальта",
@@ -10655,7 +10655,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Malta.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Malta.jpg",
+        "name": "Мальта.jpg",
         "id": "1Y04EGQqzz6PJqeI-lorc46RKh7OPdxv3"
       }
     ]
@@ -10670,7 +10670,7 @@
     "driveFileId": "1W8fVfjWoUWkXcHndNvThDoTNpT6yrgro",
     "resourceKey": "",
     "localPhotos": [
-      "Marina Militare.jpg"
+      "Marina Militare _ Quartier Generale _ Napoli.jpg"
     ],
     "continent": "Европа",
     "country": "Италия",
@@ -10684,7 +10684,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Napoli-Stemma.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Marina Militare.jpg",
+        "name": "Marina Militare _ Quartier Generale _ Napoli.jpg",
         "id": "1W8fVfjWoUWkXcHndNvThDoTNpT6yrgro"
       }
     ]
@@ -10699,7 +10699,7 @@
     "driveFileId": "1pVVMqkojOAms6tABN2yULPkbVPLlrau6",
     "resourceKey": "",
     "localPhotos": [
-      "Donegal.jpg"
+      "Донегол.jpg"
     ],
     "continent": "Европа",
     "country": "Ирландия",
@@ -10713,7 +10713,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Donegal_CoA.png?width=480",
     "drivePhotos": [
       {
-        "name": "Donegal.jpg",
+        "name": "Донегол.jpg",
         "id": "1pVVMqkojOAms6tABN2yULPkbVPLlrau6"
       }
     ]
@@ -10728,7 +10728,7 @@
     "driveFileId": "1Z-eiWDHED78FyIu0tdWcf8fyGqgnAQp_",
     "resourceKey": "",
     "localPhotos": [
-      "Waterford.jpg"
+      "Уотерфорд.jpg"
     ],
     "continent": "Европа",
     "country": "Ирландия",
@@ -10742,7 +10742,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Waterford_coa.png?width=480",
     "drivePhotos": [
       {
-        "name": "Waterford.jpg",
+        "name": "Уотерфорд.jpg",
         "id": "1Z-eiWDHED78FyIu0tdWcf8fyGqgnAQp_"
       }
     ]
@@ -10757,7 +10757,7 @@
     "driveFileId": "1L9FQYm-d0hsY0ONgbL4XvycdC-a5IV1C",
     "resourceKey": "",
     "localPhotos": [
-      "Cork.jpg"
+      "Корк.jpg"
     ],
     "continent": "Европа",
     "country": "Ирландия",
@@ -10771,7 +10771,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ireland.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Cork.jpg",
+        "name": "Корк.jpg",
         "id": "1L9FQYm-d0hsY0ONgbL4XvycdC-a5IV1C"
       }
     ],
@@ -10787,7 +10787,7 @@
     "driveFileId": "1Z_VwPak-I7lirya4gE_pbwVQ331XgjKK",
     "resourceKey": "",
     "localPhotos": [
-      "Euskal Herria.jpg"
+      "Страна Басков.jpg"
     ],
     "continent": "Европа",
     "country": "Испания",
@@ -10801,7 +10801,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_del_Pais_Vasco.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Euskal Herria.jpg",
+        "name": "Страна Басков.jpg",
         "id": "1Z_VwPak-I7lirya4gE_pbwVQ331XgjKK"
       }
     ]
@@ -10816,7 +10816,7 @@
     "driveFileId": "1WhFSN_K6ddFcOrzZmUFt93hg1--VXbNV",
     "resourceKey": "",
     "localPhotos": [
-      "Matanzas.jpg"
+      "Матансас.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Куба",
@@ -10830,7 +10830,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Municipio_de_Matanzas.png?width=480",
     "drivePhotos": [
       {
-        "name": "Matanzas.jpg",
+        "name": "Матансас.jpg",
         "id": "1WhFSN_K6ddFcOrzZmUFt93hg1--VXbNV"
       }
     ]
@@ -10845,7 +10845,7 @@
     "driveFileId": "1b5cNFol97Nz_Opyk9HawuBlfxkiWl6hw",
     "resourceKey": "",
     "localPhotos": [
-      "Habana.jpg"
+      "Гавана.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Куба",
@@ -10859,7 +10859,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_La_Habana.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Habana.jpg",
+        "name": "Гавана.jpg",
         "id": "1b5cNFol97Nz_Opyk9HawuBlfxkiWl6hw"
       }
     ]
@@ -10874,7 +10874,7 @@
     "driveFileId": "1J_QwV71In32XLWMZpWx9cjTy4IM5Bpmx",
     "resourceKey": "",
     "localPhotos": [
-      "Cuba_Nacional.jpg"
+      "Куба.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Куба",
@@ -10888,7 +10888,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Cuba.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Cuba_Nacional.jpg",
+        "name": "Куба.jpg",
         "id": "1J_QwV71In32XLWMZpWx9cjTy4IM5Bpmx"
       }
     ]
@@ -10903,7 +10903,7 @@
     "driveFileId": "14Oo-hbhg8_G4n7W493WpoNoW9vjbvJhD",
     "resourceKey": "",
     "localPhotos": [
-      "Belgrade.jpg"
+      "Белград.jpg"
     ],
     "continent": "Европа",
     "country": "Сербия",
@@ -10917,7 +10917,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Serbia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Belgrade.jpg",
+        "name": "Белград.jpg",
         "id": "14Oo-hbhg8_G4n7W493WpoNoW9vjbvJhD"
       }
     ],
@@ -10933,7 +10933,7 @@
     "driveFileId": "1_nUFffENFyii1WZD4gklfA_23D_AiQSV",
     "resourceKey": "",
     "localPhotos": [
-      "CoteDAzur.jpg"
+      "Лазурный берег.jpg"
     ],
     "continent": "Европа",
     "country": "Франция",
@@ -10947,7 +10947,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Blason_ville_fr_Saint-Tropez-A_%28Var%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "CoteDAzur.jpg",
+        "name": "Лазурный берег.jpg",
         "id": "1_nUFffENFyii1WZD4gklfA_23D_AiQSV"
       }
     ]
@@ -10962,7 +10962,7 @@
     "driveFileId": "1W8kh8_Fppg6yXtjwRDYQBz7UmO_lD4hK",
     "resourceKey": "",
     "localPhotos": [
-      "Nice.jpg"
+      "Ницца.jpg"
     ],
     "continent": "Европа",
     "country": "Франция",
@@ -10976,7 +10976,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Nizza-Stemma.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Nice.jpg",
+        "name": "Ницца.jpg",
         "id": "1W8kh8_Fppg6yXtjwRDYQBz7UmO_lD4hK"
       }
     ]
@@ -10991,7 +10991,7 @@
     "driveFileId": "1dDnZgC7vYsyLEV6uU8pSWB83e9L0AJav",
     "resourceKey": "",
     "localPhotos": [
-      "Provence.jpg"
+      "Прованс.jpg"
     ],
     "continent": "Европа",
     "country": "Франция",
@@ -11005,7 +11005,7 @@
     "coaWiki": "",
     "drivePhotos": [
       {
-        "name": "Provence.jpg",
+        "name": "Прованс.jpg",
         "id": "1dDnZgC7vYsyLEV6uU8pSWB83e9L0AJav"
       }
     ],
@@ -11021,7 +11021,7 @@
     "driveFileId": "",
     "resourceKey": "",
     "localPhotos": [
-      "Scotland (1).jpg"
+      "Шотландия.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -11044,7 +11044,7 @@
     "driveFileId": "14vCC09WU6DiWu0nkmImUD6OOD38ZRPbt",
     "resourceKey": "",
     "localPhotos": [
-      "Basel.jpg"
+      "Базель.jpg"
     ],
     "continent": "Европа",
     "country": "Швейцария",
@@ -11058,7 +11058,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Wappen_Basel-Stadt_matt.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Basel.jpg",
+        "name": "Базель.jpg",
         "id": "14vCC09WU6DiWu0nkmImUD6OOD38ZRPbt"
       }
     ]
@@ -11094,7 +11094,7 @@
     "driveFileId": "13bH0PQ4fZMVXvAMvramqAZ7NAF_SYHb0",
     "resourceKey": "",
     "localPhotos": [
-      "Valais.jpg"
+      "Вале.jpg"
     ],
     "continent": "Европа",
     "country": "Швейцария",
@@ -11108,7 +11108,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Wappen%20Wallis%20matt.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Valais.jpg",
+        "name": "Вале.jpg",
         "id": "13bH0PQ4fZMVXvAMvramqAZ7NAF_SYHb0"
       }
     ],
@@ -11124,7 +11124,7 @@
     "driveFileId": "1titI1gT5nxuzXRlZQB6ZRWvENuSSv_Fz",
     "resourceKey": "",
     "localPhotos": [
-      "Graubünden.jpg"
+      "Граубюнден.jpg"
     ],
     "continent": "Европа",
     "country": "Швейцария",
@@ -11138,7 +11138,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/CHE_Graub%C3%BCnden_COA.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Graubünden.jpg",
+        "name": "Граубюнден.jpg",
         "id": "1titI1gT5nxuzXRlZQB6ZRWvENuSSv_Fz"
       }
     ]
@@ -11153,7 +11153,7 @@
     "driveFileId": "1jym9B-yOOf0gGGVj6LhH-Khr8G3DxH8O",
     "resourceKey": "",
     "localPhotos": [
-      "Bolivia.jpg"
+      "Боливия.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Боливия",
@@ -11167,7 +11167,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Bolivia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Bolivia.jpg",
+        "name": "Боливия.jpg",
         "id": "1jym9B-yOOf0gGGVj6LhH-Khr8G3DxH8O"
       }
     ]
@@ -11182,7 +11182,7 @@
     "driveFileId": "1yfH9uTY0W7R0Blk2946sycU648C4dyDb",
     "resourceKey": "",
     "localPhotos": [
-      "Uzbekistan.jpg"
+      "Узбекистан.jpg"
     ],
     "continent": "Азия",
     "country": "Узбекистан",
@@ -11196,7 +11196,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Uzbekistan.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Uzbekistan.jpg",
+        "name": "Узбекистан.jpg",
         "id": "1yfH9uTY0W7R0Blk2946sycU648C4dyDb"
       }
     ]
@@ -11211,7 +11211,7 @@
     "driveFileId": "1kXR1frnYo5Ni2CD3pK5riJkKpj1NBI9D",
     "resourceKey": "",
     "localPhotos": [
-      "Argentina.jpg"
+      "Аргентина.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Аргентина",
@@ -11225,7 +11225,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Argentina.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Argentina.jpg",
+        "name": "Аргентина.jpg",
         "id": "1kXR1frnYo5Ni2CD3pK5riJkKpj1NBI9D"
       }
     ]
@@ -11240,7 +11240,7 @@
     "driveFileId": "1rL5U_6dmLx0UJ6O4ojkBNk1mdiPYZNaA",
     "resourceKey": "",
     "localPhotos": [
-      "Uruguay.jpg"
+      "Уругвай.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Уругвай",
@@ -11254,7 +11254,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Uruguay.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Uruguay.jpg",
+        "name": "Уругвай.jpg",
         "id": "1rL5U_6dmLx0UJ6O4ojkBNk1mdiPYZNaA"
       }
     ]
@@ -11269,7 +11269,7 @@
     "driveFileId": "1br-ig0HGoCfgTHZxbeZwlGdcxT7V5OWg",
     "resourceKey": "",
     "localPhotos": [
-      "Belize.jpg"
+      "Белиз.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Белиз",
@@ -11283,7 +11283,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Belize.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Belize.jpg",
+        "name": "Белиз.jpg",
         "id": "1br-ig0HGoCfgTHZxbeZwlGdcxT7V5OWg"
       }
     ]
@@ -11298,7 +11298,7 @@
     "driveFileId": "1dUjdWwI1AFCiTXnpYzgRS9P2F8ZhLQbK",
     "resourceKey": "",
     "localPhotos": [
-      "Chili.jpg"
+      "Чили.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Чили",
@@ -11312,7 +11312,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Chile_%28c%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Chili.jpg",
+        "name": "Чили.jpg",
         "id": "1dUjdWwI1AFCiTXnpYzgRS9P2F8ZhLQbK"
       }
     ]
@@ -11327,7 +11327,7 @@
     "driveFileId": "1LtlVkX45KhD9FLuyUnxv6K0-9QqM0qex",
     "resourceKey": "",
     "localPhotos": [
-      "Scotland.jpg"
+      "Шотландия 2.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -11341,7 +11341,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Arms_of_the_Kingdom_of_Scotland.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Scotland.jpg",
+        "name": "Шотландия 2.jpg",
         "id": "1LtlVkX45KhD9FLuyUnxv6K0-9QqM0qex"
       }
     ]
@@ -11356,7 +11356,7 @@
     "driveFileId": "1WZY22drzxysAkaXLgCafuS_0S4vqXFwP",
     "resourceKey": "",
     "localPhotos": [
-      "United Arab Emirates.jpg"
+      "Объединенные Арабские Эмираты.jpg"
     ],
     "continent": "Азия",
     "country": "Объединённые Арабские Эмираты",
@@ -11370,7 +11370,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_the_United_Arab_Emirates.svg?width=480",
     "drivePhotos": [
       {
-        "name": "United Arab Emirates.jpg",
+        "name": "Объединенные Арабские Эмираты.jpg",
         "id": "1WZY22drzxysAkaXLgCafuS_0S4vqXFwP"
       }
     ]
@@ -11385,7 +11385,7 @@
     "driveFileId": "1bow02INg53nQCQI1mhF3gT2QCFygn9Wj",
     "resourceKey": "",
     "localPhotos": [
-      "Luxembourg.jpg"
+      "Люксембург.jpg"
     ],
     "continent": "Европа",
     "country": "Люксембург",
@@ -11399,7 +11399,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Greater_coat_of_arms_of_the_grand-duchy_of_Luxembourg.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Luxembourg.jpg",
+        "name": "Люксембург.jpg",
         "id": "1bow02INg53nQCQI1mhF3gT2QCFygn9Wj"
       }
     ]
@@ -11414,7 +11414,7 @@
     "driveFileId": "13lqE6F1QCBbwYEVEzCp1taELzCqXLHWV",
     "resourceKey": "",
     "localPhotos": [
-      "Ямал.jpg"
+      "Ямало-Ненецкий автономный округ.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -11428,7 +11428,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Yamal_Nenetsia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Ямал.jpg",
+        "name": "Ямало-Ненецкий автономный округ.jpg",
         "id": "13lqE6F1QCBbwYEVEzCp1taELzCqXLHWV"
       }
     ]
@@ -11443,7 +11443,7 @@
     "driveFileId": "1weAJ1QHDPEk3tCtv5ON3toQ1WxRzhXgP",
     "resourceKey": "",
     "localPhotos": [
-      "Tbilisi.jpg"
+      "Тбилиси.jpg"
     ],
     "continent": "Азия",
     "country": "Грузия",
@@ -11457,7 +11457,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Greater_coat_of_arms_of_Georgia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Tbilisi.jpg",
+        "name": "Тбилиси.jpg",
         "id": "1weAJ1QHDPEk3tCtv5ON3toQ1WxRzhXgP"
       }
     ],
@@ -11473,7 +11473,7 @@
     "driveFileId": "1OscBCEP3nSN3oFl_F_CvolJMK0HIwDf0",
     "resourceKey": "",
     "localPhotos": [
-      "Wroclaw.jpg"
+      "Вроцлав.jpg"
     ],
     "continent": "Европа",
     "country": "Польша",
@@ -11487,7 +11487,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Herb_wroclaw.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Wroclaw.jpg",
+        "name": "Вроцлав.jpg",
         "id": "1OscBCEP3nSN3oFl_F_CvolJMK0HIwDf0"
       }
     ]
@@ -11502,7 +11502,7 @@
     "driveFileId": "1gFDPv_ysakbLtKKC1TLEKcf_Lf6HEJa7",
     "resourceKey": "",
     "localPhotos": [
-      "Szczecin.jpg"
+      "Щецин.jpg"
     ],
     "continent": "Европа",
     "country": "Польша",
@@ -11516,7 +11516,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/POL_Szczecin_COA.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Szczecin.jpg",
+        "name": "Щецин.jpg",
         "id": "1gFDPv_ysakbLtKKC1TLEKcf_Lf6HEJa7"
       }
     ]
@@ -11531,7 +11531,7 @@
     "driveFileId": "1ECpkkaCIEJTbBdmeb0irfIYC7ix8Vwmm",
     "resourceKey": "",
     "localPhotos": [
-      "Poznan.jpg"
+      "Познань.jpg"
     ],
     "continent": "Европа",
     "country": "Польша",
@@ -11545,7 +11545,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/POL%20Pozna%C5%84%20COA.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Poznan.jpg",
+        "name": "Познань.jpg",
         "id": "1ECpkkaCIEJTbBdmeb0irfIYC7ix8Vwmm"
       }
     ],
@@ -11561,7 +11561,7 @@
     "driveFileId": "1XnaxFVhiVK51UL7paPYgwkW5BQCrejJe",
     "resourceKey": "",
     "localPhotos": [
-      "Torun.jpg"
+      "Торунь.jpg"
     ],
     "continent": "Европа",
     "country": "Польша",
@@ -11575,7 +11575,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/POL%20Toru%C5%84%20COA.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Torun.jpg",
+        "name": "Торунь.jpg",
         "id": "1XnaxFVhiVK51UL7paPYgwkW5BQCrejJe"
       }
     ],
@@ -11591,7 +11591,7 @@
     "driveFileId": "1O5BmAderYvqYsx5xzvuNc32YNStFHI9-",
     "resourceKey": "",
     "localPhotos": [
-      "Lviv.jpg"
+      "Львов.jpg"
     ],
     "continent": "Европа",
     "country": "Украина",
@@ -11605,7 +11605,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Lviv.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Lviv.jpg",
+        "name": "Львов.jpg",
         "id": "1O5BmAderYvqYsx5xzvuNc32YNStFHI9-"
       }
     ]
@@ -11620,7 +11620,7 @@
     "driveFileId": "1dwOU2M1ZZXC5ErgB-shr8T3zjs5iMAN2",
     "resourceKey": "",
     "localPhotos": [
-      "Columbia.jpg"
+      "Колумбия.jpg"
     ],
     "continent": "Южная Америка",
     "country": "Колумбия",
@@ -11634,7 +11634,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Colombia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Columbia.jpg",
+        "name": "Колумбия.jpg",
         "id": "1dwOU2M1ZZXC5ErgB-shr8T3zjs5iMAN2"
       }
     ]
@@ -11649,7 +11649,7 @@
     "driveFileId": "13CnjuEFAHRbJ-h80lJ9Hy_lPQqW62VKJ",
     "resourceKey": "",
     "localPhotos": [
-      "Jaipur.jpg"
+      "Джайпур.jpg"
     ],
     "continent": "Азия",
     "country": "Индия",
@@ -11663,7 +11663,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_India.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Jaipur.jpg",
+        "name": "Джайпур.jpg",
         "id": "13CnjuEFAHRbJ-h80lJ9Hy_lPQqW62VKJ"
       }
     ]
@@ -11707,7 +11707,7 @@
     "driveFileId": "1xvzbi7_KO0fLnjTz0Bp-9ZR4x_E7EvZp",
     "resourceKey": "",
     "localPhotos": [
-      "Dartmouth.jpg"
+      "Дартмут.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -11721,7 +11721,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Coat_of_Arms_of_the_United_Kingdom_%28both_variants%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Dartmouth.jpg",
+        "name": "Дартмут.jpg",
         "id": "1xvzbi7_KO0fLnjTz0Bp-9ZR4x_E7EvZp"
       }
     ]
@@ -11736,8 +11736,8 @@
     "driveFileId": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd",
     "resourceKey": "",
     "localPhotos": [
-      "Macau (1).jpg",
-      "Macau.jpg"
+      "Macau 2.jpg",
+      "Macau 2.jpg"
     ],
     "continent": "Азия",
     "country": "Макао",
@@ -11751,11 +11751,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Regional_Emblem_of_Macau.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Macau (1).jpg",
+        "name": "Macau 2.jpg",
         "id": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd"
       },
       {
-        "name": "Macau.jpg",
+        "name": "Macau 2.jpg",
         "id": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd"
       }
     ]
@@ -11770,7 +11770,7 @@
     "driveFileId": "1KHTbMD5_lXQ4qEAPrHaWbQi6asJs8CYB",
     "resourceKey": "",
     "localPhotos": [
-      "USA.jpg"
+      "Соединенные Штаты Америки.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Соединённые Штаты Америки",
@@ -11784,7 +11784,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Greater_coat_of_arms_of_the_United_States.svg?width=480",
     "drivePhotos": [
       {
-        "name": "USA.jpg",
+        "name": "Соединенные Штаты Америки.jpg",
         "id": "1KHTbMD5_lXQ4qEAPrHaWbQi6asJs8CYB"
       }
     ]
@@ -11799,7 +11799,7 @@
     "driveFileId": "16WEymR7HQa7K1Htkd-fIEDdM7GAEtuik",
     "resourceKey": "",
     "localPhotos": [
-      "Улан-Удэ1.jpg"
+      "Улан-Удэ.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -11813,7 +11813,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulan-Ude_COA_%282005%29.gif?width=480",
     "drivePhotos": [
       {
-        "name": "Улан-Удэ1.jpg",
+        "name": "Улан-Удэ.jpg",
         "id": "16WEymR7HQa7K1Htkd-fIEDdM7GAEtuik"
       }
     ]
@@ -11828,7 +11828,7 @@
     "driveFileId": "1ubgwPD4OlQYZwdMhtMp4H0l19Zt8x9tY",
     "resourceKey": "",
     "localPhotos": [
-      "Luxor.jpg"
+      "Луксор.jpg"
     ],
     "continent": "Африка",
     "country": "Египет",
@@ -11842,7 +11842,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_Luxor_Governorate.jpg?width=480",
     "drivePhotos": [
       {
-        "name": "Luxor.jpg",
+        "name": "Луксор.jpg",
         "id": "1ubgwPD4OlQYZwdMhtMp4H0l19Zt8x9tY"
       }
     ]
@@ -11857,7 +11857,7 @@
     "driveFileId": "1Nt_hoGgarScUdtWUmSmAVgeHFyF-CChs",
     "resourceKey": "",
     "localPhotos": [
-      "Indonesia2.jpg"
+      "Индонезия.jpg"
     ],
     "continent": "Азия",
     "country": "Индонезия",
@@ -11871,7 +11871,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_emblem_of_Indonesia_Garuda_Pancasila.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Indonesia2.jpg",
+        "name": "Индонезия.jpg",
         "id": "1Nt_hoGgarScUdtWUmSmAVgeHFyF-CChs"
       }
     ]
@@ -11886,7 +11886,7 @@
     "driveFileId": "1yFmBRkJsiyPzFZ9a3aWUFa17kFAx2R7g",
     "resourceKey": "",
     "localPhotos": [
-      "Nagoya.jpg"
+      "Нагоя.jpg"
     ],
     "continent": "Азия",
     "country": "Япония",
@@ -11900,7 +11900,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Kamon_of_the_Imperial_House_of_Japan.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Nagoya.jpg",
+        "name": "Нагоя.jpg",
         "id": "1yFmBRkJsiyPzFZ9a3aWUFa17kFAx2R7g"
       }
     ]
@@ -11936,7 +11936,7 @@
     "driveFileId": "1tDTDmeLk5wcYY87VAVGf6rYgLLzuoiGZ",
     "resourceKey": "",
     "localPhotos": [
-      "Pau.jpg"
+      "По.jpg"
     ],
     "continent": "Европа",
     "country": "Франция",
@@ -11950,7 +11950,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Pau.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Pau.jpg",
+        "name": "По.jpg",
         "id": "1tDTDmeLk5wcYY87VAVGf6rYgLLzuoiGZ"
       }
     ]
@@ -11965,7 +11965,7 @@
     "driveFileId": "1W1OE2M8JrFfsNnqpAtIU96Wrc9Sz-EMe",
     "resourceKey": "",
     "localPhotos": [
-      "Galway.jpg"
+      "Голуэй.jpg"
     ],
     "continent": "Европа",
     "country": "Ирландия",
@@ -11979,7 +11979,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ireland.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Galway.jpg",
+        "name": "Голуэй.jpg",
         "id": "1W1OE2M8JrFfsNnqpAtIU96Wrc9Sz-EMe"
       }
     ],
@@ -11995,7 +11995,7 @@
     "driveFileId": "1AjI7p6zh2WYqnSQDJH-Cqaxo7iAH95Fh",
     "resourceKey": "",
     "localPhotos": [
-      "Gdansk.jpg"
+      "Гданьск.jpg"
     ],
     "continent": "Европа",
     "country": "Польша",
@@ -12009,7 +12009,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/POL%20Gda%C5%84sk%20COA.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Gdansk.jpg",
+        "name": "Гданьск.jpg",
         "id": "1AjI7p6zh2WYqnSQDJH-Cqaxo7iAH95Fh"
       }
     ],
@@ -12025,7 +12025,7 @@
     "driveFileId": "13832_kgqYa7PBg3aJxQQd3_t9nO6ZbSu",
     "resourceKey": "",
     "localPhotos": [
-      "Iraq.jpg"
+      "Ирак.jpg"
     ],
     "continent": "Азия",
     "country": "Ирак",
@@ -12039,7 +12039,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Iraq.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Iraq.jpg",
+        "name": "Ирак.jpg",
         "id": "13832_kgqYa7PBg3aJxQQd3_t9nO6ZbSu"
       }
     ]
@@ -12054,7 +12054,7 @@
     "driveFileId": "1EAG1P4tpzDUvCdu_1zSPcdYwfqEqAsyZ",
     "resourceKey": "",
     "localPhotos": [
-      "Dubai.jpg"
+      "Дубай.jpg"
     ],
     "continent": "Азия",
     "country": "Объединённые Арабские Эмираты",
@@ -12068,7 +12068,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Dubai_%282024%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Dubai.jpg",
+        "name": "Дубай.jpg",
         "id": "1EAG1P4tpzDUvCdu_1zSPcdYwfqEqAsyZ"
       }
     ]
@@ -12083,7 +12083,7 @@
     "driveFileId": "1kfJXXqPRXmsoY0KnJ50VhGlxtSDugqwc",
     "resourceKey": "",
     "localPhotos": [
-      "Abu Dhabi.jpg"
+      "Абу-Даби.jpg"
     ],
     "continent": "Азия",
     "country": "Объединённые Арабские Эмираты",
@@ -12097,7 +12097,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem%20of%20Abu%20Dhabi.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Abu Dhabi.jpg",
+        "name": "Абу-Даби.jpg",
         "id": "1kfJXXqPRXmsoY0KnJ50VhGlxtSDugqwc"
       }
     ],
@@ -12113,7 +12113,7 @@
     "driveFileId": "12-dcubWVlN_9Acez3cXENT73mw4G-Ncq",
     "resourceKey": "",
     "localPhotos": [
-      "Qatar.jpg"
+      "Катар.jpg"
     ],
     "continent": "Азия",
     "country": "Катар",
@@ -12127,7 +12127,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Qatar-2022.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Qatar.jpg",
+        "name": "Катар.jpg",
         "id": "12-dcubWVlN_9Acez3cXENT73mw4G-Ncq"
       }
     ]
@@ -12142,7 +12142,7 @@
     "driveFileId": "1D1m6a7FU0bA5u8vRABPTfBUS0emw6DfB",
     "resourceKey": "",
     "localPhotos": [
-      "Oman.jpg"
+      "Оман.jpg"
     ],
     "continent": "Азия",
     "country": "Оман",
@@ -12156,7 +12156,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_emblem_of_Oman.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Oman.jpg",
+        "name": "Оман.jpg",
         "id": "1D1m6a7FU0bA5u8vRABPTfBUS0emw6DfB"
       }
     ]
@@ -12171,7 +12171,7 @@
     "driveFileId": "1wqAskKZT9jQs1h6jh4OyURzBCEb-cIHC",
     "resourceKey": "",
     "localPhotos": [
-      "Bahrain.jpg"
+      "Бахрейн.jpg"
     ],
     "continent": "Азия",
     "country": "Бахрейн",
@@ -12185,7 +12185,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_The_Kingdom_of_Bahrain.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Bahrain.jpg",
+        "name": "Бахрейн.jpg",
         "id": "1wqAskKZT9jQs1h6jh4OyURzBCEb-cIHC"
       }
     ]
@@ -12200,7 +12200,7 @@
     "driveFileId": "1ok2hV42dHihDDyef-x1C5jxV4G4yH258",
     "resourceKey": "",
     "localPhotos": [
-      "Yemen.jpg"
+      "Йемен.jpg"
     ],
     "continent": "Азия",
     "country": "Йемен",
@@ -12214,7 +12214,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Yemen_%282%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Yemen.jpg",
+        "name": "Йемен.jpg",
         "id": "1ok2hV42dHihDDyef-x1C5jxV4G4yH258"
       }
     ]
@@ -12229,7 +12229,7 @@
     "driveFileId": "1PEjIETLiPUXooEkHhEYPiKPBvmyiu_lv",
     "resourceKey": "",
     "localPhotos": [
-      "Sudan.jpg"
+      "Судан.jpg"
     ],
     "continent": "Африка",
     "country": "Судан",
@@ -12243,7 +12243,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Sudan.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Sudan.jpg",
+        "name": "Судан.jpg",
         "id": "1PEjIETLiPUXooEkHhEYPiKPBvmyiu_lv"
       }
     ]
@@ -12258,7 +12258,7 @@
     "driveFileId": "1X84eOO1Y0jiogHaCAjj7QYvTuSrHjpBv",
     "resourceKey": "",
     "localPhotos": [
-      "Syria.jpg"
+      "Сирия.jpg"
     ],
     "continent": "Азия",
     "country": "Сирия",
@@ -12272,7 +12272,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Syria_%282025%E2%80%93present%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Syria.jpg",
+        "name": "Сирия.jpg",
         "id": "1X84eOO1Y0jiogHaCAjj7QYvTuSrHjpBv"
       }
     ]
@@ -12287,7 +12287,7 @@
     "driveFileId": "1XAZAlUIIoXKohEiculFhyz3S71H8SkzH",
     "resourceKey": "",
     "localPhotos": [
-      "Iran.jpg"
+      "Иран.jpg"
     ],
     "continent": "Азия",
     "country": "Иран",
@@ -12301,7 +12301,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Iran.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Iran.jpg",
+        "name": "Иран.jpg",
         "id": "1XAZAlUIIoXKohEiculFhyz3S71H8SkzH"
       }
     ]
@@ -12316,7 +12316,7 @@
     "driveFileId": "1u8XQSQjQkohXxBh-dq33_B0K-D7i0NEG",
     "resourceKey": "",
     "localPhotos": [
-      "Japan.jpg"
+      "Япония.jpg"
     ],
     "continent": "Азия",
     "country": "Япония",
@@ -12330,7 +12330,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Imperial_Seal_of_Japan.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Japan.jpg",
+        "name": "Япония.jpg",
         "id": "1u8XQSQjQkohXxBh-dq33_B0K-D7i0NEG"
       }
     ]
@@ -12345,7 +12345,7 @@
     "driveFileId": "14M2YcKSVgoJcXM9PJPiz-ZcQHRNwRx7R",
     "resourceKey": "",
     "localPhotos": [
-      "Kuwait.jpg"
+      "Кувейт.jpg"
     ],
     "continent": "Азия",
     "country": "Кувейт",
@@ -12359,7 +12359,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_the_State_of_Kuwait.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Kuwait.jpg",
+        "name": "Кувейт.jpg",
         "id": "14M2YcKSVgoJcXM9PJPiz-ZcQHRNwRx7R"
       }
     ]
@@ -12374,7 +12374,7 @@
     "driveFileId": "1tdOz2dolQfgom8gTD29jgRpuw3MuoxW1",
     "resourceKey": "",
     "localPhotos": [
-      "Morocco.jpg"
+      "Марокко.jpg"
     ],
     "continent": "Африка",
     "country": "Марокко",
@@ -12388,7 +12388,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Morocco.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Morocco.jpg",
+        "name": "Марокко.jpg",
         "id": "1tdOz2dolQfgom8gTD29jgRpuw3MuoxW1"
       }
     ]
@@ -12403,7 +12403,7 @@
     "driveFileId": "1OfkQ5qgDtobJIjX02MSw9Ojngpo6HT3m",
     "resourceKey": "",
     "localPhotos": [
-      "Algeria.jpg"
+      "Алжир.jpg"
     ],
     "continent": "Африка",
     "country": "Алжир",
@@ -12417,7 +12417,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_Algeria_%28bronze_effect%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Algeria.jpg",
+        "name": "Алжир.jpg",
         "id": "1OfkQ5qgDtobJIjX02MSw9Ojngpo6HT3m"
       }
     ]
@@ -12432,7 +12432,7 @@
     "driveFileId": "1LJPnhtZMY1lIgGvTObjjuTKbQdukRglF",
     "resourceKey": "",
     "localPhotos": [
-      "Haiti.jpg"
+      "Гаити.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Гаити",
@@ -12446,7 +12446,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Haiti.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Haiti.jpg",
+        "name": "Гаити.jpg",
         "id": "1LJPnhtZMY1lIgGvTObjjuTKbQdukRglF"
       }
     ]
@@ -12461,7 +12461,7 @@
     "driveFileId": "19snVT2sJ32JAI_5aV0Vuz6WDB-DlljSB",
     "resourceKey": "",
     "localPhotos": [
-      "Albania.jpg"
+      "Албания.jpg"
     ],
     "continent": "Европа",
     "country": "Албания",
@@ -12475,7 +12475,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Albania.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Albania.jpg",
+        "name": "Албания.jpg",
         "id": "19snVT2sJ32JAI_5aV0Vuz6WDB-DlljSB"
       }
     ]
@@ -12490,7 +12490,7 @@
     "driveFileId": "1VLprFpX8PI0ogjqssJYWmBHS1ozGwaFa",
     "resourceKey": "",
     "localPhotos": [
-      "German Democratic Republic.jpg"
+      "Германская демократическая республика.jpg"
     ],
     "continent": "Европа",
     "country": "Германия",
@@ -12504,7 +12504,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Germany.svg?width=480",
     "drivePhotos": [
       {
-        "name": "German Democratic Republic.jpg",
+        "name": "Германская демократическая республика.jpg",
         "id": "1VLprFpX8PI0ogjqssJYWmBHS1ozGwaFa"
       }
     ]
@@ -12519,7 +12519,7 @@
     "driveFileId": "1qzPWKg6pD1g7buYVhOxvTXWl1fvKuZnk",
     "resourceKey": "",
     "localPhotos": [
-      "Saudi Arabia.jpg"
+      "Саудовская Аравия.jpg"
     ],
     "continent": "Азия",
     "country": "Саудовская Аравия",
@@ -12533,7 +12533,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Saudi_Arabia.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Saudi Arabia.jpg",
+        "name": "Саудовская Аравия.jpg",
         "id": "1qzPWKg6pD1g7buYVhOxvTXWl1fvKuZnk"
       }
     ]
@@ -12548,7 +12548,7 @@
     "driveFileId": "1xzgLeoGlIocNOBC5Sn2BA1-P28_lvFwN",
     "resourceKey": "",
     "localPhotos": [
-      "Maryland State.jpg"
+      "Мэриленд.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Соединённые Штаты Америки",
@@ -12562,7 +12562,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Seal_of_Maryland_%28obverse%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Maryland State.jpg",
+        "name": "Мэриленд.jpg",
         "id": "1xzgLeoGlIocNOBC5Sn2BA1-P28_lvFwN"
       }
     ]
@@ -12664,7 +12664,7 @@
     "driveFileId": "1yz21qrejc3KXFkrE2gieSfiOnpSNYx7X",
     "resourceKey": "",
     "localPhotos": [
-      "Vaticano.jpg"
+      "Папский Престол (Государство-город Ватикан).jpg"
     ],
     "continent": "Европа",
     "country": "Ватикан",
@@ -12678,7 +12678,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Vatican_City_%282023%E2%80%93present%29.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Vaticano.jpg",
+        "name": "Папский Престол (Государство-город Ватикан).jpg",
         "id": "1yz21qrejc3KXFkrE2gieSfiOnpSNYx7X"
       }
     ]
@@ -12722,8 +12722,8 @@
     "driveFileId": "1R6SX84BdMScnACAJoy3CIKtFUcpS8zTJ",
     "resourceKey": "",
     "localPhotos": [
-      "Mexico (1).jpg",
-      "Mexico.jpg"
+      "Mexico 2.jpg",
+      "Mexico 2.jpg"
     ],
     "continent": "Северная Америка",
     "country": "Мексика",
@@ -12737,11 +12737,11 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mexico.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Mexico (1).jpg",
+        "name": "Mexico 2.jpg",
         "id": "1R6SX84BdMScnACAJoy3CIKtFUcpS8zTJ"
       },
       {
-        "name": "Mexico.jpg",
+        "name": "Mexico 2.jpg",
         "id": "1R6SX84BdMScnACAJoy3CIKtFUcpS8zTJ"
       }
     ]
@@ -12785,7 +12785,7 @@
     "driveFileId": "1uE99nWh2AAuMpGNnX7790I5RzeIGhiVy",
     "resourceKey": "",
     "localPhotos": [
-      "Hong-Kong.jpg"
+      "Hong Kong.jpg"
     ],
     "continent": "Азия",
     "country": "Гонконг",
@@ -12799,7 +12799,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Regional_Emblem_of_Hong_Kong.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Hong-Kong.jpg",
+        "name": "Hong Kong.jpg",
         "id": "1uE99nWh2AAuMpGNnX7790I5RzeIGhiVy"
       }
     ]
@@ -12901,7 +12901,7 @@
     "driveFileId": "1Rm9mXRLIgPOEL6RIhSp1aR35iDlwLHk_",
     "resourceKey": "",
     "localPhotos": [
-      "20818.jpg"
+      "York.jpg"
     ],
     "continent": "Европа",
     "country": "Великобритания",
@@ -12912,12 +12912,13 @@
     "crimea": false,
     "countryCode": "GB",
     "coaPath": "/media/coats/europe/gb/york/york/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_United_Kingdom_%282022%2C_variant_2%29.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%93%D0%B5%D1%80%D0%B1_%D0%99%D0%BE%D1%80%D0%BA%D0%B0#/media/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_City_of_York.svg",
     "drivePhotos": [
       {
-        "name": "20818.jpg",
+        "name": "York.jpg",
         "id": "1Rm9mXRLIgPOEL6RIhSp1aR35iDlwLHk_"
       }
-    ]
+    ],
+    "coaSource": ""
   }
 ]

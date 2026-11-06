@@ -9,7 +9,8 @@
     places: [],
     coatFiles: {},
     editing: false,
-    publishing: false
+    publishing: false,
+    treeOpen: new Set()
   };
 
   const els = {
@@ -73,7 +74,7 @@
   function loadData() {
     const url = cfg.sheetCsvUrl
       ? cfg.sheetCsvUrl + (cfg.sheetCsvUrl.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now()
-      : (cfg.dataUrl || "data/magnets.json") + "?v=17";
+      : (cfg.dataUrl || "data/magnets.json") + "?v=18";
     const magnets = fetch(url).then(function (res) {
       if (!res.ok) throw new Error("data " + res.status);
       return cfg.sheetCsvUrl ? res.text().then(parseCsv) : res.json();
@@ -102,12 +103,38 @@
     return parts;
   }
 
+  function wikiFileName(url) {
+    const raw = String(url || "");
+    const patterns = [
+      /[#/]media\/(?:File|%D0%A4%D0%B0%D0%B9%D0%BB):([^?#]+)/i,
+      /\/wiki\/(?:File|%D0%A4%D0%B0%D0%B9%D0%BB):([^?#]+)/i,
+      /Special:FilePath\/([^?#]+)/i
+    ];
+    for (let i = 0; i < patterns.length; i++) {
+      const match = raw.match(patterns[i]);
+      if (match) return decodeURIComponent(match[1]);
+    }
+    return "";
+  }
+
+  function coatImageUrl(value) {
+    const raw = (value || "").trim();
+    if (!/^https?:\/\//i.test(raw)) return "";
+    const file = wikiFileName(raw);
+    if (file) {
+      return "https://commons.wikimedia.org/wiki/Special:FilePath/" +
+        file.split("/").map(encodeURIComponent).join("/");
+    }
+    if (/wikipedia\.org|wikimedia\.org/i.test(raw)) return "";
+    return raw;
+  }
+
   function coatValue(item) {
     return (item && item.coaWiki || "").trim();
   }
 
   function coatIsImage(value) {
-    return /^https?:\/\//i.test(value || "");
+    return !!coatImageUrl(value);
   }
 
   function coatPage(url) {
@@ -122,6 +149,10 @@
     if (custom) {
       href = custom;
       label = /geraldika\.ru/i.test(custom) ? "Геральдика" : "Источник";
+    } else if (wikiFileName(wiki)) {
+      href = "https://commons.wikimedia.org/wiki/File:" +
+        wikiFileName(wiki).split("/").map(encodeURIComponent).join("/");
+      label = "Викисклад";
     } else if (coatIsImage(wiki)) {
       href = coatPage(wiki);
       label = "Викисклад";
@@ -132,7 +163,7 @@
 
   function coatHtml(value) {
     if (!value) return "";
-    if (coatIsImage(value)) return '<img class="coat" src="' + escapeAttr(value) + '" alt="Герб">';
+    if (coatIsImage(value)) return '<img class="coat" src="' + escapeAttr(coatImageUrl(value)) + '" alt="Герб">';
     return '<p class="coat-text">' + escapeHtml(value) + "</p>";
   }
 
@@ -346,6 +377,7 @@
   }
 
   function renderList() {
+    const scroll = els.list.scrollTop;
     const magnets = sortMagnets(listedMagnets());
     const gaps = els.status.value === "owned" ? [] : missingPlaces().filter(matchesQuery);
     els.count.textContent = "есть " + state.items.filter(function (item) {
@@ -354,6 +386,7 @@
     if (els.view.value === "tree") renderTree(magnets, gaps);
     else renderFlat(els.status.value === "missing" ? sortMagnets(gaps.concat(magnets)) : magnets);
     syncMarkers(magnets.filter(function (item) { return normStatus(item) !== "missing"; }));
+    els.list.scrollTop = scroll;
   }
 
   function renderFlat(items) {
@@ -365,7 +398,9 @@
     return a.localeCompare(b, "ru", { sensitivity: "base" });
   }
 
-  function branch(name, children, opened, missingItem) {
+  function branch(name, children, forceOpen, missingItem, parts) {
+    const key = parts.join("\u0001");
+    const opened = forceOpen || state.treeOpen.has(key);
     const wrap = document.createElement("div");
     wrap.className = "tree-node";
     const btn = document.createElement("button");
@@ -380,8 +415,12 @@
     box.hidden = !opened;
     children.forEach(function (child) { box.appendChild(child); });
     btn.addEventListener("click", function () {
+      if (children.length) {
+        box.hidden = !box.hidden;
+        if (box.hidden) state.treeOpen.delete(key);
+        else state.treeOpen.add(key);
+      }
       if (missingItem) select(missingItem.id);
-      if (children.length) box.hidden = !box.hidden;
     });
     wrap.appendChild(btn);
     if (children.length) wrap.appendChild(box);
@@ -427,9 +466,6 @@
     const opened = !!els.q.value.trim();
     els.list.innerHTML = "";
     const crimeaItems = magnets.filter(function (item) { return item.crimea; });
-    const crimeaBranch = crimeaItems.length
-      ? branch("Крым", sortMagnets(crimeaItems).map(row), opened)
-      : null;
     let crimeaPlaced = false;
     Array.from(continents.keys()).sort(function (a, b) {
       return continents.get(a).order - continents.get(b).order || byRu(a, b);
@@ -442,22 +478,24 @@
           const region = node.regions.get(regionName);
           const leaves = region.magnets.map(row);
           Array.from(region.cities.keys()).sort(byRu).forEach(function (city) {
-            leaves.push(branch(city, region.cities.get(city).map(row), opened));
+            leaves.push(branch(city, region.cities.get(city).map(row), opened, null, [name, countryName, regionName, city]));
           });
-          children.push(branch(regionName, leaves, opened));
+          children.push(branch(regionName, leaves, opened, null, [name, countryName, regionName]));
         });
-        if (node.item && !children.length) return branch(countryName, [], opened, node.item);
-        return branch(countryName, children, opened);
+        if (node.item && !children.length) return branch(countryName, [], opened, node.item, [name, countryName]);
+        return branch(countryName, children, opened, null, [name, countryName]);
       });
-      if (name === "Европа" && crimeaBranch) {
-        countries.unshift(crimeaBranch);
+      if (name === "Европа" && crimeaItems.length) {
+        countries.unshift(branch("Крым", sortMagnets(crimeaItems).map(row), opened, null, [name, "Крым"]));
         crimeaPlaced = true;
       }
-      els.list.appendChild(branch(name, countries, opened));
+      els.list.appendChild(branch(name, countries, opened, null, [name]));
     });
-    if (crimeaBranch && !crimeaPlaced) els.list.appendChild(crimeaBranch);
+    if (crimeaItems.length && !crimeaPlaced) {
+      els.list.appendChild(branch("Крым", sortMagnets(crimeaItems).map(row), opened, null, ["Крым"]));
+    }
     const loose = magnets.filter(function (item) { return !item.crimea && !item.country; });
-    if (loose.length) els.list.appendChild(branch("Без места", loose.map(row), opened));
+    if (loose.length) els.list.appendChild(branch("Без места", loose.map(row), opened, null, ["Без места"]));
   }
 
   function row(item) {
@@ -890,7 +928,7 @@
       if (coatIsImage(value)) {
         const img = document.createElement("img");
         img.alt = "";
-        img.src = value;
+        img.src = coatImageUrl(value);
         coatPreview.appendChild(img);
       } else coatPreview.textContent = value;
     }
