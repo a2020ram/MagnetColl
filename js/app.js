@@ -73,7 +73,7 @@
   function loadData() {
     const url = cfg.sheetCsvUrl
       ? cfg.sheetCsvUrl + (cfg.sheetCsvUrl.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now()
-      : cfg.dataUrl || "data/magnets.json";
+      : (cfg.dataUrl || "data/magnets.json") + "?v=17";
     const magnets = fetch(url).then(function (res) {
       if (!res.ok) throw new Error("data " + res.status);
       return cfg.sheetCsvUrl ? res.text().then(parseCsv) : res.json();
@@ -136,31 +136,21 @@
     return '<p class="coat-text">' + escapeHtml(value) + "</p>";
   }
 
-  function visibleItems() {
-    const q = els.q.value.trim().toLocaleLowerCase("ru");
-    const status = els.status.value;
-    let items = state.items.filter(function (item) {
-      if (status !== "all" && (item.status || "owned") !== status) return false;
-      if (!q) return true;
-      return [item.name, item.country, item.region, item.city, item.continent]
-        .join(" ")
-        .toLocaleLowerCase("ru")
-        .indexOf(q) >= 0;
-    });
-    const byName = function (a, b) {
-      return (a.name || "").localeCompare(b.name || "", "ru", { sensitivity: "base" });
-    };
+  function compareMagnets(a, b) {
     if (els.sort.value === "added") {
-      items.sort(function (a, b) {
-        const da = a.addedAt || "";
-        const db = b.addedAt || "";
-        if (da === db) return byName(a, b);
+      const da = a.addedAt || "";
+      const db = b.addedAt || "";
+      if (da !== db) {
         if (!da) return 1;
         if (!db) return -1;
         return db.localeCompare(da);
-      });
-    } else items.sort(byName);
-    return items;
+      }
+    }
+    return (a.name || "").localeCompare(b.name || "", "ru", { sensitivity: "base" });
+  }
+
+  function sortMagnets(items) {
+    return items.slice().sort(compareMagnets);
   }
 
   function select(id) {
@@ -356,13 +346,13 @@
   }
 
   function renderList() {
-    const magnets = listedMagnets();
+    const magnets = sortMagnets(listedMagnets());
     const gaps = els.status.value === "owned" ? [] : missingPlaces().filter(matchesQuery);
     els.count.textContent = "есть " + state.items.filter(function (item) {
       return normStatus(item) !== "missing";
     }).length + " · нет " + missingPlaces().length;
     if (els.view.value === "tree") renderTree(magnets, gaps);
-    else renderFlat(els.status.value === "missing" ? gaps.concat(magnets) : magnets);
+    else renderFlat(els.status.value === "missing" ? sortMagnets(gaps.concat(magnets)) : magnets);
     syncMarkers(magnets.filter(function (item) { return normStatus(item) !== "missing"; }));
   }
 
@@ -438,9 +428,7 @@
     els.list.innerHTML = "";
     const crimeaItems = magnets.filter(function (item) { return item.crimea; });
     const crimeaBranch = crimeaItems.length
-      ? branch("Крым", crimeaItems.slice().sort(function (a, b) {
-        return byRu(a.name || "", b.name || "");
-      }).map(row), opened)
+      ? branch("Крым", sortMagnets(crimeaItems).map(row), opened)
       : null;
     let crimeaPlaced = false;
     Array.from(continents.keys()).sort(function (a, b) {
@@ -884,7 +872,7 @@
           '<label>Долгота<input name="lng" inputmode="decimal" value="' + escapeAttr(card.lng || "") + '"></label>' +
         "</div>" +
         '<div class="photos"></div>' +
-        '<label>Фото<input name="photo" type="file" accept="image/*" capture="environment" multiple></label>' +
+        '<label>Фото<input name="photo" type="file" accept="image/*" multiple></label>' +
         '<div class="buttons">' +
           '<button type="button" class="geo">Автокоорд</button>' +
           '<button type="submit" class="primary">Сохранить</button>' +
