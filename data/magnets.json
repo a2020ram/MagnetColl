@@ -12886,5 +12886,215 @@
       }
     ],
     "coaSource": ""
+  },
+  {
+    "id": "карачаево-черкесская-республика",
+    "name": "Карачаево-Черкесская республика",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 43.73683,
+    "lng": 41.7268,
+    "driveFileId": "16xhDrO98vRaDirp6I8Roj47REr0Ft4by",
+    "resourceKey": "",
+    "localPhotos": [
+      "Карачаево-Черкесская республика.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Карачаево-Черкесская Республика",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/karachayevo-cherkesskaya-respublika/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Karachay-Cherkessia.svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Карачаево-Черкесская республика.jpg",
+        "id": "16xhDrO98vRaDirp6I8Roj47REr0Ft4by"
+      }
+    ]
+  },
+  {
+    "id": "кабардино-балкарская-республика",
+    "name": "Кабардино-Балкарская республика",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 43.96004,
+    "lng": 43.14747,
+    "driveFileId": "1kThnCHi0n0UqT4ydcZGBpn2cHYfTo_A0",
+    "resourceKey": "",
+    "localPhotos": [
+      "Кабардино-Балкарская республика.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Кабардино-Балкарская Республика",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/kabardino-balkarskaja-respublika/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Kabardino-Balkaria.svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Кабардино-Балкарская республика.jpg",
+        "id": "1kThnCHi0n0UqT4ydcZGBpn2cHYfTo_A0"
+      }
+    ]
+  },
+  {
+    "id": "glasgow",
+    "name": "Glasgow",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 55.86115,
+    "lng": -4.25017,
+    "driveFileId": "1YmPNfu27QHjgu5e59xIrNp9fz8SU9yqn",
+    "resourceKey": "",
+    "localPhotos": [
+      "Glasgow.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Великобритания",
+    "region": "Scotland",
+    "city": "Glasgow",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "GB",
+    "coaPath": "/media/coats/europe/gb/glasgow-city/glasgow/coat.geraldika.gif",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Glasgow_Coat_of_Arms_1996.svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Glasgow.jpg",
+        "id": "1YmPNfu27QHjgu5e59xIrNp9fz8SU9yqn"
+      }
+    ]
+  },
+  {
+    "id": "пуэрто-монт",
+    "name": "Пуэрто-Монт",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": -41.4718,
+    "lng": -72.93959,
+    "driveFileId": "1A22vMqoMczUlHMZexyvyb5419EcNJwep",
+    "resourceKey": "",
+    "localPhotos": [
+      "Пуэрто-Монт.jpg"
+    ],
+    "continent": "Южная Америка",
+    "country": "Чили",
+    "region": "",
+    "city": "Пуэрто-Монт",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "CL",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Escudo_de_Puerto_Montt.svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Пуэрто-Монт.jpg",
+        "id": "1A22vMqoMczUlHMZexyvyb5419EcNJwep"
+      }
+    ]
+  },
+  {
+    "id": "пунта-аренас",
+    "name": "Пунта-Аренас",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": -53.16257,
+    "lng": -70.90782,
+    "driveFileId": "1Q3eHi1apIsec2fGN5V0I_ojUufS8sCFq",
+    "resourceKey": "",
+    "localPhotos": [
+      "Пунта-Аренас.jpg"
+    ],
+    "continent": "Южная Америка",
+    "country": "Чили",
+    "region": "",
+    "city": "Пунта-Аренас",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "CL",
+    "coaPath": "/media/coats/south-america/cl/magallanes/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Escudo_de_Punta_Arenas.svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Пунта-Аренас.jpg",
+        "id": "1Q3eHi1apIsec2fGN5V0I_ojUufS8sCFq"
+      }
+    ]
+  },
+  {
+    "id": "arromanches-les-bains",
+    "name": "Arromanches-les-Bains",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 49.33726,
+    "lng": -0.62279,
+    "driveFileId": "1Ap_RyzKUWwIsb0V7yfmD3HYjSpt_QEVq",
+    "resourceKey": "",
+    "localPhotos": [
+      "Arromanches-les-Bains.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Франция",
+    "region": "Normandie",
+    "city": "Arromanches-les-Bains",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "FR",
+    "coaPath": "/media/coats/europe/fr/normandie/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Blason_Ville_fr_Arromanches_les_bains(14).svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Arromanches-les-Bains.jpg",
+        "id": "1Ap_RyzKUWwIsb0V7yfmD3HYjSpt_QEVq"
+      }
+    ]
+  },
+  {
+    "id": "монреаль",
+    "name": "Монреаль",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 45.50318,
+    "lng": -73.56981,
+    "driveFileId": "11N6VWkT4TnZSika5fxLpir5CgQL14pxV",
+    "resourceKey": "",
+    "localPhotos": [
+      "Монреаль.jpg"
+    ],
+    "continent": "Северная Америка",
+    "country": "Канада",
+    "region": "",
+    "city": "Монреаль",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "CA",
+    "coaPath": "",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_arms_of_Montreal.svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Монреаль.jpg",
+        "id": "11N6VWkT4TnZSika5fxLpir5CgQL14pxV"
+      }
+    ]
   }
 ]
