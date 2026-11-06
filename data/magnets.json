@@ -386,7 +386,6 @@
     "driveFileId": "0B4sMW1qgoxAndmhHNUdNMW1iQ3c",
     "resourceKey": "0--ulGK0_1F6kr82uRgFhMbA",
     "localPhotos": [
-      "Башкортостан.JPG",
       "Башкортостан 2.jpg"
     ],
     "continent": "Европа",
@@ -400,10 +399,6 @@
     "coaPath": "/media/coats/europe/ru/bashkortostan-respublika/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Bashkortostan.svg?width=480",
     "drivePhotos": [
-      {
-        "name": "Башкортостан.JPG",
-        "id": "0B4sMW1qgoxAndmhHNUdNMW1iQ3c"
-      },
       {
         "name": "Башкортостан 2.jpg",
         "id": "1pGQ-7442FCHuRlC2Ms7n5AMZS7Ul8G3P"
