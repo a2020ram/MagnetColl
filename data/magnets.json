@@ -1977,12 +1977,12 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kirov.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Киров.jpg",
+        "name": "Киров (1).jpg",
         "id": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS"
       },
       {
-        "name": "Киров (1).jpg",
-        "id": "1KfxDpbap895fVH_RaQ68KMYVUywnLQdJ"
+        "name": "Киров.jpg",
+        "id": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS"
       }
     ]
   },
@@ -6782,6 +6782,10 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Hamburg.svg?width=480",
     "drivePhotos": [
       {
+        "name": "Hamburg (1).jpg",
+        "id": "1d9qJWULfO24Sa3RTPCTO0G7DgBv03tC4"
+      },
+      {
         "name": "Hamburg2.jpg",
         "id": "1d9qJWULfO24Sa3RTPCTO0G7DgBv03tC4"
       }
@@ -9102,6 +9106,10 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Syktyvkar_%28Komi%29_%282008%29.svg?width=480",
     "drivePhotos": [
       {
+        "name": "Сыктывкар (1).jpg",
+        "id": "1AQTkFNLGHDaS-hsifBxG6zYVr2j73ONC"
+      },
+      {
         "name": "Сыктывкар.jpg",
         "id": "1AQTkFNLGHDaS-hsifBxG6zYVr2j73ONC"
       }
@@ -9249,7 +9257,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Sverdlovsk_oblast.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Дружинино.jpg",
+        "name": " Дружинино.jpg",
         "id": "1_iqlx0WZ28AqXuBkBrxTgWEANAPNSzUS"
       }
     ]
@@ -9453,7 +9461,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Yelets.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Елец.jpg",
+        "name": " Елец.jpg",
         "id": "1Vq4nPy-GPDMIe58PIAxR6B8H8offE5u1"
       }
     ]
@@ -11743,6 +11751,10 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Regional_Emblem_of_Macau.svg?width=480",
     "drivePhotos": [
       {
+        "name": "Macau (1).jpg",
+        "id": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd"
+      },
+      {
         "name": "Macau.jpg",
         "id": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd"
       }
@@ -12725,6 +12737,10 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mexico.svg?width=480",
     "drivePhotos": [
       {
+        "name": "Mexico (1).jpg",
+        "id": "1R6SX84BdMScnACAJoy3CIKtFUcpS8zTJ"
+      },
+      {
         "name": "Mexico.jpg",
         "id": "1R6SX84BdMScnACAJoy3CIKtFUcpS8zTJ"
       }
@@ -12872,6 +12888,35 @@
       {
         "name": "Merkid.jpg",
         "id": "1YpSVi0PrwXj4u4lLA3IUwTEF1PHwo4J4"
+      }
+    ]
+  },
+  {
+    "id": "york",
+    "name": "York",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 53.95906,
+    "lng": -1.08154,
+    "driveFileId": "1Rm9mXRLIgPOEL6RIhSp1aR35iDlwLHk_",
+    "resourceKey": "",
+    "localPhotos": [
+      "20818.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Великобритания",
+    "region": "England",
+    "city": "York",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "GB",
+    "coaPath": "/media/coats/europe/gb/york/york/coat.svg",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_United_Kingdom_%282022%2C_variant_2%29.svg?width=480",
+    "drivePhotos": [
+      {
+        "name": "20818.jpg",
+        "id": "1Rm9mXRLIgPOEL6RIhSp1aR35iDlwLHk_"
       }
     ]
   }
