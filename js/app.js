@@ -474,6 +474,10 @@
       pin.addEventListener("click", function (event) {
         event.stopPropagation();
         select(item.id);
+        if (window.matchMedia("(max-width: 800px)").matches) {
+          els.panel.classList.add("open");
+          syncToggle();
+        }
       });
       state.map.pins.appendChild(pin);
       state.markers.set(item.id, pin);
@@ -944,6 +948,8 @@
     els.add.hidden = false;
     els.git.hidden = false;
     els.lan.hidden = false;
+  } else if (els.git) {
+    els.git.remove();
   }
   els.add.addEventListener("click", function () { openEditor(null); });
   function publishStep() {
