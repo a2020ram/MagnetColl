@@ -1616,13 +1616,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/irkutskaja-oblast/irkutskii/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Irkutsky_rayon_%28Irkutsk_oblast%29.gif?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Irkutsk.png",
     "drivePhotos": [
       {
         "name": "Иркутск.jpg",
         "id": "0B4sMW1qgoxAndm41bnZNSzF4QUE"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "йошкар-ола",
