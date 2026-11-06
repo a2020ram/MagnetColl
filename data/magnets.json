@@ -1074,10 +1074,6 @@
     "drivePhotos": [
       {
         "name": "Гатчина 2.jpg",
-        "id": "1YO1a643ZamXDauDdTrJBWrcMGIMY6FfJ"
-      },
-      {
-        "name": "Гатчина 2.jpg",
         "id": "1Q1VxUj6eAqoUi0AmakDGz-48UbP09HUw"
       }
     ]
@@ -1979,10 +1975,6 @@
       {
         "name": "Киров 2.jpg",
         "id": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS"
-      },
-      {
-        "name": "Киров 2.jpg",
-        "id": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS"
       }
     ]
   },
@@ -2155,10 +2147,6 @@
     "coaPath": "/media/coats/europe/ru/komi-respublika/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Komi_%28large%29.svg?width=480",
     "drivePhotos": [
-      {
-        "name": "Коми 2.jpg",
-        "id": "11z2G-VlkNhHiqj8CiyuZWVdU1B6aCdyz"
-      },
       {
         "name": "Коми 2.jpg",
         "id": "1bQkXQUCJNjsLEi75MWaRUxfPNrLl6gsc"
@@ -3912,10 +3900,6 @@
     "coaPath": "/media/coats/europe/ru/mordovija-respublika/gorodskoy-okrug-saransk/coat.svg",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Saransk.svg?width=480",
     "drivePhotos": [
-      {
-        "name": "Саранск 2.jpg",
-        "id": "18os2SLCL884eXDt50BdqzbAb_JPeKQ2H"
-      },
       {
         "name": "Саранск 2.jpg",
         "id": "0B4sMW1qgoxAndXBnTGhLQlVUNk0"
@@ -6783,7 +6767,7 @@
     "drivePhotos": [
       {
         "name": "Hamburg 3.jpg",
-        "id": "1d9qJWULfO24Sa3RTPCTO0G7DgBv03tC4"
+        "id": "1srXXSKnIu1fNWZhI_YVl-X_LuBkvh-0V"
       },
       {
         "name": "Hamburg 2.jpg",
@@ -6990,10 +6974,6 @@
     "coaPath": "/media/coats/asia/ps/jerusalem/jerusalem/coat.svg",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem_emblem.svg?width=480",
     "drivePhotos": [
-      {
-        "name": "Jerusalem 2.jpg",
-        "id": "1iYwqY7CZFv--6s00wNi18o1QOHZam-wL"
-      },
       {
         "name": "Jerusalem 2.jpg",
         "id": "1i0G_o-FVWGz2EOsR_KQr52utkSQDISwN"
@@ -8956,14 +8936,14 @@
     "crimea": false,
     "countryCode": "CH",
     "coaPath": "/media/coats/europe/ch/bern/bern/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Switzerland.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/CHE_Bern_COA.svg",
     "drivePhotos": [
       {
         "name": "Берн.jpg",
         "id": "1IccOscFSCFnfUZNYiKRUpCj6Q9WFhCJu"
       }
     ],
-    "coaSource": "https://geraldika.ru/i/%D0%91%D0%B5%D1%80%D0%BD%20(%D0%A8%D0%B2%D0%B5%D0%B9%D1%86%D0%B0%D1%80%D0%B8%D1%8F)"
+    "coaSource": ""
   },
   {
     "id": "дрезден",
@@ -9105,10 +9085,6 @@
     "coaPath": "/media/coats/europe/ru/komi-respublika/syktyvkar-urban-okrug/coat.svg",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Syktyvkar_%28Komi%29_%282008%29.svg?width=480",
     "drivePhotos": [
-      {
-        "name": "Сыктывкар 2.jpg",
-        "id": "1AQTkFNLGHDaS-hsifBxG6zYVr2j73ONC"
-      },
       {
         "name": "Сыктывкар 2.jpg",
         "id": "1AQTkFNLGHDaS-hsifBxG6zYVr2j73ONC"
@@ -11753,10 +11729,6 @@
       {
         "name": "Macau 2.jpg",
         "id": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd"
-      },
-      {
-        "name": "Macau 2.jpg",
-        "id": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd"
       }
     ]
   },
@@ -12736,10 +12708,6 @@
     "coaPath": "/media/coats/north-america/mx/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mexico.svg?width=480",
     "drivePhotos": [
-      {
-        "name": "Mexico 2.jpg",
-        "id": "1R6SX84BdMScnACAJoy3CIKtFUcpS8zTJ"
-      },
       {
         "name": "Mexico 2.jpg",
         "id": "1R6SX84BdMScnACAJoy3CIKtFUcpS8zTJ"
