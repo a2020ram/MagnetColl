@@ -9198,13 +9198,14 @@
     "crimea": false,
     "countryCode": "CN",
     "coaPath": "/media/coats/asia/cn/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Emblem_of_the_People%27s_Republic_of_China.svg?width=480",
+    "coaWiki": "山東 山东",
     "drivePhotos": [
       {
         "name": "Шаньдун.jpg",
         "id": "12OMTITXM2QMTfr57dm-xv9m-qtJrhVQp"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "дружинино",
