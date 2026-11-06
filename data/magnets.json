@@ -13096,5 +13096,185 @@
         "id": "11N6VWkT4TnZSika5fxLpir5CgQL14pxV"
       }
     ]
+  },
+  {
+    "id": "республика-ингушетия",
+    "name": "Республика Ингушетия",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 43.16553,
+    "lng": 44.97968,
+    "driveFileId": "1xO1dKu2JP2KLyzeXwJSGHvHN7MvV-kg-",
+    "resourceKey": "",
+    "localPhotos": [
+      "Республика Ингушетия.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Республика Ингушетия",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/ingushetiya-respublika/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Ingushetia.png",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Республика Ингушетия.jpg",
+        "id": "1xO1dKu2JP2KLyzeXwJSGHvHN7MvV-kg-"
+      }
+    ]
+  },
+  {
+    "id": "республика-северная-осетия-алания",
+    "name": "Республика Северная Осетия — Алания",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 43.00223,
+    "lng": 44.67338,
+    "driveFileId": "1OT0d7nqIfssaAkhBznIQy2QAsZnoAkFq",
+    "resourceKey": "",
+    "localPhotos": [
+      "Республика Северная Осетия _ Алания.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Республика Северная Осетия",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/severnaja-osetija-respublika/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Emblem_of_North_Ossetia.svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Республика Северная Осетия _ Алания.jpg",
+        "id": "1OT0d7nqIfssaAkhBznIQy2QAsZnoAkFq"
+      }
+    ]
+  },
+  {
+    "id": "кельн",
+    "name": "Кёльн",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 50.93836,
+    "lng": 6.95997,
+    "driveFileId": "12iFcrk3SPTjr6BkfvK-PxCRSDjdSFR0g",
+    "resourceKey": "",
+    "localPhotos": [
+      "Кёльн.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Германия",
+    "region": "",
+    "city": "Кёльн",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "DE",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:DEU_Koeln_COA.svg?uselang=ru",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Кёльн.jpg",
+        "id": "12iFcrk3SPTjr6BkfvK-PxCRSDjdSFR0g"
+      }
+    ]
+  },
+  {
+    "id": "синтра",
+    "name": "Синтра",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 38.83554,
+    "lng": -9.35224,
+    "driveFileId": "1P2j9bYzaMuy3C9Rts7QBuV0ZFMKgq144",
+    "resourceKey": "",
+    "localPhotos": [
+      "Синтра.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Португалия",
+    "region": "",
+    "city": "Синтра",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "PT",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Bras%C3%A3o_de_Armas_de_Sintra.png?uselang=ru",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Синтра.jpg",
+        "id": "1P2j9bYzaMuy3C9Rts7QBuV0ZFMKgq144"
+      }
+    ]
+  },
+  {
+    "id": "киев-2",
+    "name": "Киев",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 50.45003,
+    "lng": 30.52414,
+    "driveFileId": "134Oxu4y_LeyUAanxxCx1gS6TRSH3bf0C",
+    "resourceKey": "",
+    "localPhotos": [
+      "Киев 2.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Украина",
+    "region": "",
+    "city": "Киев",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "UA",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Kiew-city-COA.PNG?uselang=ru",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Киев 2.jpg",
+        "id": "134Oxu4y_LeyUAanxxCx1gS6TRSH3bf0C"
+      }
+    ]
+  },
+  {
+    "id": "саламанка",
+    "name": "Саламанка",
+    "status": "owned",
+    "addedAt": "2026-11-06",
+    "lat": 40.96516,
+    "lng": -5.66402,
+    "driveFileId": "1YSM0jWJGIWlltIonH4xLTSNZZTj-hg_9",
+    "resourceKey": "",
+    "localPhotos": [
+      "Саламанка.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Испания",
+    "region": "",
+    "city": "Саламанка",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "ES",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Escudo_de_Salamanca.svg?uselang=ru",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Саламанка.jpg",
+        "id": "1YSM0jWJGIWlltIonH4xLTSNZZTj-hg_9"
+      }
+    ]
   }
 ]
