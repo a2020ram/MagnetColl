@@ -1954,8 +1954,7 @@
     "driveFileId": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS",
     "resourceKey": "",
     "localPhotos": [
-      "Киров 2.jpg",
-      "Киров 2.jpg"
+      "Киров.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -1969,7 +1968,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kirov.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Киров 2.jpg",
+        "name": "Киров.jpg",
         "id": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS"
       }
     ]
@@ -11861,7 +11860,7 @@
     "addedAt": "",
     "lat": 58.4198529,
     "lng": 50.2097248,
-    "driveFileId": "",
+    "driveFileId": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS",
     "resourceKey": "",
     "localPhotos": [],
     "continent": "Европа",
@@ -11873,7 +11872,13 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/kirovskaja-oblast/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kirov_Region.svg?width=480"
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Kirov_Region.svg?width=480",
+    "drivePhotos": [
+      {
+        "name": "Кировская область.jpg",
+        "id": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS"
+      }
+    ]
   },
   {
     "id": "по",
