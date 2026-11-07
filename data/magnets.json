@@ -10307,13 +10307,13 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "Rotherham",
-    "city": "Wales",
+    "region": "Wales [Cymru GB-CYM]",
+    "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "GB",
-    "coaPath": "/media/coats/europe/gb/rotherham/wales/coat.svg",
+    "coaPath": "/media/coats/europe/gb/wales-cymru-gb-cym/coat.svg",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Badge_of_Wales_%282024_onwards%29.svg?width=480",
     "drivePhotos": [
       {
