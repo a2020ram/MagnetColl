@@ -1951,14 +1951,14 @@
     "addedAt": "",
     "lat": 58.5763524,
     "lng": 49.7007,
-    "driveFileId": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS",
+    "driveFileId": "1KfxDpbap895fVH_RaQ68KMYVUywnLQdJ",
     "resourceKey": "",
     "localPhotos": [
       "Киров.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
-    "region": "Киров",
+    "region": "Кировская область",
     "city": "Киров",
     "coaImageUrl": "",
     "notes": "",
@@ -1969,7 +1969,7 @@
     "drivePhotos": [
       {
         "name": "Киров.jpg",
-        "id": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS"
+        "id": "1KfxDpbap895fVH_RaQ68KMYVUywnLQdJ"
       }
     ]
   },
@@ -11862,7 +11862,9 @@
     "lng": 50.2097248,
     "driveFileId": "1OuLa0_5cSAWBtdyYDCeZWCFHUL-glRHS",
     "resourceKey": "",
-    "localPhotos": [],
+    "localPhotos": [
+      "Кировская область.jpg"
+    ],
     "continent": "Европа",
     "country": "Россия",
     "region": "Кировская область",
