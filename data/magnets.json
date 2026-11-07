@@ -1186,13 +1186,14 @@
     "crimea": true,
     "countryCode": "",
     "coaPath": "",
-    "coaWiki": "",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Big_Coat_of_Evpatoria.jpg",
     "drivePhotos": [
       {
         "name": "Евпатория.jpg",
         "id": "1YZzq1Zj1iHm76fCB-SZvK_v9W9s7HpwM"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "екатеринбург",
@@ -4224,13 +4225,14 @@
     "crimea": true,
     "countryCode": "",
     "coaPath": "",
-    "coaWiki": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:COA_Simferopol.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Симферополь.jpg",
         "id": "1YaIDch-RpsywJcAcWeIOqx8v8ON_UQAC"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "сочи",
