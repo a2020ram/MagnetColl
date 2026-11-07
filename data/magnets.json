@@ -8173,7 +8173,7 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "Dorset",
+    "region": "England",
     "city": "Swanage",
     "coaImageUrl": "",
     "notes": "",
@@ -10161,13 +10161,13 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "Корнуолл",
+    "region": "England",
     "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "GB",
-    "coaPath": "/media/coats/europe/gb/cornwall/coat.svg",
+    "coaPath": "/media/coats/europe/gb/england/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Arms_of_Cornwall_Council.svg?width=480",
     "drivePhotos": [
       {
@@ -10190,13 +10190,13 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "Дэвон",
+    "region": "England",
     "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "GB",
-    "coaPath": "/media/coats/europe/gb/devon/coat.png",
+    "coaPath": "/media/coats/europe/gb/england/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Devon_County_Council.svg?width=480",
     "drivePhotos": [
       {
@@ -10219,13 +10219,13 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "",
+    "region": "England",
     "city": "Уэймут",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "GB",
-    "coaPath": "/media/coats/europe/gb/dorset/weymouth/coat.svg",
+    "coaPath": "/media/coats/europe/gb/england/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Arms_of_Weymouth.svg?width=480",
     "drivePhotos": [
       {
@@ -10248,21 +10248,21 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "",
+    "region": "England",
     "city": "Бат",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "GB",
-    "coaPath": "/media/coats/europe/gb/bath-and-north-east-somerset/bath/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_United_Kingdom_%282022%2C_variant_2%29.svg?width=480",
+    "coaPath": "/media/coats/europe/gb/england/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Bath_Coat_of_Arms.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Бат.jpg",
         "id": "1jE0NNJkYJA_dYUMq5cqit0mr63Iu-39N"
       }
     ],
-    "coaSource": "https://geraldika.ru/i/%D0%91%D0%B0%D1%82%20(%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F)"
+    "coaSource": ""
   },
   {
     "id": "портсмут",
@@ -10278,13 +10278,13 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "",
+    "region": "England",
     "city": "Портсмут",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "GB",
-    "coaPath": "/media/coats/europe/gb/portsmouth/portsmouth/coat.svg",
+    "coaPath": "/media/coats/europe/gb/england/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Portsmouth.svg?width=480",
     "drivePhotos": [
       {
@@ -10324,7 +10324,7 @@
   },
   {
     "id": "англия",
-    "name": "Англия",
+    "name": "England",
     "status": "owned",
     "addedAt": "",
     "lat": 52.838164,
@@ -10336,20 +10336,21 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "",
+    "region": "England",
     "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "GB",
-    "coaPath": "/media/coats/europe/gb/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Coat_of_Arms_of_the_United_Kingdom_%28both_variants%29.svg?width=480",
+    "coaPath": "/media/coats/europe/gb/england/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Royal_Arms_of_England_(1198-1340).svg",
     "drivePhotos": [
       {
         "name": "Англия.jpg",
         "id": "1P-C52rxXi_LTMYPd_Arc9_V5iYjlIvDg"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "словакия",
@@ -11644,20 +11645,21 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "Дэвон",
+    "region": "England",
     "city": "Дартмут",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "GB",
-    "coaPath": "/media/coats/europe/gb/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Coat_of_Arms_of_the_United_Kingdom_%28both_variants%29.svg?width=480",
+    "coaPath": "/media/coats/europe/gb/england/coat.png",
+    "coaWiki": "",
     "drivePhotos": [
       {
         "name": "Дартмут.jpg",
         "id": "1xvzbi7_KO0fLnjTz0Bp-9ZR4x_E7EvZp"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "macau",
