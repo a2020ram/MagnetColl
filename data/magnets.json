@@ -7297,13 +7297,14 @@
     "crimea": false,
     "countryCode": "GB",
     "coaPath": "/media/coats/europe/gb/cities/london/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_United_Kingdom_%282022%2C_variant_2%29.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_The_City_of_London.svg",
     "drivePhotos": [
       {
         "name": "London.jpg",
         "id": "17g62Pfy7OYPBsJ4L65Cso96SJPXdbUqh"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "madrid",
@@ -10458,13 +10459,14 @@
     "crimea": false,
     "countryCode": "PT",
     "coaPath": "/media/coats/europe/pt/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Portugal.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:PRT.png?uselang=ru",
     "drivePhotos": [
       {
         "name": "Порту.jpg",
         "id": "1KGCpsE1NXrlhJsv1szM7bvNx9QoiSSur"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "килларни",
@@ -12656,8 +12658,7 @@
     "driveFileId": "1R6SX84BdMScnACAJoy3CIKtFUcpS8zTJ",
     "resourceKey": "",
     "localPhotos": [
-      "Mexico 2.jpg",
-      "Mexico 2.jpg"
+      "Mexico 2 (1).jpg"
     ],
     "continent": "Северная Америка",
     "country": "Мексика",
@@ -12671,7 +12672,7 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Mexico.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Mexico 2.jpg",
+        "name": "Mexico 2 (1).jpg",
         "id": "1R6SX84BdMScnACAJoy3CIKtFUcpS8zTJ"
       }
     ]
