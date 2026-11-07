@@ -9,14 +9,15 @@
     "driveFileId": "0B4sMW1qgoxAnZVJJbWxRVV8xLWs",
     "resourceKey": "0-a1gPowHDDBZAKb4bfovmeg",
     "localPhotos": [
-      "Абхазия.jpg"
+      "Абхазия.jpg",
+      "Абхазия 2.jpg"
     ],
     "continent": "Азия",
     "country": "Абхазия",
     "region": "",
-    "city": "Новый Афон",
+    "city": "",
     "coaImageUrl": "",
-    "notes": "",
+    "notes": "Новый Афон · Сухум",
     "crimea": false,
     "countryCode": "AB",
     "coaPath": "",
@@ -25,6 +26,10 @@
       {
         "name": "Абхазия.jpg",
         "id": "0B4sMW1qgoxAnZVJJbWxRVV8xLWs"
+      },
+      {
+        "name": "Абхазия 2.jpg",
+        "id": "1EIQ-mDD3QlmRcMM3sKGYla6E9fSlc225"
       }
     ]
   },
@@ -54,35 +59,6 @@
       {
         "name": "Zagreb.jpg",
         "id": "17E912wto9QjUQ4AbP_xjTPUsS70Q9jn_"
-      }
-    ]
-  },
-  {
-    "id": "абхазия-2",
-    "name": "Абхазия",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 43.0015,
-    "lng": 41.0232,
-    "driveFileId": "1EIQ-mDD3QlmRcMM3sKGYla6E9fSlc225",
-    "resourceKey": "",
-    "localPhotos": [
-      "Абхазия 2.jpg"
-    ],
-    "continent": "Азия",
-    "country": "Абхазия",
-    "region": "",
-    "city": "Сухум",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "AB",
-    "coaPath": "",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Abkhazia.svg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Абхазия 2.jpg",
-        "id": "1EIQ-mDD3QlmRcMM3sKGYla6E9fSlc225"
       }
     ]
   },
