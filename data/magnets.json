@@ -4127,7 +4127,7 @@
     "crimea": true,
     "countryCode": "",
     "coaPath": "/media/coats/europe/ua/sevastopol/sevastopol/coat.jpg",
-    "coaWiki": "",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:COA_of_Sevastopol.svg",
     "drivePhotos": [
       {
         "name": "Севастополь.jpg",
@@ -4138,7 +4138,7 @@
         "id": "1ueHOOFvZfWCDGpY_PN9n3IZ6_gHuUC4W"
       }
     ],
-    "coaSource": "https://geraldika.ru/s/3309"
+    "coaSource": ""
   },
   {
     "id": "североморск",
