@@ -10490,14 +10490,14 @@
     "crimea": false,
     "countryCode": "IE",
     "coaPath": "/media/coats/europe/ie/kerry/killarney/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ireland.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Killarney_coat_of_arms.png",
     "drivePhotos": [
       {
         "name": "Килларни.jpg",
         "id": "1Wft_bLr-KyWeifOEuIefn7oNuIVpd2HT"
       }
     ],
-    "coaSource": "https://geraldika.ru/i/%D0%9A%D0%B8%D0%BB%D0%BB%D0%B0%D1%80%D0%BD%D0%B8%20(%D0%98%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F)"
+    "coaSource": ""
   },
   {
     "id": "наварра",
@@ -10723,14 +10723,14 @@
     "crimea": false,
     "countryCode": "IE",
     "coaPath": "/media/coats/europe/ie/cork/cork/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ireland.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:County_Cork_arms.png",
     "drivePhotos": [
       {
         "name": "Корк.jpg",
         "id": "1L9FQYm-d0hsY0ONgbL4XvycdC-a5IV1C"
       }
     ],
-    "coaSource": "https://geraldika.ru/i/%D0%9A%D0%BE%D1%80%D0%BA%20(%D0%98%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F)"
+    "coaSource": ""
   },
   {
     "id": "страна-басков",
@@ -11914,14 +11914,14 @@
     "crimea": false,
     "countryCode": "IE",
     "coaPath": "/media/coats/europe/ie/galway/galway/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ireland.svg?width=480",
+    "coaWiki": "https://en.wikipedia.org/wiki/File:Galway_crest.svg",
     "drivePhotos": [
       {
         "name": "Голуэй.jpg",
         "id": "1W1OE2M8JrFfsNnqpAtIU96Wrc9Sz-EMe"
       }
     ],
-    "coaSource": "https://geraldika.ru/i/%D0%93%D0%BE%D0%BB%D1%83%D1%8D%D0%B9%20(%D0%98%D1%80%D0%BB%D0%B0%D0%BD%D0%B4%D0%B8%D1%8F)"
+    "coaSource": ""
   },
   {
     "id": "гданьск",
