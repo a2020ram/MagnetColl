@@ -74,7 +74,7 @@
   function loadData() {
     const url = cfg.sheetCsvUrl
       ? cfg.sheetCsvUrl + (cfg.sheetCsvUrl.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now()
-      : (cfg.dataUrl || "data/magnets.json") + "?v=20";
+      : (cfg.dataUrl || "data/magnets.json") + "?v=26";
     const magnets = fetch(url).then(function (res) {
       if (!res.ok) throw new Error("data " + res.status);
       return cfg.sheetCsvUrl ? res.text().then(parseCsv) : res.json();
@@ -88,19 +88,102 @@
     return Promise.all([magnets, places, coats]);
   }
 
-  function hierarchy(item) {
-    const parts = [];
+  function hierarchyLevels(item) {
+    const levels = [];
     const continent = (item.continent || "").trim();
     const country = (item.country || "").trim();
     const region = (item.region || "").trim();
     const city = (item.city || "").trim();
-    if (continent) parts.push(continent);
-    if (item.crimea) parts.push("Крым");
-    else if (country) parts.push(country);
-    if (region) parts.push(region);
-    if (city) parts.push(city);
-    if (parts.length === 1 && parts[0] === (item.name || "").trim()) return [];
-    return parts;
+    if (continent) levels.push({ kind: "continent", name: continent, code: "" });
+    if (item.crimea) levels.push({ kind: "crimea", name: "Крым", code: "CRIMEA" });
+    else if (country) levels.push({ kind: "country", name: country, code: item.countryCode || "" });
+    if (region) levels.push({ kind: "region", name: region, code: item.countryCode || "" });
+    if (city) levels.push({ kind: "city", name: city, code: item.countryCode || "" });
+    if (levels.length === 1 && levels[0].name === (item.name || "").trim()) return [];
+    return levels;
+  }
+
+  function hierarchy(item) {
+    return hierarchyLevels(item).map(function (level) { return level.name; });
+  }
+
+  function sameText(a, b) {
+    return String(a || "").trim().toLocaleLowerCase("ru") === String(b || "").trim().toLocaleLowerCase("ru");
+  }
+
+  function emptyPlace(value) {
+    return !String(value || "").trim();
+  }
+
+  function catalogCards() {
+    return state.items.concat(missingPlaces());
+  }
+
+  function matchCrumbLevel(level) {
+    if (!level) return null;
+    const cards = catalogCards();
+    if (level.kind === "continent") return null;
+    if (level.kind === "crimea") {
+      return cards.find(function (it) { return it.crimea && emptyPlace(it.city); })
+        || cards.find(function (it) { return it.crimea; })
+        || null;
+    }
+    if (level.kind === "country") {
+      return cards.find(function (it) {
+        return !it.crimea
+          && ((level.code && it.countryCode === level.code) || sameText(it.country, level.name) || sameText(it.name, level.name))
+          && emptyPlace(it.region)
+          && emptyPlace(it.city);
+      }) || null;
+    }
+    if (level.kind === "region") {
+      return cards.find(function (it) {
+        return !it.crimea
+          && (!level.code || it.countryCode === level.code)
+          && sameText(it.region, level.name)
+          && emptyPlace(it.city);
+      }) || cards.find(function (it) {
+        return sameText(it.name, level.name) && sameText(it.region, level.name) && emptyPlace(it.city);
+      }) || null;
+    }
+    if (level.kind === "city") {
+      return cards.find(function (it) {
+        if (!(sameText(it.city, level.name) || sameText(it.name, level.name))) return false;
+        if (level.code) return it.countryCode === level.code;
+        return !!it.crimea;
+      }) || null;
+    }
+    return null;
+  }
+
+  function findCrumbTarget(levels, index) {
+    for (let i = index; i >= 0; i--) {
+      const found = matchCrumbLevel(levels[i]);
+      if (found) return found;
+    }
+    return null;
+  }
+
+  function crumbsHtml(levels) {
+    if (!levels.length) return "";
+    return levels.map(function (level, index) {
+      return (index ? '<span class="place-sep"> · </span>' : "") +
+        '<button type="button" class="place-crumb" data-crumb="' + index + '">' +
+        escapeHtml(level.name) + "</button>";
+    }).join("");
+  }
+
+  function bindCrumbs(root, item) {
+    const levels = hierarchyLevels(item);
+    root.querySelectorAll(".place-crumb").forEach(function (btn) {
+      btn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        const target = findCrumbTarget(levels, Number(btn.getAttribute("data-crumb") || 0));
+        if (!target) return;
+        select(target.id);
+        syncToggle();
+      });
+    });
   }
 
   function wikiFileName(url) {
@@ -220,19 +303,27 @@
   }
 
   function gallery(item) {
-    const local = [];
+    const slides = [];
+    const localNames = {};
     if (onThisMachine()) {
       (item.localPhotos || []).forEach(function (path) {
         const name = localName(path);
-        if (name) local.push("photos/" + encodeURIComponent(name));
+        if (!name || localNames[name]) return;
+        localNames[name] = true;
+        slides.push("photos/" + encodeURIComponent(name));
       });
     }
-    if (local.length) return local;
-    const many = (item.drivePhotos || []).map(function (photo) {
-      if (!photo.id) return "";
-      return "https://drive.google.com/thumbnail?id=" + encodeURIComponent(photo.id) + "&sz=w1600";
-    }).filter(Boolean);
-    if (many.length) return many;
+    const driveList = (item.drivePhotos || []).filter(function (photo) { return photo.id; });
+    const covered = {};
+    driveList.forEach(function (photo) {
+      if (photo.sameAs && localNames[photo.sameAs]) covered[photo.id] = true;
+      else if (driveList.length === 1 && photo.name && localNames[photo.name]) covered[photo.id] = true;
+    });
+    driveList.forEach(function (photo) {
+      if (covered[photo.id]) return;
+      slides.push("https://drive.google.com/thumbnail?id=" + encodeURIComponent(photo.id) + "&sz=w1600");
+    });
+    if (slides.length) return slides;
     const drive = thumbUrl(item, 1600);
     return drive ? [drive] : [];
   }
@@ -291,7 +382,7 @@
     if (index >= slides.length) index = 0;
     const missing = normStatus(item) === "missing";
     const status = missing ? "Нет" : "Есть";
-    const placeParts = hierarchy(item);
+    const placeLevels = hierarchyLevels(item);
     const many = slides.length > 1;
     const showCoat = !!coatValue(item) && (item.placeOnly || slides.length);
     els.detail.innerHTML =
@@ -308,7 +399,7 @@
       sourceHtml(item) +
       "<h2>" + escapeHtml(item.name || "Без названия") + "</h2>" +
       '<p class="meta"><span class="badge ' + (missing ? "missing" : "") + '">' + status + "</span>" +
-      (placeParts.length ? " · " + escapeHtml(placeParts.join(" · ")) : "") +
+      (placeLevels.length ? ' · <span class="place-crumbs">' + crumbsHtml(placeLevels) + "</span>" : "") +
       (item.notes ? " · " + escapeHtml(item.notes) : "") +
       "</p>" +
       '<p class="file"></p>' +
@@ -317,6 +408,7 @@
           (item.placeOnly ? "Добавить магнит" : "Править") + "</button></p>"
         : "");
     els.detail.querySelector(".detail-close").addEventListener("click", closeCard);
+    bindCrumbs(els.detail, item);
     const editCard = els.detail.querySelector(".edit-card");
     if (editCard) editCard.addEventListener("click", function () {
       openEditor(item.placeOnly ? {
@@ -499,23 +591,28 @@
   }
 
   function row(item) {
-    const btn = document.createElement("button");
-    btn.type = "button";
+    const btn = document.createElement("div");
     btn.className = "item" + (item.id === state.selectedId ? " active" : "");
     btn.dataset.id = item.id;
     const src = item.placeOnly ? coatSrc(item) : markerSrc(item, 96);
     const img = src
       ? '<img src="' + escapeAttr(src) + '" alt="">'
       : '<span class="ph">' + (normStatus(item) === "missing" ? "нет" : "") + "</span>";
-    const where = hierarchy(item).join(" · ");
+    const levels = hierarchyLevels(item);
     const count = gallery(item).length;
-    btn.innerHTML = img + "<span><b>" + escapeHtml(item.name || "Без названия") + "</b>" +
-      (where ? "<small>" + escapeHtml(where) + "</small>" : "") +
+    btn.innerHTML = img + '<span class="item-main"><b class="item-title">' + escapeHtml(item.name || "Без названия") + "</b>" +
+      (levels.length ? '<small class="place-crumbs">' + crumbsHtml(levels) + "</small>" : "") +
       (count > 1 ? "<small>" + count + " фото</small>" : "") + "</span>";
-    btn.addEventListener("click", function () {
+    function openCard() {
       select(item.id);
       syncToggle();
+    }
+    btn.addEventListener("click", openCard);
+    btn.querySelector(".item-title").addEventListener("click", function (event) {
+      event.stopPropagation();
+      openCard();
     });
+    bindCrumbs(btn, item);
     return btn;
   }
 
@@ -910,7 +1007,8 @@
           '<label>Долгота<input name="lng" inputmode="decimal" value="' + escapeAttr(card.lng || "") + '"></label>' +
         "</div>" +
         '<div class="photos"></div>' +
-        '<label>Фото<input name="photo" type="file" accept="image/*" multiple></label>' +
+        '<label>Фото с телефона<input name="photo" type="file" accept="image/*" multiple></label>' +
+        '<label>Ссылки на фото<textarea name="photoUrl" rows="3" placeholder="Файл с Диска или картинка из интернета. Каждая ссылка с новой строки"></textarea></label>' +
         '<div class="buttons">' +
           '<button type="button" class="geo">Автокоорд</button>' +
           '<button type="submit" class="primary">Сохранить</button>' +
@@ -945,17 +1043,41 @@
       }
     });
     const photos = els.detail.querySelector(".photos");
-    function drawPhotos(names) {
+    function photoRows() {
+      const rows = [];
+      const local = card.localPhotos || [];
+      const driveList = (card.drivePhotos || []).filter(function (photo) { return photo.id; });
+      const covered = {};
+      driveList.forEach(function (photo) {
+        if (photo.sameAs && local.indexOf(photo.sameAs) >= 0) covered[photo.id] = photo.sameAs;
+        else if (driveList.length === 1 && photo.name && local.indexOf(photo.name) >= 0) covered[photo.id] = photo.name;
+      });
+      local.forEach(function (name) {
+        let driveId = "";
+        driveList.forEach(function (photo) {
+          if (covered[photo.id] === name) driveId = photo.id;
+        });
+        rows.push({ label: name, name: name, driveId: driveId });
+      });
+      driveList.forEach(function (photo) {
+        if (covered[photo.id]) return;
+        rows.push({ label: (photo.name || "Фото") + " · с Диска", name: "", driveId: photo.id });
+      });
+      return rows;
+    }
+    function drawPhotos() {
       photos.innerHTML = "";
-      (names || []).forEach(function (name) {
+      photoRows().forEach(function (row) {
         const line = document.createElement("div");
         line.className = "photo-line";
-        line.innerHTML = "<span>" + escapeHtml(name) + '</span><button type="button">Убрать фото</button>';
+        line.innerHTML = "<span>" + escapeHtml(row.label) + '</span><button type="button">Убрать из карточки</button>';
         line.querySelector("button").addEventListener("click", function () {
-          postJson("/api/photo/delete", { id: card.id, name: name }).then(function (saved) {
+          postJson("/api/photo/unlink", { id: card.id, name: row.name, driveId: row.driveId }).then(function (saved) {
             remember(saved);
             card.localPhotos = saved.localPhotos || [];
-            drawPhotos(card.localPhotos);
+            card.drivePhotos = saved.drivePhotos || [];
+            card.driveFileId = saved.driveFileId || "";
+            drawPhotos();
           }).catch(function (error) {
             form.querySelector(".form-msg").textContent = error.message;
           });
@@ -963,14 +1085,14 @@
         photos.appendChild(line);
       });
     }
-    drawPhotos(card.localPhotos || []);
+    drawPhotos();
     form.querySelector(".geo").addEventListener("click", function () {
       const msg = form.querySelector(".form-msg");
       const code = form.country.value;
       const regionName = form.region.value.trim();
       const cityName = form.city.value.trim();
-      if (!code && !regionName && !cityName) {
-        msg.textContent = "Сначала выберите страну или впишите город";
+      if (!code) {
+        msg.textContent = "Сначала выберите страну";
         return;
       }
       const params = new URLSearchParams({ code: code, region: regionName, city: cityName });
@@ -978,38 +1100,11 @@
       fetch("/api/center?" + params.toString()).then(function (res) {
         return res.json().then(function (data) { return { ok: res.ok, data: data }; });
       }).then(function (result) {
-        if (result.ok && result.data.lat != null) {
-          writeCoord(form, result.data);
-          msg.textContent = cityName ? "Центр города" : (regionName ? "Центр области" : "Центр страны");
-          return;
+        if (!result.ok || result.data.lat == null) {
+          throw new Error((result.data && result.data.error) || "Место не нашлось");
         }
-        if (!cityName && !regionName) {
-          const local = countryCenter(code);
-          if (!local) throw new Error("Для этой страны центр не задан");
-          writeCoord(form, local);
-          msg.textContent = "Центр страны";
-          return;
-        }
-        const place = state.places.find(function (item) { return item.countryCode === code; });
-        const countryName = code === "CRIMEA" ? "Crimea" : (place ? (place.nameEn || place.name) : "");
-        const query = [cityName, regionName, countryName].filter(Boolean).join(", ");
-        return fetch("https://photon.komoot.io/api/?limit=1&q=" + encodeURIComponent(query)).then(function (res) {
-          if (!res.ok) throw new Error("Карта не ответила");
-          return res.json();
-        }).then(function (data) {
-          const coords = data.features && data.features[0] && data.features[0].geometry && data.features[0].geometry.coordinates;
-          if (!coords) throw new Error("Место не нашлось. Можно вписать координаты вручную");
-          const point = { lat: coords[1], lng: coords[0] };
-          writeCoord(form, point);
-          msg.textContent = "Центр по карте, проверьте точку";
-          return postJson("/api/center", {
-            countryCode: code,
-            region: regionName,
-            city: cityName,
-            lat: point.lat,
-            lng: point.lng
-          }).catch(function () {});
-        });
+        writeCoord(form, result.data);
+        msg.textContent = cityName ? "Центр города" : (regionName ? "Центр области" : "Центр страны");
       }).catch(function (error) {
         msg.textContent = error.message || "Центр не нашёлся. Можно вписать координаты вручную";
       });
@@ -1054,7 +1149,8 @@
           coaWiki: form.coat.value.trim(),
           lat: form.lat.value.trim(),
           lng: form.lng.value.trim(),
-          photos: encodedPhotos
+          photos: encodedPhotos,
+          photoUrls: form.photoUrl.value.split(/\s+/).filter(Boolean)
         });
       }).then(function (saved) {
         remember(saved);

@@ -252,6 +252,27 @@ input, select {
 }
 .ph { display: grid; place-items: center; color: var(--muted); font-size: 12px; }
 .item small { display: block; color: var(--muted); }
+.item-main { min-width: 0; }
+.place-crumbs { display: inline; }
+.place-sep { color: var(--muted); }
+.place-crumb {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+}
+.place-crumb:hover,
+.place-crumb:focus-visible {
+  text-decoration-color: currentColor;
+}
+.meta .place-crumb { color: var(--muted); }
 .tree-node { margin-left: 12px; }
 .tree-btn { font-weight: 600; }
 .tree-btn img { width: 28px; height: 28px; object-fit: contain; flex: none; }
