@@ -13254,5 +13254,35 @@
         "id": "1XZAGShFN6cVyrePQOxu-zvIsqKPJFE3S"
       }
     ]
+  },
+  {
+    "id": "республика-алтай",
+    "name": "Республика Алтай",
+    "status": "owned",
+    "addedAt": "2026-11-08",
+    "lat": 61.524,
+    "lng": 105.3188,
+    "driveFileId": "1fXcY1VRpzmtH9Ri0HRKqTN5edvKz-fi0",
+    "resourceKey": "",
+    "localPhotos": [
+      "Республика Алтай.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Республика Алтай",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/altaj-respublika/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Altai_Republic.svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Республика Алтай.jpg",
+        "id": "1fXcY1VRpzmtH9Ri0HRKqTN5edvKz-fi0"
+      }
+    ]
   }
 ]
