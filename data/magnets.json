@@ -7063,13 +7063,14 @@
     "crimea": false,
     "countryCode": "PL",
     "coaPath": "/media/coats/europe/pl/cities/krakow/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Herb_Polski.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:POL_Krak%C3%B3w_COA.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Krakow.jpg",
         "id": "1oYjuc-OXiV-axxw4OiqsnxJmme_L_ggN"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "l-aquila",
@@ -10967,29 +10968,6 @@
     "coaSource": ""
   },
   {
-    "id": "шотландия",
-    "name": "Шотландия",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 57.7470128,
-    "lng": -4.6873058,
-    "driveFileId": "",
-    "resourceKey": "",
-    "localPhotos": [
-      "Шотландия.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Великобритания",
-    "region": "Шотландия",
-    "city": "",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "GB",
-    "coaPath": "/media/coats/europe/gb/scotland/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_Arms_of_the_Kingdom_of_Scotland.svg?width=480"
-  },
-  {
     "id": "базель",
     "name": "Базель",
     "status": "owned",
@@ -11265,7 +11243,7 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "Шотландия",
+    "region": "Scotland",
     "city": "",
     "coaImageUrl": "",
     "notes": "",
