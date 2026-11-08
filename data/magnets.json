@@ -5352,19 +5352,20 @@
     "continent": "Европа",
     "country": "Россия",
     "region": "Чеченская Республика",
-    "city": "Грозный",
+    "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/chechenskaya-respublika/gorodskoy-okrug-groznyy/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Grozny%20%28Chechnya%29.svg?width=480",
+    "coaPath": "/media/coats/europe/ru/chechenskaya-respublika/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_arms_of_Chechnya.svg",
     "drivePhotos": [
       {
         "name": "Чечня.jpg",
         "id": "0B4sMW1qgoxAnXzR0LUFBWTVpWU0"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "чувашия",
