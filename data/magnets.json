@@ -3971,8 +3971,8 @@
     "name": "Светлогорск - Raushen",
     "status": "owned",
     "addedAt": "",
-    "lat": 54.9394,
-    "lng": 20.1566,
+    "lat": 54.94176,
+    "lng": 20.15509,
     "driveFileId": "11JWMrIUixT4vrfadfsZLk3MVh8YZxelM",
     "resourceKey": "",
     "localPhotos": [
@@ -3986,14 +3986,15 @@
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaPath": "/media/coats/europe/ru/kaliningradskaja-oblast/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Svetlogorsk_(Kaliningrad_oblast).png",
     "drivePhotos": [
       {
         "name": "Светлогорск - Raushen.jpg",
         "id": "11JWMrIUixT4vrfadfsZLk3MVh8YZxelM"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "светлогорск-калинобл",
