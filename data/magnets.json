@@ -1519,8 +1519,8 @@
     "name": "Ивановская область",
     "status": "owned",
     "addedAt": "",
-    "lat": 57.0003,
-    "lng": 40.9739,
+    "lat": 56.91674,
+    "lng": 41.43521,
     "driveFileId": "0B4sMW1qgoxAna1J6a2hNRzFwTHc",
     "resourceKey": "0-CC-G_juOJyyJdMAMRsiy0Q",
     "localPhotos": [
@@ -1534,7 +1534,7 @@
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/ivanovskaja-oblast/gorodskoy-okrug-ivanovo/coat.svg",
+    "coaPath": "/media/coats/europe/ru/ivanovskaja-oblast/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Ivanovo_Oblast.svg?width=480",
     "drivePhotos": [
       {
@@ -7036,13 +7036,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/kaliningradskaja-oblast/kaliningradskiy-gorodskoy-okrug/kaliningrad/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Kaliningrad.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:K%C3%B6nigsbergWappen.jpg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Konigsberg.jpg",
         "id": "1akhRc6cWsPSCAFgsS1QTm5iVnhRBq2ad"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "krakow",
