@@ -4390,15 +4390,15 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/brjanskaja-oblast/starodub/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Starodub_COA_(Chernigov_Governorate)_(1782).png",
     "drivePhotos": [
       {
         "name": "Стародуб.jpg",
         "id": "1boa4Vd8puYp8RZ73C_YMP2Ris2kfKJNa"
       }
     ],
-    "coaSource": "https://geraldika.ru/i/Стародуб (Брянская область)",
-    "coaSourceLabel": "Геральдика"
+    "coaSource": "",
+    "coaSourceLabel": "Викисклад"
   },
   {
     "id": "суздаль",
@@ -4548,36 +4548,6 @@
     ]
   },
   {
-    "id": "татарстан",
-    "name": "Татарстан",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 55.1802,
-    "lng": 50.9944,
-    "driveFileId": "0B4sMW1qgoxAnNDJDZi1zS0dLdUU",
-    "resourceKey": "0-YSAO-G4eqPbP7tT45FThmQ",
-    "localPhotos": [
-      "Татарстан.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Республика Татарстан",
-    "city": "",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/tatarstan-respublika/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Tatarstan.svg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Татарстан.jpg",
-        "id": "0B4sMW1qgoxAnNDJDZi1zS0dLdUU",
-        "resourceKey": "0-YSAO-G4eqPbP7tT45FThmQ"
-      }
-    ]
-  },
-  {
     "id": "татарстан-2",
     "name": "Татарстан",
     "status": "owned",
@@ -4695,7 +4665,7 @@
   },
   {
     "id": "тольятти2",
-    "name": "Тольятти2_",
+    "name": "Тольятти",
     "status": "owned",
     "addedAt": "",
     "lat": 53.5085,
@@ -4714,7 +4684,7 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/samarskaja-oblast/tolyatti/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Togliattil.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Тольятти2_.jpg",
@@ -4722,8 +4692,8 @@
         "resourceKey": "0-Ikuo47QrKQVk-D1iJIGafA"
       }
     ],
-    "coaSource": "https://geraldika.ru/",
-    "coaSourceLabel": "Геральдика"
+    "coaSource": "",
+    "coaSourceLabel": "Викисклад"
   },
   {
     "id": "томск",
@@ -4805,15 +4775,15 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/brjanskaja-oblast/trubchevsk/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Trubchevsk_COA_(Oryol_Governorate)_(1781).png",
     "drivePhotos": [
       {
         "name": "Трубчевск.jpg",
         "id": "16Qhebvg386SakcEmbR4ugT_nyncGeZry"
       }
     ],
-    "coaSource": "https://geraldika.ru/i/Трубчевск (Брянская область)",
-    "coaSourceLabel": "Геральдика"
+    "coaSource": "",
+    "coaSourceLabel": "Викисклад"
   },
   {
     "id": "тюмень",
@@ -4866,13 +4836,15 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/jaroslavskaja-oblast/uglichskiy/uglich/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/UglichProvince.gif?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Uglich_(Yaroslavl_oblast).png",
     "drivePhotos": [
       {
         "name": "Углич.jpg",
         "id": "18J2aHYW-vevSuUdgRGYd4AtqtfjDUKWN"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "удмуртия",
@@ -4935,37 +4907,8 @@
     ]
   },
   {
-    "id": "ульяновск",
-    "name": "Ульяновск",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 54.3142,
-    "lng": 48.4031,
-    "driveFileId": "10Dw0HAS_sAlGfoeMjEuAssA15CP9pgYU",
-    "resourceKey": "",
-    "localPhotos": [
-      "Ульяновск.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Ульяновская область",
-    "city": "Ульяновск",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/ul-janovskaja-oblast/ulyanovsk-urban-okrug/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Ulyanovsk.png?width=480",
-    "drivePhotos": [
-      {
-        "name": "Ульяновск.jpg",
-        "id": "10Dw0HAS_sAlGfoeMjEuAssA15CP9pgYU"
-      }
-    ]
-  },
-  {
     "id": "ульяновск2",
-    "name": "ульяновск2_",
+    "name": "Ульяновск",
     "status": "owned",
     "addedAt": "",
     "lat": 54.3142,
@@ -4990,8 +4933,14 @@
         "name": "ульяновск2_.jpg",
         "id": "0B4sMW1qgoxAnTjhHd1EwQnNJQkk",
         "resourceKey": "0-i91OE8qZD4uzzOVk5mdbEg"
+      },
+      {
+        "name": "Ульяновск.jpg",
+        "id": "10Dw0HAS_sAlGfoeMjEuAssA15CP9pgYU"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "ульяновская-область",
@@ -5043,17 +4992,19 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/brjanskaja-oblast/unechskiy/unecha/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%B5%D1%80%D0%B1_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%A3%D0%BD%D0%B5%D1%87%D0%B0.png?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Unecha_(Bryansk_oblast)_(1986).png?uselang=ru",
     "drivePhotos": [
       {
         "name": "Унеча.jpg",
         "id": "1z7fmR9JGDKp-X3pcmKiPJFnpk2vKYfE6"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "уфа-1",
-    "name": "Уфа (1)",
+    "name": "Уфа",
     "status": "owned",
     "addedAt": "",
     "lat": 54.7351,
@@ -5079,7 +5030,9 @@
         "id": "0B4sMW1qgoxAnZnVLbHVZdWZKZzA",
         "resourceKey": "0-ap8j2pg5omb5zkQcvaQHhw"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "феодосия",
@@ -5439,7 +5392,7 @@
   },
   {
     "id": "югра",
-    "name": "Югра",
+    "name": "Ханты-Мансийский автономный округ - Югра",
     "status": "owned",
     "addedAt": "",
     "lat": 61.003,
@@ -5466,7 +5419,8 @@
         "resourceKey": "0-pnBRLPMLh0y0PWDtbWxLAQ"
       }
     ],
-    "coaSource": ""
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "ялта",
@@ -5577,13 +5531,15 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/jaroslavskaja-oblast/yaroslavl-urban-okrug/yaroslavl/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Nekouz_%28Yaroslav_oblast%29.png?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coa_yaroslavl.svg",
     "drivePhotos": [
       {
         "name": "Ярославль.jpg",
         "id": "17N_mmadKOby_T_nZr3GRyKlH3lSt-Bcv"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "amsterdam",
@@ -5674,7 +5630,7 @@
   },
   {
     "id": "austria",
-    "name": "Austria_",
+    "name": "Austria",
     "status": "owned",
     "addedAt": "",
     "lat": 47.5162,
@@ -5699,38 +5655,14 @@
         "name": "Austria_.jpg",
         "id": "0B4sMW1qgoxAncGI5M2RmZ3YydDQ",
         "resourceKey": "0-lEcjw8WNJlrMY_P6p8iR7Q"
-      }
-    ]
-  },
-  {
-    "id": "austria2",
-    "name": "Austria2",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 47.5162,
-    "lng": 14.5501,
-    "driveFileId": "0B4sMW1qgoxAnbmNoVl8wVnJ3eUE",
-    "resourceKey": "0-Zq-TGE0wk7LSD21mLv04lw",
-    "localPhotos": [
-      "Austria2.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Австрия",
-    "region": "",
-    "city": "",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "AT",
-    "coaPath": "/media/coats/europe/at/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Austria.svg?width=480",
-    "drivePhotos": [
+      },
       {
         "name": "Austria2.jpg",
-        "id": "0B4sMW1qgoxAnbmNoVl8wVnJ3eUE",
-        "resourceKey": "0-Zq-TGE0wk7LSD21mLv04lw"
+        "id": "0B4sMW1qgoxAnbmNoVl8wVnJ3eUE"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "azerbaijan",
@@ -5970,15 +5902,15 @@
   },
   {
     "id": "bulgaria-nesebr",
-    "name": "Bulgaria_Nesebr",
+    "name": "Bulgaria",
     "status": "owned",
     "addedAt": "",
-    "lat": 42.6599,
-    "lng": 27.7352,
-    "driveFileId": "0B4sMW1qgoxAnM2RXOUVVaC1SVnM",
+    "lat": 42.7339,
+    "lng": 25.4858,
+    "driveFileId": "1lmICvojr872MlMQQY2gL3ZCDFiycGYMm",
     "resourceKey": "0-Gxn74fa0YVdx9InMTw0AJg",
     "localPhotos": [
-      "Bulgaria_Nesebr.jpg"
+      "Bulgaria.jpg"
     ],
     "continent": "Европа",
     "country": "Болгария",
@@ -5992,11 +5924,13 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Bulgaria.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Bulgaria_Nesebr.jpg",
-        "id": "0B4sMW1qgoxAnM2RXOUVVaC1SVnM",
+        "name": "Bulgaria.jpg",
+        "id": "1lmICvojr872MlMQQY2gL3ZCDFiycGYMm",
         "resourceKey": "0-Gxn74fa0YVdx9InMTw0AJg"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "camaguey",
@@ -6018,45 +5952,16 @@
     "notes": "",
     "crimea": false,
     "countryCode": "CU",
-    "coaPath": "/media/coats/north-america/cu/camaguey/camagueey/coat.svg",
-    "coaWiki": "",
+    "coaPath": "/media/coats/north-america/cu/camaguey/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Camaguey_escudo.jpg",
     "drivePhotos": [
       {
         "name": "Camaguey.jpg",
         "id": "1jisZf6s6G5ALcOypMCMvPhHIcbhmQwW1"
       }
     ],
-    "coaSource": ""
-  },
-  {
-    "id": "ceska-republika",
-    "name": "Ceska Republika",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 49.8175,
-    "lng": 15.473,
-    "driveFileId": "0B4sMW1qgoxAnU0JPZDU3VUpCTVk",
-    "resourceKey": "0-1E7tC8zDd2lHiE6OxDz8fA",
-    "localPhotos": [
-      "Ceska Republika.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Чехия",
-    "region": "",
-    "city": "",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "CZ",
-    "coaPath": "/media/coats/europe/cz/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Czech_Republic.svg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Ceska Republika.jpg",
-        "id": "0B4sMW1qgoxAnU0JPZDU3VUpCTVk",
-        "resourceKey": "0-1E7tC8zDd2lHiE6OxDz8fA"
-      }
-    ]
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "cesko",
@@ -6085,8 +5990,14 @@
         "name": "Cesko.jpg",
         "id": "0B4sMW1qgoxAnMXB3VzZuS0lET2M",
         "resourceKey": "0-BeS60GE_yemY6vcWyCZr4Q"
+      },
+      {
+        "name": "Ceska Republika.jpg",
+        "id": "0B4sMW1qgoxAnU0JPZDU3VUpCTVk"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "chang-an",
@@ -6298,7 +6209,7 @@
   },
   {
     "id": "dublin-2",
-    "name": "Dublin 2",
+    "name": "Dublin",
     "status": "owned",
     "addedAt": "",
     "lat": 53.3498,
@@ -6323,11 +6234,13 @@
         "name": "Dublin 2.jpg",
         "id": "1Pot-ctEzucuPD644OUNDsJ27-rRP4SHr"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "dusseldorf",
-    "name": "Dusseldorf_",
+    "name": "Dusseldorf",
     "status": "owned",
     "addedAt": "",
     "lat": 51.2277,
@@ -6352,7 +6265,9 @@
         "name": "Dusseldorf_.jpg",
         "id": "18GbS-3-mOmbZyGhFIqW4HIWdg-ivVkIl"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "eesti",
@@ -6386,7 +6301,7 @@
   },
   {
     "id": "egypt-1",
-    "name": "Egypt_1",
+    "name": "Egypt",
     "status": "owned",
     "addedAt": "",
     "lat": 26.8206,
@@ -6418,7 +6333,9 @@
         "name": "Egypt_1 2.jpg",
         "id": "1Mm8rNQFsMd7krGuANa2U4u4nrZI7AzML"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "finland",
@@ -6480,7 +6397,7 @@
   },
   {
     "id": "frankfurt",
-    "name": "Frankfurt",
+    "name": "Frankfurt am Main",
     "status": "owned",
     "addedAt": "",
     "lat": 50.1109,
@@ -6492,20 +6409,22 @@
     ],
     "continent": "Европа",
     "country": "Германия",
-    "region": "Brandenburg",
-    "city": "Frankfurt (Oder)",
+    "region": "Hessen",
+    "city": "Frankfurt am Main",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "DE",
-    "coaPath": "/media/coats/europe/de/brandenburg/frankfurt-oder/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/DEU_Frankfurt_%28Oder%29_COA.svg?width=480",
+    "coaPath": "/media/coats/europe/de/hessen/frankfurt-am-main/coat.svg",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:DEU_Frankfurt_am_Main_COA.svg",
     "drivePhotos": [
       {
         "name": "Frankfurt.jpg",
         "id": "11h3WVTFN0UdAkuH8PLto8x25-wNzcYVX"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "gdynia",
@@ -6753,35 +6672,6 @@
     ]
   },
   {
-    "id": "hamburg-2",
-    "name": "Hamburg",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 53.5511,
-    "lng": 9.9937,
-    "driveFileId": "1srXXSKnIu1fNWZhI_YVl-X_LuBkvh-0V",
-    "resourceKey": "",
-    "localPhotos": [
-      "Hamburg 3.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Германия",
-    "region": "Hamburg",
-    "city": "Hamburg",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "DE",
-    "coaPath": "/media/coats/europe/de/hamburg/hamburg/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Middle%20Coat%20of%20arms%20of%20Hamburg.svg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Hamburg 3.jpg",
-        "id": "1srXXSKnIu1fNWZhI_YVl-X_LuBkvh-0V"
-      }
-    ]
-  },
-  {
     "id": "helsinki",
     "name": "Helsinki",
     "status": "owned",
@@ -6802,7 +6692,7 @@
     "crimea": false,
     "countryCode": "FI",
     "coaPath": "/media/coats/europe/fi/uusimaa/helsinki/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Finland.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Helsinki.vaakuna.svg",
     "drivePhotos": [
       {
         "name": "Helsinki.jpg",
@@ -6873,7 +6763,7 @@
   },
   {
     "id": "israel-logo",
-    "name": "Israel_logo",
+    "name": "Israel",
     "status": "owned",
     "addedAt": "",
     "lat": 31.0461,
@@ -6899,7 +6789,9 @@
         "id": "0B4sMW1qgoxAnaVRKNHg2WXF3bVk",
         "resourceKey": "0-eg9hVd4dRTX3BY433QbZEw"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "italy",
@@ -6940,10 +6832,7 @@
     "lng": 35.2137,
     "driveFileId": "1iYwqY7CZFv--6s00wNi18o1QOHZam-wL",
     "resourceKey": "",
-    "localPhotos": [
-      "Jerusalem 2.jpg",
-      "Jerusalem 2.jpg"
-    ],
+    "localPhotos": [],
     "continent": "Азия",
     "country": "Палестина",
     "region": "Jerusalem",
@@ -6957,38 +6846,42 @@
     "drivePhotos": [
       {
         "name": "Jerusalem 2.jpg",
-        "id": "1i0G_o-FVWGz2EOsR_KQr52utkSQDISwN"
+        "id": "1iYwqY7CZFv--6s00wNi18o1QOHZam-wL"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "karjala",
-    "name": "Karjala",
+    "name": "Северная Карелия",
     "status": "owned",
     "addedAt": "",
-    "lat": 63.0,
-    "lng": 32.0,
+    "lat": 62.80105,
+    "lng": 30.21271,
     "driveFileId": "1cryfi4cBw6KqKm7Ycd0BHVtGXlJMJw_3",
     "resourceKey": "",
     "localPhotos": [
       "Karjala.jpg"
     ],
     "continent": "Европа",
-    "country": "Россия",
-    "region": "Республика Карелия",
+    "country": "Финляндия",
+    "region": "Pohjois-Karjala",
     "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/karelija-respublika/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Republic_of_Karelia.svg?width=480",
+    "countryCode": "FI",
+    "coaPath": "/media/coats/europe/fi/pohjois-karjala/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Pohjois-Karjala.vaakuna.svg",
     "drivePhotos": [
       {
         "name": "Karjala.jpg",
         "id": "1cryfi4cBw6KqKm7Ycd0BHVtGXlJMJw_3"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "klaipeda",
@@ -7130,13 +7023,15 @@
     "crimea": false,
     "countryCode": "FI",
     "coaPath": "/media/coats/europe/fi/etela-karjala/lappeenranta/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Finland.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Lappeenranta.vaakuna.svg",
     "drivePhotos": [
       {
         "name": "Lappeenranta.jpg",
         "id": "1fUkMar0yM-DxDQp4ZJboEgIVNigMRhpT"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "las-villas",
@@ -7170,7 +7065,7 @@
   },
   {
     "id": "latvija",
-    "name": "latvija",
+    "name": "Latvija",
     "status": "owned",
     "addedAt": "",
     "lat": 56.8796,
@@ -7196,7 +7091,9 @@
         "id": "0B4sMW1qgoxAnY3Jsb3JlU3hVOG8",
         "resourceKey": "0-trb0bQS439sc4lI44t-wIw"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "lietuva",
@@ -7379,7 +7276,7 @@
   },
   {
     "id": "maroc-agadir",
-    "name": "Maroc_Agadir",
+    "name": "Agadir",
     "status": "owned",
     "addedAt": "",
     "lat": 30.4278,
@@ -7405,7 +7302,9 @@
         "id": "0B4sMW1qgoxAnaGpQTkg5RUpIVDg",
         "resourceKey": "0-GpLfPsZWlQUSOG9Fpt_0HA"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "moldova",
@@ -7608,14 +7507,15 @@
     "crimea": false,
     "countryCode": "CU",
     "coaPath": "",
-    "coaWiki": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Seal_of_the_Oriente_Province.svg",
     "drivePhotos": [
       {
         "name": "Oriente.jpg",
         "id": "1a8ePuN5AFWeGRFlfv_84_xP6l0vKBrZc"
       }
     ],
-    "coaSource": ""
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "paris",
@@ -7883,33 +7783,35 @@
   },
   {
     "id": "rome-vatican",
-    "name": "Rome_Vatican",
+    "name": "Rome",
     "status": "owned",
     "addedAt": "",
-    "lat": 41.9029,
-    "lng": 12.4534,
+    "lat": 41.89332,
+    "lng": 12.48293,
     "driveFileId": "0B4sMW1qgoxAnRFVjRFFna28xalE",
     "resourceKey": "0-ffRTWxO2iEWInl5bnEuxAg",
     "localPhotos": [
       "Rome_Vatican.jpg"
     ],
     "continent": "Европа",
-    "country": "Ватикан",
+    "country": "Италия",
     "region": "",
-    "city": "",
+    "city": "Rome",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
-    "countryCode": "VA",
-    "coaPath": "/media/coats/europe/va/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Vatican_City_%282023%E2%80%93present%29.svg?width=480",
+    "countryCode": "IT",
+    "coaPath": "/media/coats/europe/it/roma/rome/coat.geraldika.gif",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Insigne_Romanum_coronatum.svg",
     "drivePhotos": [
       {
         "name": "Rome_Vatican.jpg",
         "id": "0B4sMW1qgoxAnRFVjRFFna28xalE",
         "resourceKey": "0-ffRTWxO2iEWInl5bnEuxAg"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "salzburg",
@@ -11418,15 +11320,15 @@
     "crimea": false,
     "countryCode": "GE",
     "coaPath": "/media/coats/asia/ge/tbilisi/tbilisi/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Greater_coat_of_arms_of_Georgia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Seal_of_Tbilisi,_Georgia.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Тбилиси.jpg",
         "id": "1weAJ1QHDPEk3tCtv5ON3toQ1WxRzhXgP"
       }
     ],
-    "coaSource": "https://geraldika.ru/s/19587",
-    "coaSourceLabel": "Геральдика"
+    "coaSource": "",
+    "coaSourceLabel": "Викисклад"
   },
   {
     "id": "вроцлав",
@@ -13366,6 +13268,37 @@
       {
         "name": "Пензенская область.jpg",
         "id": "10BXRqliosXZwLNtmnaPQLFp3iP0HKSCF"
+      }
+    ]
+  },
+  {
+    "id": "несебыр",
+    "name": "Несебыр",
+    "status": "owned",
+    "addedAt": "2026-11-11",
+    "lat": 42.66079,
+    "lng": 27.71675,
+    "driveFileId": "1_2eZZACX23gVnyHaxXd7YhCkD_Ip65ER",
+    "resourceKey": "",
+    "localPhotos": [
+      "Несебыр.jpg"
+    ],
+    "continent": "Европа",
+    "country": "Болгария",
+    "region": "",
+    "city": "Несебыр",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "BG",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Nesebar_COA.jpg?uselang=ru",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Несебыр.jpg",
+        "id": "1_2eZZACX23gVnyHaxXd7YhCkD_Ip65ER"
       }
     ]
   }
