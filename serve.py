@@ -2,17 +2,20 @@
 """Local preview and catalog editor: site, photos, and magnet changes."""
 import base64
 import hashlib
+import ipaddress
 import json
+import os
 import re
 import socket
 import subprocess
 import threading
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
-from urllib.parse import parse_qs, quote, unquote, urlsplit
+from urllib.parse import parse_qs, quote, unquote, urlencode, urlsplit
 
 from PIL import Image
 
@@ -43,6 +46,11 @@ CRIMEA_LAT = 45.3
 CRIMEA_LNG = 34.1
 LOCK = threading.Lock()
 REGION_CACHE = {}
+COUNTRY_BOX = {}
+NOMINATIM_LOCK = threading.Lock()
+NOMINATIM_NEXT = 0.0
+CRIMEA_BOX = (32.4, 44.3, 36.8, 46.3)
+PLACE_TYPES = {"city", "town", "village", "hamlet", "administrative", "municipality", "suburb"}
 COAT_INDEX = {"ready": False, "slug": {}, "city": {}, "division": {}, "division_wiki": {}, "wiki_by_path": {}}
 COAT_TYPES = {
     ".png": "image/png",
@@ -100,6 +108,21 @@ def unique_filename(name):
     return candidate
 
 
+def titled_filename(title, suffix):
+    suffix = (suffix or ".jpg").lower()
+    if suffix not in FILE_MIME:
+        suffix = ".jpg"
+    base = safe_filename((title or "фото") + suffix)
+    stem = Path(base).stem
+    ext = Path(base).suffix or suffix
+    number = 1
+    while True:
+        candidate = f"{stem}{ext}" if number == 1 else f"{stem} {number}{ext}"
+        if not (PHOTOS / candidate).exists():
+            return candidate
+        number += 1
+
+
 def store_photo(payload):
     raw_name = payload.get("name") or "photo.jpg"
     encoded = payload.get("base64") or ""
@@ -114,24 +137,212 @@ def store_photo(payload):
     return filename
 
 
+def public_http_url(raw):
+    parsed = urlsplit((raw or "").strip())
+    if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+        raise ValueError("Нужна ссылка http или https")
+    if parsed.port not in (None, 80, 443):
+        raise ValueError("Эта ссылка недоступна")
+    host = parsed.hostname.strip(".").lower()
+    if host in {"localhost"} or host.endswith(".local"):
+        raise ValueError("Эта ссылка недоступна")
+    drive = re.search(r"/file/d/([^/]+)", parsed.path or "")
+    if host.endswith("drive.google.com") and drive:
+        parsed = urlsplit("https://drive.google.com/uc?export=download&id=" + drive.group(1))
+        host = parsed.hostname
+    try:
+        infos = socket.getaddrinfo(host, None)
+    except socket.gaierror:
+        raise ValueError("Ссылка не открылась")
+    for info in infos:
+        address = ipaddress.ip_address(info[4][0])
+        if address.is_private or address.is_loopback or address.is_link_local or address.is_reserved or address.is_multicast or address.is_unspecified:
+            raise ValueError("Эта ссылка недоступна")
+    return urlsplit(parsed.geturl()).geturl()
+
+
+class PublicRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        public_http_url(newurl)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+def image_suffix(kind, data):
+    kind = (kind or "").split(";")[0].strip().lower()
+    if data.startswith(b"\xff\xd8\xff"):
+        return ".jpg"
+    if data.startswith(b"\x89PNG"):
+        return ".png"
+    if data.startswith(b"GIF87a") or data.startswith(b"GIF89a"):
+        return ".gif"
+    if data.startswith(b"RIFF") and data[8:12] == b"WEBP":
+        return ".webp"
+    if kind == "image/jpeg":
+        return ".jpg"
+    if kind == "image/png":
+        return ".png"
+    if kind == "image/gif":
+        return ".gif"
+    if kind == "image/webp":
+        return ".webp"
+    return ""
+
+
+def drive_file_id(raw):
+    parsed = urlsplit((raw or "").strip())
+    host = (parsed.hostname or "").lower()
+    if "drive.google.com" not in host and "docs.google.com" not in host:
+        return ""
+    match = re.search(r"(?:/file/d/|[?&]id=)([A-Za-z0-9_-]{10,})", parsed.path + "?" + parsed.query)
+    return match.group(1) if match else ""
+
+
+def locate_drive_photo(file_id):
+    config = load_upload_config()
+    url = (config.get("uploadUrl") or "").strip()
+    secret = (config.get("uploadSecret") or "").strip()
+    if not url or not secret:
+        raise ValueError("Сначала впишите адрес скрипта Google в data/upload.local.json.")
+    payload = json.dumps({
+        "secret": secret,
+        "locate": True,
+        "lookup": True,
+        "kind": "photo",
+        "id": file_id,
+        "name": "link-" + file_id,
+    }).encode("utf-8")
+    request = urllib.request.Request(url, data=payload, headers={"Content-Type": "application/json"})
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    try:
+        with opener.open(request, timeout=60) as response:
+            result = json.loads(response.read().decode("utf-8"))
+    except (urllib.error.URLError, json.JSONDecodeError):
+        raise ValueError("Скрипт Google не открылся")
+    if result.get("error"):
+        raise ValueError(str(result["error"]))
+    if result.get("name") and result.get("id") == file_id:
+        return {"id": file_id, "name": Path(result["name"]).name}
+    return None
+
+
+def matching_photo(data):
+    size = len(data)
+    digest = hashlib.sha1(data).digest()
+    if not PHOTOS.is_dir():
+        return ""
+    for file in PHOTOS.iterdir():
+        if not file.is_file():
+            continue
+        try:
+            if file.stat().st_size != size:
+                continue
+            if hashlib.sha1(file.read_bytes()).digest() == digest:
+                return file.name
+        except OSError:
+            continue
+    return ""
+
+
+def drive_bytes(file_id):
+    url = "https://drive.google.com/uc?export=download&id=" + quote(file_id)
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    req = urllib.request.Request(url, headers={"User-Agent": "MagnetColl/1.0"})
+    try:
+        with opener.open(req, timeout=60) as res:
+            kind = (res.headers.get("Content-Type") or "").lower()
+            data = res.read(15_000_001)
+    except Exception:
+        return b""
+    if "image/" not in kind or not data or len(data) > 15_000_000:
+        return b""
+    return data
+
+
+def attach_drive_photo(magnet, file_id, file_name, same_as=""):
+    file_id = (file_id or "").strip()
+    file_name = Path(file_name or "").name
+    if not file_id:
+        return
+    photos = magnet.setdefault("drivePhotos", [])
+    if not isinstance(photos, list):
+        photos = []
+        magnet["drivePhotos"] = photos
+    pair = next((item for item in photos if isinstance(item, dict) and item.get("id") == file_id), None)
+    if pair is None:
+        pair = {"name": file_name, "id": file_id}
+        photos.append(pair)
+    elif file_name:
+        pair["name"] = file_name
+    if same_as:
+        pair["sameAs"] = same_as
+        local = magnet.setdefault("localPhotos", [])
+        if same_as not in local:
+            local.append(same_as)
+    if not (magnet.get("driveFileId") or "").strip():
+        magnet["driveFileId"] = file_id
+
+
+def reuse_photo(magnet, data, title, suffix):
+    photos = magnet.setdefault("localPhotos", [])
+    existing = matching_photo(data)
+    if existing:
+        if existing not in photos:
+            photos.append(existing)
+        file_id = upload_file("photo", existing)
+        if file_id:
+            attach_drive_photo(magnet, file_id, existing)
+        return existing
+    filename = titled_filename(title, suffix)
+    PHOTOS.mkdir(parents=True, exist_ok=True)
+    (PHOTOS / filename).write_bytes(data)
+    photos.append(filename)
+    return filename
+
+
+def fetch_image(raw_url):
+    url = public_http_url(raw_url)
+    opener = urllib.request.build_opener(PublicRedirect, urllib.request.ProxyHandler({}))
+    req = urllib.request.Request(url, headers={"User-Agent": "MagnetColl/1.0"})
+    try:
+        with opener.open(req, timeout=30) as res:
+            kind = res.headers.get("Content-Type") or ""
+            data = res.read(15_000_001)
+    except ValueError:
+        raise
+    except Exception:
+        raise ValueError("Ссылка не открылась")
+    if not data or len(data) > 15_000_000:
+        raise ValueError("Фото пустое или больше 15 МБ")
+    suffix = image_suffix(kind, data)
+    if not suffix:
+        raise ValueError("По ссылке нет картинки")
+    return data, suffix
+
+
+RU_EXTRA_REGIONS = ("Республика Крым", "Севастополь")
+
+
 def regions_for(code):
     code = (code or "").upper()
     if code in REGION_CACHE:
         return REGION_CACHE[code]
-    if not DIVISIONS.is_file():
-        REGION_CACHE[code] = []
-        return []
-    divisions = json.loads(DIVISIONS.read_text(encoding="utf-8"))
     names = []
     seen = set()
-    for item in divisions:
-        if item.get("countryCode") != code or item.get("navLevel") != 1:
-            continue
-        name = ((item.get("name") or {}).get("ru") or (item.get("name") or {}).get("en") or "").strip()
-        if not name or name in seen:
-            continue
-        seen.add(name)
-        names.append(name)
+    if DIVISIONS.is_file():
+        divisions = json.loads(DIVISIONS.read_text(encoding="utf-8"))
+        for item in divisions:
+            if item.get("countryCode") != code or item.get("navLevel") != 1:
+                continue
+            name = ((item.get("name") or {}).get("ru") or (item.get("name") or {}).get("en") or "").strip()
+            if not name or name in seen:
+                continue
+            seen.add(name)
+            names.append(name)
+    if code == "RU":
+        for name in RU_EXTRA_REGIONS:
+            if name not in seen:
+                seen.add(name)
+                names.append(name)
     names.sort(key=lambda value: value.casefold())
     REGION_CACHE[code] = names
     return names
@@ -289,19 +500,188 @@ def country_point(code):
     return {"lat": place["lat"], "lng": place["lng"], "label": place.get("name") or code}
 
 
+def nominatim(params):
+    global NOMINATIM_NEXT
+    query = urlencode(dict(params, format="jsonv2"))
+    url = "https://nominatim.openstreetmap.org/search?" + query
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    req = urllib.request.Request(url, headers={"User-Agent": "MagnetColl/1.0 (local catalog)"})
+    with NOMINATIM_LOCK:
+        wait = NOMINATIM_NEXT - time.time()
+        if wait > 0:
+            time.sleep(wait)
+        try:
+            with opener.open(req, timeout=25) as res:
+                data = json.loads(res.read().decode("utf-8"))
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError):
+            raise ValueError("Карта не ответила")
+        finally:
+            NOMINATIM_NEXT = time.time() + 1.1
+    return data if isinstance(data, list) else []
+
+
+def place_box(raw):
+    if not raw or len(raw) < 4:
+        return None
+    south, north, west, east = (float(raw[0]), float(raw[1]), float(raw[2]), float(raw[3]))
+    return (west, south, east, north)
+
+
+def box_text(box):
+    west, south, east, north = box
+    return f"{west},{north},{east},{south}"
+
+
+def point_in_box(lat, lng, box, pad=0.6):
+    west, south, east, north = box
+    if west <= east:
+        lng_ok = (west - pad) <= lng <= (east + pad)
+    else:
+        lng_ok = lng >= (west - pad) or lng <= (east + pad)
+    return (south - pad) <= lat <= (north + pad) and lng_ok
+
+
+def hit_point(hit):
+    return {"lat": round(float(hit["lat"]), 5), "lng": round(float(hit["lon"]), 5)}
+
+
+def country_box(code):
+    if code == "CRIMEA":
+        return CRIMEA_BOX
+    if code in COUNTRY_BOX:
+        return COUNTRY_BOX[code]
+    places = json.loads(PLACES.read_text(encoding="utf-8"))
+    place = next((item for item in places if item.get("countryCode") == code), None)
+    if not place:
+        return None
+    hits = nominatim({
+        "q": place.get("nameEn") or place.get("name") or code,
+        "countrycodes": code.lower(),
+        "featuretype": "country",
+        "limit": "1",
+    })
+    box = place_box(hits[0].get("boundingbox")) if hits else None
+    if box:
+        COUNTRY_BOX[code] = box
+    return box
+
+
+def pick_hit(hits, box):
+    ranked = []
+    for hit in hits:
+        try:
+            point = hit_point(hit)
+        except (TypeError, ValueError, KeyError):
+            continue
+        if box and not point_in_box(point["lat"], point["lng"], box):
+            continue
+        kind = (hit.get("type") or "").lower()
+        ranked.append((0 if kind in PLACE_TYPES else 1, point))
+    if not ranked:
+        return None
+    ranked.sort(key=lambda item: item[0])
+    return ranked[0][1]
+
+
+def find_region(code, region):
+    params = {"q": region, "limit": "5", "accept-language": "ru"}
+    if code == "CRIMEA":
+        params["viewbox"] = box_text(CRIMEA_BOX)
+        params["bounded"] = "1"
+    else:
+        params["countrycodes"] = code.lower()
+        params["featuretype"] = "state"
+    hits = nominatim(params)
+    if not hits and code != "CRIMEA":
+        params.pop("featuretype", None)
+        hits = nominatim(params)
+    for hit in hits:
+        try:
+            point = hit_point(hit)
+        except (TypeError, ValueError, KeyError):
+            continue
+        box = place_box(hit.get("boundingbox"))
+        if box:
+            return point, box
+    return None, None
+
+
+def find_city(code, city, box):
+    params = {
+        "q": city,
+        "limit": "5",
+        "accept-language": "ru",
+        "featuretype": "settlement",
+    }
+    if code != "CRIMEA":
+        params["countrycodes"] = code.lower()
+    if box:
+        params["viewbox"] = box_text(box)
+        params["bounded"] = "1"
+    hits = nominatim(params)
+    found = pick_hit(hits, box)
+    if found:
+        return found
+    params.pop("featuretype", None)
+    return pick_hit(nominatim(params), box)
+
+
+def cached_center(code, region, city):
+    if not CENTERS.is_file():
+        return None
+    saved = json.loads(CENTERS.read_text(encoding="utf-8")).get(center_key(code, region, city))
+    if not saved:
+        return None
+    lat = number_or_none(saved.get("lat"))
+    lng = number_or_none(saved.get("lng"))
+    if lat is None or lng is None:
+        return None
+    return {"lat": lat, "lng": lng}
+
+
 def lookup_center(code, region, city):
     code = (code or "").strip().upper()
     region = (region or "").strip()
     city = (city or "").strip()
-    if city or region:
-        if CENTERS.is_file():
-            cached = json.loads(CENTERS.read_text(encoding="utf-8")).get(center_key(code, region, city))
-            if cached:
-                return cached
-        return None
+    if not (city or region):
+        if not code:
+            return None
+        return country_point(code)
     if not code:
-        return None
-    return country_point(code)
+        raise ValueError("Сначала выберите страну")
+    region_point = None
+    area = None
+    if region:
+        region_point, area = find_region(code, region)
+        if not city:
+            if region_point is None:
+                raise ValueError("Регион в этой стране не нашёлся")
+            return remember_center({
+                "countryCode": code,
+                "region": region,
+                "city": "",
+                "lat": region_point["lat"],
+                "lng": region_point["lng"],
+            })
+        if area is None:
+            area = country_box(code)
+    else:
+        area = country_box(code)
+    cached = cached_center(code, region, city)
+    if cached and area and point_in_box(cached["lat"], cached["lng"], area):
+        return cached
+    point = find_city(code, city, area)
+    if point is None:
+        if region and region_point:
+            raise ValueError("Город в этой области не нашёлся")
+        raise ValueError("Город в этой стране не нашёлся")
+    return remember_center({
+        "countryCode": code,
+        "region": region,
+        "city": city,
+        "lat": point["lat"],
+        "lng": point["lng"],
+    })
 
 
 def remember_center(data):
@@ -330,17 +710,15 @@ def apply_place(magnet, country_code, region, city, previous_code):
     places = json.loads(PLACES.read_text(encoding="utf-8"))
     region = (region or "").strip()
     city = (city or "").strip()
+    # Old editor value: keep saving as Russia + Crimea/Sevastopol subject.
     if country_code == "CRIMEA":
-        magnet["crimea"] = True
-        magnet["continent"] = "Европа"
-        magnet["country"] = ""
-        magnet["countryCode"] = ""
-        magnet["region"] = ""
-        magnet["city"] = city
-        if previous_code != "CRIMEA":
-            magnet["coaPath"] = ""
-            magnet["coaWiki"] = ""
-        return
+        country_code = "RU"
+        city_fold = fold(city)
+        if city_fold == "севастополь" or fold(region) == "севастополь":
+            region = "Севастополь"
+            city = city or "Севастополь"
+        else:
+            region = region or "Республика Крым"
     place = next((item for item in places if item.get("countryCode") == country_code), None)
     magnet["crimea"] = False
     magnet["region"] = region
@@ -406,6 +784,21 @@ def number_or_none(value):
 def save_card(data):
     if (data.get("region") or "").strip() or (data.get("city") or "").strip():
         ensure_coat_index()
+    linked = []
+    linked_drive = []
+    for raw_url in data.get("photoUrls") or []:
+        text = str(raw_url or "").strip()
+        if not text:
+            continue
+        file_id = drive_file_id(text)
+        if file_id:
+            found = locate_drive_photo(file_id)
+            if not found:
+                raise ValueError("Этого файла нет в папке Magnets cloud")
+            found["sameAs"] = matching_photo(drive_bytes(file_id))
+            linked_drive.append(found)
+            continue
+        linked.append(fetch_image(text))
     with LOCK:
         items = load_magnets()
         incoming_id = (data.get("id") or "").strip()
@@ -417,7 +810,7 @@ def save_card(data):
             current = blank_magnet(name)
             current["id"] = unique_id(items, name)
             items.append(current)
-        previous = "CRIMEA" if current.get("crimea") else (current.get("countryCode") or "")
+        previous = (current.get("countryCode") or "") or ("CRIMEA" if current.get("crimea") else "")
         current["name"] = name
         current["status"] = "missing" if data.get("status") == "missing" else "owned"
         current["notes"] = (data.get("notes") or "").strip()
@@ -430,9 +823,19 @@ def save_card(data):
             current["coaWiki"] = typed_coat
             if typed_coat != previous_wiki:
                 current["coaSource"] = ""
-        photos = current.setdefault("localPhotos", [])
         for payload in data.get("photos") or []:
-            photos.append(store_photo(payload))
+            encoded = payload.get("base64") or ""
+            if "," in encoded[:80]:
+                encoded = encoded.split(",", 1)[1]
+            data_bytes = base64.b64decode(encoded)
+            if not data_bytes or len(data_bytes) > 15_000_000:
+                raise ValueError("Фото пустое или больше 15 МБ")
+            suffix = Path((payload.get("name") or "photo.jpg")).suffix
+            reuse_photo(current, data_bytes, current.get("name"), suffix)
+        for found in linked_drive:
+            attach_drive_photo(current, found["id"], found["name"], found.get("sameAs") or "")
+        for data_bytes, suffix in linked:
+            reuse_photo(current, data_bytes, current.get("name"), suffix)
         save_magnets(items)
         return current
 
@@ -442,6 +845,37 @@ def photo_name(filename):
     if not filename or filename.startswith(".") or "/" in filename or "\\" in filename:
         raise ValueError("Неверное имя фото")
     return filename
+
+
+def unlink_photo(magnet_id, filename, drive_id):
+    filename = (filename or "").strip()
+    drive_id = (drive_id or "").strip()
+    if filename:
+        filename = photo_name(filename)
+    if not filename and not drive_id:
+        raise ValueError("Не указано фото")
+    with LOCK:
+        items = load_magnets()
+        current = next((item for item in items if item.get("id") == magnet_id), None)
+        if current is None:
+            raise ValueError("Карточка не найдена")
+        if filename:
+            current["localPhotos"] = [name for name in current.get("localPhotos") or [] if name != filename]
+        photos = []
+        for pair in current.get("drivePhotos") or []:
+            if not isinstance(pair, dict):
+                continue
+            if drive_id and pair.get("id") == drive_id:
+                continue
+            if filename and pair.get("sameAs") == filename:
+                continue
+            photos.append(pair)
+        current["drivePhotos"] = photos
+        remaining = [pair.get("id") for pair in photos if pair.get("id")]
+        if current.get("driveFileId") not in remaining:
+            current["driveFileId"] = remaining[0] if remaining else ""
+        save_magnets(items)
+        return current
 
 
 def delete_photo(magnet_id, filename):
@@ -527,15 +961,24 @@ def collect_jobs(items, places, progress):
             name = Path(str(raw)).name
             if name and name not in names:
                 names.append(name)
-        file_id = (item.get("driveFileId") or "").strip()
-        if names and file_id and "/" not in file_id and "?" not in file_id:
-            photos.setdefault(names[0], file_id)
+        known = {}
         for pair in item.get("drivePhotos") or []:
             if pair.get("name") and pair.get("id"):
+                known[pair["name"]] = pair["id"]
                 photos.setdefault(pair["name"], pair["id"])
+        file_id = (item.get("driveFileId") or "").strip()
+        if len(names) == 1 and file_id and "/" not in file_id and "?" not in file_id and names[0] not in known:
+            known[names[0]] = file_id
+            photos.setdefault(names[0], file_id)
+        # New editor cards (addedAt) always sync. Old cards sync only if they already live on Drive —
+        # so a second local photo on СССР/Пенза is uploaded, but pure local-only legacy stays local.
+        fresh = bool((item.get("addedAt") or "").strip())
+        on_drive = bool(file_id) or bool(known)
+        if not fresh and not on_drive:
+            continue
         for name in names:
             key = "photo:" + name
-            if name in photos or key in skip or key in seen:
+            if name in known or name in photos or key in skip or key in seen:
                 continue
             if not (PHOTOS / name).is_file():
                 progress["skip"].append(key)
@@ -585,21 +1028,51 @@ def upload_file(kind, drive_name, data_bytes=None):
 def flush_catalog(progress):
     with LOCK:
         items = load_magnets()
+        photos = progress.get("photos") or {}
         for item in items:
             names = []
             for raw in item.get("localPhotos") or []:
                 name = Path(str(raw)).name
                 if name and name not in names:
                     names.append(name)
-            pairs = []
+            by_name = {}
+            for pair in item.get("drivePhotos") or []:
+                name = (pair.get("name") or "").strip()
+                file_id = (pair.get("id") or "").strip()
+                if name and file_id:
+                    by_name[name] = dict(pair)
+            file_id = (item.get("driveFileId") or "").strip()
+            if len(names) == 1 and file_id and names[0] not in by_name:
+                entry = {"name": names[0], "id": file_id}
+                if (item.get("resourceKey") or "").strip():
+                    entry["resourceKey"] = item["resourceKey"]
+                by_name[names[0]] = entry
             for name in names:
-                file_id = (progress.get("photos") or {}).get(name) or ""
-                if file_id:
-                    pairs.append({"name": name, "id": file_id})
-            if pairs:
-                item["drivePhotos"] = pairs
-                if not (item.get("driveFileId") or "").strip():
-                    item["driveFileId"] = pairs[0]["id"]
+                file_id = (photos.get(name) or "").strip()
+                if not file_id:
+                    continue
+                prev = by_name.get(name) or {}
+                entry = {"name": name, "id": file_id}
+                if prev.get("resourceKey") and prev.get("id") == file_id:
+                    entry["resourceKey"] = prev["resourceKey"]
+                elif (item.get("resourceKey") or "").strip() and item.get("driveFileId") == file_id:
+                    entry["resourceKey"] = item["resourceKey"]
+                by_name[name] = entry
+            if not by_name:
+                continue
+            ordered = []
+            seen = set()
+            for name in names:
+                if name in by_name and name not in seen:
+                    ordered.append(by_name[name])
+                    seen.add(name)
+            for name, pair in by_name.items():
+                if name not in seen:
+                    ordered.append(pair)
+                    seen.add(name)
+            item["drivePhotos"] = ordered
+            if not (item.get("driveFileId") or "").strip():
+                item["driveFileId"] = ordered[0]["id"]
         save_magnets(items)
         COAT_FILES.write_text(json.dumps(progress.get("coats") or {}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     progress["since_flush"] = 0
@@ -657,6 +1130,13 @@ def publish_step():
     return {"done": False, "message": label + ": " + shown + " · осталось " + str(left)}
 
 
+def git_env():
+    env = os.environ.copy()
+    for key in ("HTTP_PROXY", "HTTPS_PROXY", "http_proxy", "https_proxy", "ALL_PROXY", "all_proxy"):
+        env.pop(key, None)
+    return env
+
+
 def publish_git():
     progress = load_progress()
     if progress.get("photos") or progress.get("coats"):
@@ -664,13 +1144,20 @@ def publish_git():
         save_progress(progress)
     if not (ROOT / ".git").exists():
         return "Каталог записан на компьютере. Репозиторий Git ещё не создан, на GitHub ничего не ушло."
-    git = ["git", "-C", str(ROOT)]
+    git = [
+        "git",
+        "-c", "safe.directory=H:/E/Arslan/AI_Cursor_projs/MagnetColl",
+        "-c", "http.proxy=",
+        "-c", "https.proxy=",
+        "-C", str(ROOT),
+    ]
+    env = git_env()
     paths = ["data/magnets.json", "data/coat-files.json"]
-    subprocess.run(git + ["add", "--"] + paths, check=True)
-    status = subprocess.run(git + ["status", "--porcelain", "--"] + paths, capture_output=True, text=True, check=True)
+    subprocess.run(git + ["add", "--"] + paths, check=True, env=env)
+    status = subprocess.run(git + ["status", "--porcelain", "--"] + paths, capture_output=True, text=True, check=True, env=env)
     if status.stdout.strip():
-        subprocess.run(git + ["commit", "-m", "Обновить каталог магнитов"], check=True)
-    push = subprocess.run(git + ["push"], capture_output=True, text=True)
+        subprocess.run(git + ["commit", "-m", "Обновить каталог магнитов"], check=True, env=env)
+    push = subprocess.run(git + ["push"], capture_output=True, text=True, env=env)
     if push.returncode != 0:
         detail = (push.stderr or push.stdout or "").strip()
         return "Изменения записаны в Git. Отправка не прошла: " + detail
@@ -716,13 +1203,17 @@ class Handler(SimpleHTTPRequestHandler):
             return
         if path == "/api/center":
             query = parse_qs(parts.query)
-            point = lookup_center(
-                (query.get("code") or [""])[0],
-                (query.get("region") or [""])[0],
-                (query.get("city") or [""])[0],
-            )
+            try:
+                point = lookup_center(
+                    (query.get("code") or [""])[0],
+                    (query.get("region") or [""])[0],
+                    (query.get("city") or [""])[0],
+                )
+            except ValueError as error:
+                self.send_json(400, {"error": str(error)})
+                return
             if point is None:
-                self.send_json(404, {"error": "Нет сохранённого центра"})
+                self.send_json(404, {"error": "Для этой страны центр не задан"})
             else:
                 self.send_json(200, point)
             return
@@ -787,6 +1278,9 @@ class Handler(SimpleHTTPRequestHandler):
                 self.send_json(200, saved)
             elif path == "/api/photo/delete":
                 saved = delete_photo(data.get("id") or "", data.get("name") or "")
+                self.send_json(200, saved)
+            elif path == "/api/photo/unlink":
+                saved = unlink_photo(data.get("id") or "", data.get("name") or "", data.get("driveId") or "")
                 self.send_json(200, saved)
             elif path == "/api/delete":
                 self.send_json(200, delete_magnet(data.get("id") or ""))

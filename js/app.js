@@ -74,7 +74,7 @@
   function loadData() {
     const url = cfg.sheetCsvUrl
       ? cfg.sheetCsvUrl + (cfg.sheetCsvUrl.indexOf("?") >= 0 ? "&" : "?") + "t=" + Date.now()
-      : (cfg.dataUrl || "data/magnets.json") + "?v=26";
+      : (cfg.dataUrl || "data/magnets.json") + "?v=30";
     const magnets = fetch(url).then(function (res) {
       if (!res.ok) throw new Error("data " + res.status);
       return cfg.sheetCsvUrl ? res.text().then(parseCsv) : res.json();
@@ -95,10 +95,10 @@
     const region = (item.region || "").trim();
     const city = (item.city || "").trim();
     if (continent) levels.push({ kind: "continent", name: continent, code: "" });
-    if (item.crimea) levels.push({ kind: "crimea", name: "Крым", code: "CRIMEA" });
-    else if (country) levels.push({ kind: "country", name: country, code: item.countryCode || "" });
-    if (region) levels.push({ kind: "region", name: region, code: item.countryCode || "" });
-    if (city) levels.push({ kind: "city", name: city, code: item.countryCode || "" });
+    if (country) levels.push({ kind: "country", name: country, code: item.countryCode || "" });
+    else if (item.crimea) levels.push({ kind: "country", name: "Россия", code: "RU" });
+    if (region) levels.push({ kind: "region", name: region, code: item.countryCode || (item.crimea ? "RU" : "") });
+    if (city) levels.push({ kind: "city", name: city, code: item.countryCode || (item.crimea ? "RU" : "") });
     if (levels.length === 1 && levels[0].name === (item.name || "").trim()) return [];
     return levels;
   }
@@ -123,23 +123,16 @@
     if (!level) return null;
     const cards = catalogCards();
     if (level.kind === "continent") return null;
-    if (level.kind === "crimea") {
-      return cards.find(function (it) { return it.crimea && emptyPlace(it.city); })
-        || cards.find(function (it) { return it.crimea; })
-        || null;
-    }
     if (level.kind === "country") {
       return cards.find(function (it) {
-        return !it.crimea
-          && ((level.code && it.countryCode === level.code) || sameText(it.country, level.name) || sameText(it.name, level.name))
+        return ((level.code && it.countryCode === level.code) || sameText(it.country, level.name) || sameText(it.name, level.name))
           && emptyPlace(it.region)
           && emptyPlace(it.city);
       }) || null;
     }
     if (level.kind === "region") {
       return cards.find(function (it) {
-        return !it.crimea
-          && (!level.code || it.countryCode === level.code)
+        return (!level.code || it.countryCode === level.code)
           && sameText(it.region, level.name)
           && emptyPlace(it.city);
       }) || cards.find(function (it) {
@@ -150,7 +143,7 @@
       return cards.find(function (it) {
         if (!(sameText(it.city, level.name) || sameText(it.name, level.name))) return false;
         if (level.code) return it.countryCode === level.code;
-        return !!it.crimea;
+        return true;
       }) || null;
     }
     return null;
@@ -321,7 +314,11 @@
     });
     driveList.forEach(function (photo) {
       if (covered[photo.id]) return;
-      slides.push("https://drive.google.com/thumbnail?id=" + encodeURIComponent(photo.id) + "&sz=w1600");
+      let key = photo.resourceKey || "";
+      if (!key && item.resourceKey && photo.id === item.driveFileId) key = item.resourceKey;
+      let url = "https://drive.google.com/thumbnail?id=" + encodeURIComponent(photo.id) + "&sz=w1600";
+      if (key) url += "&resourcekey=" + encodeURIComponent(key);
+      slides.push(url);
     });
     if (slides.length) return slides;
     const drive = thumbUrl(item, 1600);
@@ -490,30 +487,45 @@
     return a.localeCompare(b, "ru", { sensitivity: "base" });
   }
 
-  function branch(name, children, forceOpen, missingItem, parts) {
+  function branch(name, children, forceOpen, titleItem, parts) {
     const key = parts.join("\u0001");
     const opened = forceOpen || state.treeOpen.has(key);
     const wrap = document.createElement("div");
     wrap.className = "tree-node";
     const btn = document.createElement("button");
     btn.type = "button";
-    btn.className = "tree-btn" + (missingItem ? " missing" : "");
-    if (missingItem) {
-      const src = coatSrc(missingItem);
-      btn.innerHTML = (src ? '<img src="' + escapeAttr(src) + '" alt="">' : "") +
-        "<span>" + escapeHtml(name) + " · нет</span>";
+    const missingTitle = !!(titleItem && (titleItem.placeOnly || normStatus(titleItem) === "missing"));
+    btn.className = "tree-btn" + (missingTitle ? " missing" : "") + (titleItem && !missingTitle ? " has-card" : "");
+    if (titleItem) {
+      const src = missingTitle ? coatSrc(titleItem) : (markerSrc(titleItem, 96) || coatSrc(titleItem));
+      btn.innerHTML = (src ? '<img class="tree-thumb" src="' + escapeAttr(src) + '" alt="">' : "") +
+        "<span>" + escapeHtml(name) + (missingTitle ? " · нет" : "") + "</span>";
     } else btn.textContent = name;
     const box = document.createElement("div");
     box.hidden = !opened;
     children.forEach(function (child) { box.appendChild(child); });
+    function openTitle() {
+      if (!titleItem) return;
+      select(titleItem.id);
+      syncToggle();
+    }
+    function toggleOpen() {
+      if (!children.length) return;
+      box.hidden = !box.hidden;
+      if (box.hidden) state.treeOpen.delete(key);
+      else state.treeOpen.add(key);
+    }
     btn.addEventListener("click", function () {
-      if (children.length) {
-        box.hidden = !box.hidden;
-        if (box.hidden) state.treeOpen.delete(key);
-        else state.treeOpen.add(key);
-      }
-      if (missingItem) select(missingItem.id);
+      if (children.length) toggleOpen();
+      else openTitle();
     });
+    const thumb = btn.querySelector(".tree-thumb");
+    if (thumb && titleItem) {
+      thumb.addEventListener("click", function (event) {
+        event.stopPropagation();
+        openTitle();
+      });
+    }
     wrap.appendChild(btn);
     if (children.length) wrap.appendChild(box);
     return wrap;
@@ -539,7 +551,7 @@
       return continent.countries.get(countryName);
     }
     magnets.forEach(function (item) {
-      if (item.crimea || !item.country) return;
+      if (!item.country) return;
       const node = countryNode(item.continent || "Без части света", item.country);
       const region = (item.region || "").trim();
       const city = (item.city || "").trim();
@@ -557,36 +569,47 @@
     });
     const opened = !!els.q.value.trim();
     els.list.innerHTML = "";
-    const crimeaItems = magnets.filter(function (item) { return item.crimea; });
-    let crimeaPlaced = false;
     Array.from(continents.keys()).sort(function (a, b) {
       return continents.get(a).order - continents.get(b).order || byRu(a, b);
     }).forEach(function (name) {
       const continent = continents.get(name);
       const countries = Array.from(continent.countries.keys()).sort(byRu).map(function (countryName) {
         const node = continent.countries.get(countryName);
-        const children = node.magnets.map(row);
+        const regionBranches = [];
         Array.from(node.regions.keys()).sort(byRu).forEach(function (regionName) {
           const region = node.regions.get(regionName);
-          const leaves = region.magnets.map(row);
+          const regionMagnets = region.magnets.slice();
+          let regionCard = null;
+          const cardAt = regionMagnets.findIndex(function (item) {
+            return emptyPlace(item.city) && sameText(item.name, regionName);
+          });
+          if (cardAt >= 0) regionCard = regionMagnets.splice(cardAt, 1)[0];
+          const leaves = regionMagnets.map(row);
+          // During search the region card is only a branch title otherwise — show it as a row too.
+          if (regionCard && opened) leaves.unshift(row(regionCard));
           Array.from(region.cities.keys()).sort(byRu).forEach(function (city) {
             leaves.push(branch(city, region.cities.get(city).map(row), opened, null, [name, countryName, regionName, city]));
           });
-          children.push(branch(regionName, leaves, opened, null, [name, countryName, regionName]));
+          regionBranches.push(branch(regionName, leaves, opened, regionCard, [name, countryName, regionName]));
         });
-        if (node.item && !children.length) return branch(countryName, [], opened, node.item, [name, countryName]);
-        return branch(countryName, children, opened, null, [name, countryName]);
+        let countryCard = node.item;
+        const countryMagnets = node.magnets.slice();
+        if (!countryCard) {
+          const cardAt = countryMagnets.findIndex(function (item) {
+            return emptyPlace(item.region) && emptyPlace(item.city) && sameText(item.name, countryName);
+          });
+          if (cardAt >= 0) countryCard = countryMagnets.splice(cardAt, 1)[0];
+        }
+        const top = countryMagnets.map(row).concat(regionBranches);
+        if (countryCard && opened && !countryCard.placeOnly && normStatus(countryCard) !== "missing") {
+          top.unshift(row(countryCard));
+        }
+        if (countryCard && !top.length) return branch(countryName, [], opened, countryCard, [name, countryName]);
+        return branch(countryName, top, opened, countryCard, [name, countryName]);
       });
-      if (name === "Европа" && crimeaItems.length) {
-        countries.unshift(branch("Крым", sortMagnets(crimeaItems).map(row), opened, null, [name, "Крым"]));
-        crimeaPlaced = true;
-      }
       els.list.appendChild(branch(name, countries, opened, null, [name]));
     });
-    if (crimeaItems.length && !crimeaPlaced) {
-      els.list.appendChild(branch("Крым", sortMagnets(crimeaItems).map(row), opened, null, ["Крым"]));
-    }
-    const loose = magnets.filter(function (item) { return !item.crimea && !item.country; });
+    const loose = magnets.filter(function (item) { return !item.country; });
     if (loose.length) els.list.appendChild(branch("Без места", loose.map(row), opened, null, ["Без места"]));
   }
 
@@ -902,7 +925,6 @@
   }
 
   function countryCenter(code) {
-    if (code === "CRIMEA") return { lat: 45.3, lng: 34.1 };
     const place = state.places.find(function (item) { return item.countryCode === code; });
     if (!place || place.lat == null || place.lng == null) return null;
     return { lat: place.lat, lng: place.lng };
@@ -943,7 +965,6 @@
 
   function countryOptions(selected) {
     const rows = ['<option value="">Страна не выбрана</option>'];
-    rows.push('<option value="CRIMEA"' + (selected === "CRIMEA" ? " selected" : "") + ">Крым</option>");
     state.places.forEach(function (place) {
       rows.push('<option value="' + escapeAttr(place.countryCode) + '"' +
         (place.countryCode === selected ? " selected" : "") + ">" + escapeHtml(place.name) + "</option>");
@@ -953,7 +974,7 @@
 
   function fillRegions(select, code, current) {
     select.innerHTML = '<option value="">Регион не выбран</option>';
-    if (!code || code === "CRIMEA") {
+    if (!code) {
       if (current) select.add(new Option(current, current, true, true));
       return;
     }
@@ -976,7 +997,7 @@
       id: "", name: "", status: "owned", countryCode: "", region: "", city: "",
       notes: "", lat: "", lng: "", localPhotos: []
     };
-    const countryValue = card.crimea ? "CRIMEA" : (card.countryCode || "");
+    const countryValue = card.countryCode || (card.crimea ? "RU" : "");
     state.editing = true;
     els.list.hidden = true;
     els.detail.hidden = false;
