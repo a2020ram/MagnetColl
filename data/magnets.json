@@ -605,13 +605,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/tatarstan-respublika/bugulminskii-munitsipalnyi/bugulma/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Bugulma_COA_%281839%29.gif?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Bugulma_COA_(Samara_Governorate)_(1782).png",
     "drivePhotos": [
       {
         "name": "Бугульма.jpg",
         "id": "0B4sMW1qgoxAnLXJnNVFtT3pzT2c"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "булгары",
@@ -634,13 +635,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/tatarstan-respublika/spasskiy-73-538050/bolgar/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82_%D0%B3%D0%B5%D1%80%D0%B1%D0%B0_%D1%83%D0%B5%D0%B7%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%A1%D0%BF%D0%B0%D1%81%D1%81%D0%BA%D0%B0_%28%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D0%B0%29_1859_%D0%B3%D0%BE%D0%B4%D0%B0.gif?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Bolgar_(Tatarstan)_(2005).gif?uselang=ru%D0%BE_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%A1%D0%BF%D0%B0%D1%81%D1%81%D0%BA%D0%B0_%28%D0%91%D0%BE%D0%BB%D0%B3%D0%B0%D1%80%D0%B0%29_1859_%D0%B3%D0%BE%D0%B4%D0%B0.gif?width=480",
     "drivePhotos": [
       {
         "name": "Булгары.jpg",
         "id": "0B4sMW1qgoxAnMkxiUzcwTGNZWjQ"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "валдай",
@@ -721,13 +723,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/vidyayevo/vidyayevo/coat.geraldika.jpg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Vidyayevo%20%28Murmansk%20oblast%29.png?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Vidyayevo_(Murmansk_oblast)_(2004)_-_2.png",
     "drivePhotos": [
       {
         "name": "Видяево.jpg",
         "id": "1ENB__jdfm1qqwmuczm90RpPZRDGIqNyc"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "владивосток",
@@ -1710,13 +1713,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/kaliningradskaja-oblast/kaliningradskiy-gorodskoy-okrug/kaliningrad/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Guryevsk_%28Kaliningrad_oblast%29.png?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Teutonic_GM_Arms.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Калининград-Тевтонский орден.jpg",
         "id": "1k7TsCkdJlOvAaZso751Lju6MfAEtpZbn"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "калининград",
@@ -1860,35 +1864,6 @@
       {
         "name": "Керчь.jpg",
         "id": "1Yfj-891td0kFZbNfMg4cb_Qy4F1flvQu"
-      }
-    ]
-  },
-  {
-    "id": "киев",
-    "name": "Киев",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 50.4501,
-    "lng": 30.5234,
-    "driveFileId": "0B4sMW1qgoxAnSVJZU1QzQWdjcmc",
-    "resourceKey": "0-GSZ-KIpvYwFLysbw87aqqA",
-    "localPhotos": [
-      "Киев.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Украина",
-    "region": "Київ",
-    "city": "Киев",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "UA",
-    "coaPath": "/media/coats/europe/ua/kyiv/kyiv/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/COA_of_Kyiv_Kurovskyi.svg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Киев.jpg",
-        "id": "0B4sMW1qgoxAnSVJZU1QzQWdjcmc"
       }
     ]
   },
@@ -2525,7 +2500,7 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/sankt-peterburg/lomonosov/coat.geraldika.jpg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Lomonosov_(Oranienbaum_St_Petersburg)_proposal_(1859).png?uselang=ru",
     "drivePhotos": [
       {
         "name": "Ломоносов.jpg",
@@ -2535,7 +2510,8 @@
         "name": "Ломоносов 2.jpg",
         "id": "1H4NjwWW07iCiYdyv0wcHgPw4P-S9FMkk"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "майкоп",
@@ -2586,14 +2562,15 @@
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/tatarstan-respublika/mamadysh/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaPath": "/media/coats/europe/ru/tatarstan-respublika/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Mamadysh_COA_(Kazan_Governorate)_(1781).png",
     "drivePhotos": [
       {
         "name": "Мамадыш.jpg",
         "id": "0B4sMW1qgoxAnVmEyakpmOHItV2M"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "мари",
@@ -3055,14 +3032,15 @@
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/nizhegorodskaya-oblast/gorodskoy-okrug-nizhniy-novgorod/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20Nizhny%20Novgorod%20Oblast%20%28large%29.svg?width=480",
+    "coaPath": "/media/coats/europe/ru/nizhegorodskaya-oblast/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_Nizhny_Novgorod_Region.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Нижегородская область.jpg",
         "id": "0B4sMW1qgoxAnV2ZTUDNBMFJkclE"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "нижний-тагил",
@@ -3278,7 +3256,8 @@
     "resourceKey": "",
     "localPhotos": [
       "Орел 2.jpg",
-      "Орел 2.jpg"
+      "Орел 2.jpg",
+      "Орел.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -3293,6 +3272,10 @@
     "drivePhotos": [
       {
         "name": "Орел 2.jpg",
+        "id": "1BfDbCSKRNjv_gNsNxG27Hesw_sZOnKZh"
+      },
+      {
+        "name": "Орел.jpg",
         "id": "1BfDbCSKRNjv_gNsNxG27Hesw_sZOnKZh"
       }
     ]
@@ -3327,35 +3310,6 @@
     ]
   },
   {
-    "id": "пенза",
-    "name": "Пенза",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 53.1951,
-    "lng": 45.0183,
-    "driveFileId": "0B4sMW1qgoxAnRFZMNURtNVN0M3c",
-    "resourceKey": "0-e9y1jHzJ5FS_CRrkZTJMjQ",
-    "localPhotos": [
-      "Пенза.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Пензенская область",
-    "city": "Пенза",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/penzenskaja-oblast/penza/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Penza_%28Penza_oblast%29_%282001%29.png?width=480",
-    "drivePhotos": [
-      {
-        "name": "Пенза.jpg",
-        "id": "0B4sMW1qgoxAnRFZMNURtNVN0M3c"
-      }
-    ]
-  },
-  {
     "id": "пенза-2",
     "name": "Пенза",
     "status": "owned",
@@ -3381,35 +3335,6 @@
       {
         "name": "Пенза 2.jpg",
         "id": "106ZMpcGtH_mk_YAUzAjRec3dOyEAOu3z"
-      }
-    ]
-  },
-  {
-    "id": "пензенская-область",
-    "name": "Пензенская область",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 53.16554,
-    "lng": 44.78792,
-    "driveFileId": "10BXRqliosXZwLNtmnaPQLFp3iP0HKSCF",
-    "resourceKey": "",
-    "localPhotos": [
-      "Пензенская область.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Пензенская область",
-    "city": "",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/penzenskaja-oblast/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Penza_Oblast_%28large%29.svg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Пензенская область.jpg",
-        "id": "10BXRqliosXZwLNtmnaPQLFp3iP0HKSCF"
       }
     ]
   },
@@ -3579,13 +3504,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/pskovskaja-oblast/pskovskiy/pskov/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Dno_%28Pskov_oblast%29.png?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Pskovgfull.svg",
     "drivePhotos": [
       {
         "name": "Псков.jpg",
         "id": "1NKlPHqniLwWhtmReAp4Kga2x2nlvRGyu"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "псковская-область",
@@ -3637,13 +3563,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/stavropol-skij-kraj/pyatigorsk/coat.geraldika.jpg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Pyatigorsk_%28Stavropol_krai%29_%281842%29.png?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%B5%D1%80%D0%B1_%D0%9F%D1%8F%D1%82%D0%B8%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B0.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Пятигорск.jpg",
         "id": "1b6A6GZz8ZYuvKpYQiP2BLfJ04N-JvUaQ"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "раменское",
@@ -3900,13 +3827,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/udmurtskaja-respublika/sarapulskiy/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Sarapul_rayon_%28Udmurtia%29.gif?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Sarapul_COA_(Vyatka_Governorate)_(1781).svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Сарапул.jpg",
         "id": "1lBTobSqnH0K0RZQ-Onk2VJ9YXznBe71I"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "саратов",
@@ -4016,43 +3944,15 @@
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaPath": "/media/coats/europe/ru/kaliningradskaja-oblast/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Svetlogorsk_(Kaliningrad_oblast).png?uselang=ru",
     "drivePhotos": [
       {
         "name": "Светлогорск_КалинОбл.jpg",
         "id": "1AElvOsaCAMPPvCgwOxvaxj9s-dZjgrEm"
       }
-    ]
-  },
-  {
-    "id": "свияжск",
-    "name": "Свияжск",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 55.7732,
-    "lng": 48.662,
-    "driveFileId": "11a1NvnxLPvzgEN7USOxLJolhc6QGI8YI",
-    "resourceKey": "",
-    "localPhotos": [
-      "Свияжск.jpg"
     ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Республика Татарстан",
-    "city": "Свияжск",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/tatarstan-respublika/sviyazhsk/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Sviyazhsk_%28Tatarstan%29.png?width=480",
-    "drivePhotos": [
-      {
-        "name": "Свияжск.jpg",
-        "id": "11a1NvnxLPvzgEN7USOxLJolhc6QGI8YI"
-      }
-    ]
+    "coaSource": ""
   },
   {
     "id": "свияжск-2",
@@ -4274,7 +4174,8 @@
     "driveFileId": "0B4sMW1qgoxAnR2t2cnZVeUVCbkE",
     "resourceKey": "0-iYZuWx0VFEEEqSgeWbBHaA",
     "localPhotos": [
-      "СССР.jpg"
+      "СССР.jpg",
+      "СССР 2.jpg"
     ],
     "continent": "Европа",
     "country": "Россия",
@@ -4285,13 +4186,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:State_Emblem_of_the_Soviet_Union.svg",
     "drivePhotos": [
       {
         "name": "СССР.jpg",
         "id": "0B4sMW1qgoxAnR2t2cnZVeUVCbkE"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "ставркрай",
@@ -8976,13 +8878,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/kurskaja-oblast/zheleznogorsk/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Russia.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Zheleznogorsk.svg",
     "drivePhotos": [
       {
         "name": "Железногорск.jpg",
         "id": "19Hhglz7y2EaMQ34kJw6NhWL1kMsyGGmO"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "горно-алтайск",
@@ -9033,14 +8936,15 @@
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/amurskaja-oblast/blagoveshchenskiy-05-2026607/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Blagoveschenskii_rayon_%28Amur_oblast%29.png?width=480",
+    "coaPath": "/media/coats/europe/ru/amurskaja-oblast/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_Arms_of_Blagoveshchensk.svg",
     "drivePhotos": [
       {
         "name": "Благовещенск.jpg",
         "id": "12Y97WP3ME7eRUG3JbHkilyflp9Jov3cW"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "сыктывкар",
@@ -9208,17 +9112,18 @@
     "region": "Свердловская область",
     "city": "Дружинино",
     "coaImageUrl": "",
-    "notes": "",
+    "notes": "Геральдика ру",
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/sverdlovskaja-oblast/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Sverdlovsk_oblast.svg?width=480",
+    "coaWiki": "https://www.heraldicum.ru/russia/subjects/towns/images/druzinin.gif",
     "drivePhotos": [
       {
         "name": "Дружинино.jpg",
         "id": "1_iqlx0WZ28AqXuBkBrxTgWEANAPNSzUS"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "нью-брунсвик",
@@ -9270,13 +9175,14 @@
     "crimea": false,
     "countryCode": "CA",
     "coaPath": "/media/coats/north-america/ca/nova-scotia/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Nova_Scotia.svg?width=480",
+    "coaWiki": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Cape_Breton_Island_Flag_%28Popular%2C_version%29-alone.svg?utm_source=commons.wikimedia.org&utm_campaignhttps://commons.wikimedia.org/wiki/File:Cape_Breton_Island_Flag_(Popular,_version)-alone.svg",
     "drivePhotos": [
       {
         "name": "остров Кейп-Бретон.jpg",
         "id": "1bvURXxvAgTR4q5rR78ZKR_vj0_zncR8C"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "новая-шотландия",
@@ -9735,13 +9641,14 @@
     "crimea": false,
     "countryCode": "BO",
     "coaPath": "/media/coats/south-america/bo/el-beni/coat.jpg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Beni.JPG?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Escudo_del_Beni.png?uselang=ru",
     "drivePhotos": [
       {
         "name": "Бени.jpg",
         "id": "13zgGHC5-51eA5IwZmJeNjcR30rUfyTb9"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "кочабамба",
@@ -9764,13 +9671,14 @@
     "crimea": false,
     "countryCode": "BO",
     "coaPath": "/media/coats/south-america/bo/cochabamba/cochabamba/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Escudo_de_Cochabamba.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Escudo_del_Cochabamba.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Кочабамба.jpg",
         "id": "1DiPsAbMpZuu2YqdrYSFGTDG3imSRjgvh"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "ла-пас",
@@ -9909,14 +9817,14 @@
     "crimea": false,
     "countryCode": "BE",
     "coaPath": "/media/coats/europe/be/west-vlaanderen/brugge/coat.geraldika.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_coat_of_arms_of_Belgium.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:BEL_COA_Bruges.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Брюгге.jpg",
         "id": "1Ir-QqGhwHHb2zNM3Avjnqo40fm1Quk_w"
       }
     ],
-    "coaSource": "https://geraldika.ru/i/%D0%91%D1%80%D1%8E%D0%B3%D0%B3%D0%B5%20(%D0%91%D0%B5%D0%BB%D1%8C%D0%B3%D0%B8%D1%8F)"
+    "coaSource": ""
   },
   {
     "id": "цюрих",
@@ -9978,7 +9886,7 @@
   },
   {
     "id": "любляна",
-    "name": "Любляна",
+    "name": "Любляны",
     "status": "owned",
     "addedAt": "",
     "lat": 46.0569465,
@@ -9991,20 +9899,20 @@
     "continent": "Европа",
     "country": "Словения",
     "region": "",
-    "city": "Любляна",
+    "city": "Любляны",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "SI",
     "coaPath": "/media/coats/europe/si/ljubljana/ljubljana/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovenia.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Blason_ville_si_Ljubljana_(Slov%C3%A9nie).svg",
     "drivePhotos": [
       {
         "name": "Любляна.jpg",
         "id": "1stVFJ4U3C09yjUiClJx2Do8zG_HRj_YC"
       }
     ],
-    "coaSource": "https://geraldika.ru/s/14925"
+    "coaSource": ""
   },
   {
     "id": "копер",
@@ -10027,14 +9935,14 @@
     "crimea": false,
     "countryCode": "SI",
     "coaPath": "/media/coats/europe/si/koper/koper/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Slovenia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Coa_Koper.grb.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Копер.jpg",
         "id": "1SwYtnsahuXMxBAfGLgHoIa1VJqsLOwOh"
       }
     ],
-    "coaSource": "https://geraldika.ru/s/27871"
+    "coaSource": ""
   },
   {
     "id": "любек",
@@ -10874,14 +10782,14 @@
     "crimea": false,
     "countryCode": "RS",
     "coaPath": "/media/coats/europe/rs/cities/belgrade/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Serbia.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Small_Coat_of_Arms_Belgrade.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Белград.jpg",
         "id": "14Oo-hbhg8_G4n7W493WpoNoW9vjbvJhD"
       }
     ],
-    "coaSource": "https://geraldika.ru/s/6316"
+    "coaSource": ""
   },
   {
     "id": "лазурный-берег",
@@ -10904,13 +10812,14 @@
     "crimea": false,
     "countryCode": "FR",
     "coaPath": "/media/coats/europe/fr/var/saint-tropez/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Blason_ville_fr_Saint-Tropez-A_%28Var%29.svg?width=480",
+    "coaWiki": "",
     "drivePhotos": [
       {
         "name": "Лазурный берег.jpg",
         "id": "1_nUFffENFyii1WZD4gklfA_23D_AiQSV"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "ницца",
@@ -10962,7 +10871,7 @@
     "crimea": false,
     "countryCode": "FR",
     "coaPath": "/media/coats/europe/fr/provence-alpes-cote-d-azur/coat.png",
-    "coaWiki": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Blason_province_fr_Provence.svg",
     "drivePhotos": [
       {
         "name": "Прованс.jpg",
@@ -11576,13 +11485,14 @@
     "crimea": false,
     "countryCode": "IN",
     "coaPath": "/media/coats/asia/in/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_India.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Khangarot%27s_symbol.jpg",
     "drivePhotos": [
       {
         "name": "Джайпур.jpg",
         "id": "13CnjuEFAHRbJ-h80lJ9Hy_lPQqW62VKJ"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "снежинск",
@@ -12421,13 +12331,14 @@
     "crimea": false,
     "countryCode": "DE",
     "coaPath": "/media/coats/europe/de/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Germany.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:State_arms_of_the_German_Democratic_Republic.svg",
     "drivePhotos": [
       {
         "name": "Германская демократическая республика.jpg",
         "id": "1VLprFpX8PI0ogjqssJYWmBHS1ozGwaFa"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "саудовская-аравия",
@@ -12682,13 +12593,14 @@
     "crimea": false,
     "countryCode": "RU",
     "coaPath": "/media/coats/europe/ru/moscow-city/moscow/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Moscow.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Emblem_of_the_Russian_Soviet_Federative_Socialist_Republic_(1920%E2%80%931954).svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "РСФСР.jpg",
         "id": "1AyCE895ItaqGWCsNArbTdbwY--eZv5VU"
       }
-    ]
+    ],
+    "coaSource": ""
   },
   {
     "id": "hong-kong",
@@ -13284,6 +13196,34 @@
       {
         "name": "Республика Алтай.jpg",
         "id": "1fXcY1VRpzmtH9Ri0HRKqTN5edvKz-fi0"
+      }
+    ]
+  },
+  {
+    "id": "пензенская-область",
+    "name": "Пензенская область",
+    "status": "owned",
+    "addedAt": "2026-11-11",
+    "lat": 61.524,
+    "lng": 105.3188,
+    "driveFileId": "10BXRqliosXZwLNtmnaPQLFp3iP0HKSCF",
+    "resourceKey": "",
+    "localPhotos": [],
+    "continent": "Европа",
+    "country": "Россия",
+    "region": "Пензенская область",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "RU",
+    "coaPath": "/media/coats/europe/ru/penzenskaja-oblast/coat.png",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Coat_of_arms_of_Penza_Oblast.svg",
+    "coaSource": "",
+    "drivePhotos": [
+      {
+        "name": "Пензенская область.jpg",
+        "id": "10BXRqliosXZwLNtmnaPQLFp3iP0HKSCF"
       }
     ]
   }
