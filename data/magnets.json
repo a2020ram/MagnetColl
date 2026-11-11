@@ -4903,8 +4903,14 @@
         "name": "Украина.jpg",
         "id": "0B4sMW1qgoxAnZ2EyR0ZfbzA1a2M",
         "resourceKey": "0-qZUhjH2x7zh-eIou4FVYyg"
+      },
+      {
+        "name": "Ukraine.jpg",
+        "id": "1j_Y1DSe4_jVqfUyHm1L6vOExW10tpQy4"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "ульяновск2",
@@ -8078,7 +8084,7 @@
     "crimea": false,
     "countryCode": "SE",
     "coaPath": "/media/coats/europe/se/stockholms-lan-se-01/stockholm/coat.geraldika.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_coat_of_arms_of_Sweden.svg?width=480",
+    "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Stockholm_vapen_bra.svg",
     "drivePhotos": [
       {
         "name": "Stockholm.jpg",
@@ -8268,7 +8274,7 @@
   },
   {
     "id": "tunisia",
-    "name": "tunisia",
+    "name": "Tunisia",
     "status": "owned",
     "addedAt": "",
     "lat": 33.8869,
@@ -8294,7 +8300,9 @@
         "id": "0B4sMW1qgoxAndGJGSDUxZ2hoelE",
         "resourceKey": "0-GZZOASt7pO2NagACOEPLxQ"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "turkey",
@@ -8323,35 +8331,6 @@
         "name": "Turkey.jpg",
         "id": "0B4sMW1qgoxAnVDdqS0RqeEFFUE0",
         "resourceKey": "0-NIwdSffWongcvE9FCfcGSA"
-      }
-    ]
-  },
-  {
-    "id": "ukraine",
-    "name": "Ukraine",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 48.3794,
-    "lng": 31.1656,
-    "driveFileId": "1j_Y1DSe4_jVqfUyHm1L6vOExW10tpQy4",
-    "resourceKey": "",
-    "localPhotos": [
-      "Ukraine.jpg"
-    ],
-    "continent": "Европа",
-    "country": "Украина",
-    "region": "",
-    "city": "",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "UA",
-    "coaPath": "/media/coats/europe/ua/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Lesser_Coat_of_Arms_of_Ukraine.svg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Ukraine.jpg",
-        "id": "1j_Y1DSe4_jVqfUyHm1L6vOExW10tpQy4"
       }
     ]
   },
@@ -8497,13 +8476,15 @@
     "crimea": false,
     "countryCode": "BE",
     "coaPath": "/media/coats/europe/be/coat.png",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_coat_of_arms_of_Belgium.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Vlaanderen_wapen.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Vlaanderen.jpg",
         "id": "1OoquO2fLWcJmzWcBWMtiKZmWnveti5xA"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "warszawa",
