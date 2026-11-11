@@ -334,7 +334,7 @@
     const covered = {};
     driveList.forEach(function (photo) {
       if (photo.sameAs && localNames[photo.sameAs]) covered[photo.id] = true;
-      else if (driveList.length === 1 && photo.name && localNames[photo.name]) covered[photo.id] = true;
+      else if (photo.name && localNames[photo.name]) covered[photo.id] = true;
     });
     driveList.forEach(function (photo) {
       if (covered[photo.id]) return;
@@ -1044,10 +1044,10 @@
         '<label>Страна<select name="country">' + countryOptions(countryValue) + "</select></label>" +
         '<label>Регион<select name="region"></select></label>' +
         '<label>Город<input name="city" value="' + escapeAttr(card.city || "") + '"></label>' +
-        '<label>Официальный герб<input name="coat" value="' + escapeAttr(card.coaWiki || "") + '" placeholder="Ссылка или текст"></label>' +
+        '<label>Герб (картинка или текст)<input name="coat" value="' + escapeAttr(card.coaWiki || "") + '" placeholder="Ссылка на файл герба или текст"></label>' +
         '<div class="coat-preview"></div>' +
-        '<label>Ссылка на источник<input name="coaSource" value="' + escapeAttr(card.coaSource || "") + '" placeholder="https://…"></label>' +
-        '<label>Подпись источника<input name="coaSourceLabel" value="' + escapeAttr(card.coaSourceLabel || "") + '" placeholder="Викисклад, Геральдикум…"></label>' +
+        '<label>Откуда герб (не картинка)<input name="coaSource" value="' + escapeAttr(card.coaSource || "") + '" placeholder="Страница-источник, если не Викисклад"></label>' +
+        '<label>Подпись под гербом<input name="coaSourceLabel" value="' + escapeAttr(card.coaSourceLabel || "") + '" placeholder="Викисклад, Геральдикум…"></label>' +
         '<label>Заметка<textarea name="notes" rows="2">' + escapeHtml(card.notes || "") + "</textarea></label>" +
         '<div class="pair">' +
           '<label>Широта<input name="lat" inputmode="decimal" value="' + escapeAttr(card.lat || "") + '"></label>' +
@@ -1128,7 +1128,7 @@
       const covered = {};
       driveList.forEach(function (photo) {
         if (photo.sameAs && local.indexOf(photo.sameAs) >= 0) covered[photo.id] = photo.sameAs;
-        else if (driveList.length === 1 && photo.name && local.indexOf(photo.name) >= 0) covered[photo.id] = photo.name;
+        else if (photo.name && local.indexOf(photo.name) >= 0) covered[photo.id] = photo.name;
       });
       local.forEach(function (name) {
         let driveId = "";

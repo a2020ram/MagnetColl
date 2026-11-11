@@ -861,7 +861,13 @@ def save_card(data):
             found = locate_drive_photo(file_id)
             if not found:
                 raise ValueError("Этого файла нет в папке Magnets cloud")
-            found["sameAs"] = matching_photo(drive_bytes(file_id))
+            # Fast path: same local filename means same photo. Skip Drive download + full-folder hash
+            # (that was ~40s per link on the USB photo folder and looked like a failed save).
+            local_name = found.get("name") or ""
+            if local_name and (PHOTOS / local_name).is_file():
+                found["sameAs"] = local_name
+            else:
+                found["sameAs"] = ""
             linked_drive.append(found)
             continue
         linked.append(fetch_image(text))

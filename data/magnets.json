@@ -4274,7 +4274,7 @@
   },
   {
     "id": "ставркрай",
-    "name": "СтаврКрай",
+    "name": "Ставропольский Край",
     "status": "owned",
     "addedAt": "",
     "lat": 45.0428,
@@ -4300,36 +4300,9 @@
         "id": "0B4sMW1qgoxAnRzFTM1Y3SUVmWk0",
         "resourceKey": "0-2SnSs6g_etbbvPKb7sHN_Q"
       }
-    ]
-  },
-  {
-    "id": "ставрополь-2",
-    "name": "Ставрополь 2",
-    "status": "owned",
-    "addedAt": "",
-    "lat": 45.0445,
-    "lng": 41.9691,
-    "driveFileId": "1a2RMA8NKJcFRrcMkIbLfCfAjY1sJoDRM",
-    "resourceKey": "",
-    "localPhotos": [
-      "Ставрополь 2.jpg"
     ],
-    "continent": "Европа",
-    "country": "Россия",
-    "region": "Ставропольский край",
-    "city": "Ставрополь",
-    "coaImageUrl": "",
-    "notes": "",
-    "crimea": false,
-    "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/stavropol-skij-kraj/stavropol-urban-okrug/stavropol/coat.gif",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Stavropol%20%282021%29.jpeg?width=480",
-    "drivePhotos": [
-      {
-        "name": "Ставрополь 2.jpg",
-        "id": "1a2RMA8NKJcFRrcMkIbLfCfAjY1sJoDRM"
-      }
-    ]
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "ставрополь",
@@ -4359,7 +4332,9 @@
         "id": "0B4sMW1qgoxAnQllQYTRVb2ZWRlE",
         "resourceKey": "0-P9aNaqSxljRxop4wqcvmlA"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "старая-русса",
