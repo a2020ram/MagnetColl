@@ -288,14 +288,26 @@ def reuse_photo(magnet, data, title, suffix):
     if existing:
         if existing not in photos:
             photos.append(existing)
-        file_id = upload_file("photo", existing)
+        filename = existing
+        data_bytes = data
+    else:
+        filename = titled_filename(title, suffix)
+        PHOTOS.mkdir(parents=True, exist_ok=True)
+        (PHOTOS / filename).write_bytes(data)
+        photos.append(filename)
+        data_bytes = data
+    # Phone / downloaded photo: upload to Drive now, then the card shows Drive thumbnails.
+    try:
+        file_id = upload_file("photo", filename)
+        if not file_id:
+            file_id = upload_file("photo", filename, data_bytes)
         if file_id:
-            attach_drive_photo(magnet, file_id, existing)
-        return existing
-    filename = titled_filename(title, suffix)
-    PHOTOS.mkdir(parents=True, exist_ok=True)
-    (PHOTOS / filename).write_bytes(data)
-    photos.append(filename)
+            progress = load_progress()
+            progress["photos"][filename] = file_id
+            save_progress(progress)
+            attach_drive_photo(magnet, file_id, filename, "")
+    except ValueError:
+        pass
     return filename
 
 
@@ -861,13 +873,7 @@ def save_card(data):
             found = locate_drive_photo(file_id)
             if not found:
                 raise ValueError("Этого файла нет в папке Magnets cloud")
-            # Fast path: same local filename means same photo. Skip Drive download + full-folder hash
-            # (that was ~40s per link on the USB photo folder and looked like a failed save).
-            local_name = found.get("name") or ""
-            if local_name and (PHOTOS / local_name).is_file():
-                found["sameAs"] = local_name
-            else:
-                found["sameAs"] = ""
+            # Drive link = reference only. Do not download, hash, or pair with local files.
             linked_drive.append(found)
             continue
         linked.append(fetch_image(text))
@@ -911,7 +917,7 @@ def save_card(data):
             suffix = Path((payload.get("name") or "photo.jpg")).suffix
             reuse_photo(current, data_bytes, current.get("name"), suffix)
         for found in linked_drive:
-            attach_drive_photo(current, found["id"], found["name"], found.get("sameAs") or "")
+            attach_drive_photo(current, found["id"], found["name"], "")
         for data_bytes, suffix in linked:
             reuse_photo(current, data_bytes, current.get("name"), suffix)
         save_magnets(items)

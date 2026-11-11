@@ -36,7 +36,18 @@
     return "https://drive.google.com/thumbnail?id=" + encodeURIComponent(item.driveFileId) + "&sz=w" + size + key;
   }
 
+  function driveThumb(photo, item, size) {
+    if (!photo || !photo.id) return "";
+    let key = photo.resourceKey || "";
+    if (!key && item && item.resourceKey && photo.id === item.driveFileId) key = item.resourceKey;
+    let url = "https://drive.google.com/thumbnail?id=" + encodeURIComponent(photo.id) + "&sz=w" + size;
+    if (key) url += "&resourcekey=" + encodeURIComponent(key);
+    return url;
+  }
+
   function markerSrc(item, size) {
+    const driveList = (item.drivePhotos || []).filter(function (photo) { return photo.id; });
+    if (driveList.length) return driveThumb(driveList[0], item, size);
     const name = localName((item.localPhotos || [])[0] || "");
     if (onThisMachine() && name) return "photos/" + encodeURIComponent(name) + "?w=" + size;
     return thumbUrl(item, size) || "";
@@ -320,30 +331,22 @@
   }
 
   function gallery(item) {
+    // Photos are shown from Google Drive. Local files are only a temporary preview
+    // until the phone photo is uploaded to Drive.
+    const driveList = (item.drivePhotos || []).filter(function (photo) { return photo.id; });
+    if (driveList.length) {
+      return driveList.map(function (photo) { return driveThumb(photo, item, 1600); }).filter(Boolean);
+    }
     const slides = [];
-    const localNames = {};
     if (onThisMachine()) {
+      const seen = {};
       (item.localPhotos || []).forEach(function (path) {
         const name = localName(path);
-        if (!name || localNames[name]) return;
-        localNames[name] = true;
+        if (!name || seen[name]) return;
+        seen[name] = true;
         slides.push("photos/" + encodeURIComponent(name));
       });
     }
-    const driveList = (item.drivePhotos || []).filter(function (photo) { return photo.id; });
-    const covered = {};
-    driveList.forEach(function (photo) {
-      if (photo.sameAs && localNames[photo.sameAs]) covered[photo.id] = true;
-      else if (photo.name && localNames[photo.name]) covered[photo.id] = true;
-    });
-    driveList.forEach(function (photo) {
-      if (covered[photo.id]) return;
-      let key = photo.resourceKey || "";
-      if (!key && item.resourceKey && photo.id === item.driveFileId) key = item.resourceKey;
-      let url = "https://drive.google.com/thumbnail?id=" + encodeURIComponent(photo.id) + "&sz=w1600";
-      if (key) url += "&resourcekey=" + encodeURIComponent(key);
-      slides.push(url);
-    });
     if (slides.length) return slides;
     const drive = thumbUrl(item, 1600);
     return drive ? [drive] : [];
@@ -1125,21 +1128,19 @@
       const rows = [];
       const local = card.localPhotos || [];
       const driveList = (card.drivePhotos || []).filter(function (photo) { return photo.id; });
-      const covered = {};
+      const onDrive = {};
       driveList.forEach(function (photo) {
-        if (photo.sameAs && local.indexOf(photo.sameAs) >= 0) covered[photo.id] = photo.sameAs;
-        else if (photo.name && local.indexOf(photo.name) >= 0) covered[photo.id] = photo.name;
+        rows.push({
+          label: (photo.name || "Фото") + " · Google Drive",
+          name: "",
+          driveId: photo.id
+        });
+        if (photo.name) onDrive[photo.name] = true;
+        if (photo.sameAs) onDrive[photo.sameAs] = true;
       });
       local.forEach(function (name) {
-        let driveId = "";
-        driveList.forEach(function (photo) {
-          if (covered[photo.id] === name) driveId = photo.id;
-        });
-        rows.push({ label: name, name: name, driveId: driveId });
-      });
-      driveList.forEach(function (photo) {
-        if (covered[photo.id]) return;
-        rows.push({ label: (photo.name || "Фото") + " · с Диска", name: "", driveId: photo.id });
+        if (onDrive[name]) return;
+        rows.push({ label: name + " · ещё не на Диске", name: name, driveId: "" });
       });
       return rows;
     }
