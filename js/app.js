@@ -217,21 +217,45 @@
     return String(url || "").replace("/wiki/Special:FilePath/", "/wiki/File:").split("?")[0];
   }
 
+  function sourceHostLabel(url) {
+    try {
+      const host = new URL(url).hostname.toLowerCase();
+      if (/wikipedia\.org|wikimedia\.org/i.test(host)) return "Викисклад";
+      if (/geraldika\.ru$/i.test(host)) return "Геральдика";
+      if (/heraldicum\.ru$/i.test(host)) return "Геральдикум";
+      return host.replace(/^www\./, "").split(".")[0].replace(/^./, function (c) { return c.toUpperCase(); });
+    } catch (error) {
+      return "";
+    }
+  }
+
+  function suggestSourceLabel(url, title) {
+    const known = sourceHostLabel(url);
+    if (known === "Викисклад" || known === "Геральдика" || known === "Геральдикум") return known;
+    const raw = String(title || "").replace(/\s+/g, " ").trim();
+    if (!raw) return known || "Источник";
+    let short = raw.split(/\s+[|\u2013\u2014\-]\s+/)[0].trim();
+    short = short.replace(/\s*[·•].*$/, "").trim();
+    if (short.length > 40) short = short.slice(0, 37).trim() + "…";
+    return short || known || "Источник";
+  }
+
   function sourceHtml(item) {
     const custom = (item && item.coaSource || "").trim();
+    const customLabel = (item && item.coaSourceLabel || "").trim();
     const wiki = coatValue(item);
     let href = "";
     let label = "";
     if (custom) {
       href = custom;
-      label = /geraldika\.ru/i.test(custom) ? "Геральдика" : "Источник";
+      label = customLabel || sourceHostLabel(custom) || "Источник";
     } else if (wikiFileName(wiki)) {
       href = "https://commons.wikimedia.org/wiki/File:" +
         wikiFileName(wiki).split("/").map(encodeURIComponent).join("/");
       label = "Викисклад";
     } else if (coatIsImage(wiki)) {
       href = coatPage(wiki);
-      label = "Викисклад";
+      label = sourceHostLabel(wiki) || "Источник";
     }
     if (!href) return "";
     return '<a class="coat-source" href="' + escapeAttr(href) + '" target="_blank" rel="noopener">' + escapeHtml(label) + "</a>";
@@ -1022,6 +1046,8 @@
         '<label>Город<input name="city" value="' + escapeAttr(card.city || "") + '"></label>' +
         '<label>Официальный герб<input name="coat" value="' + escapeAttr(card.coaWiki || "") + '" placeholder="Ссылка или текст"></label>' +
         '<div class="coat-preview"></div>' +
+        '<label>Ссылка на источник<input name="coaSource" value="' + escapeAttr(card.coaSource || "") + '" placeholder="https://…"></label>' +
+        '<label>Подпись источника<input name="coaSourceLabel" value="' + escapeAttr(card.coaSourceLabel || "") + '" placeholder="Викисклад, Геральдикум…"></label>' +
         '<label>Заметка<textarea name="notes" rows="2">' + escapeHtml(card.notes || "") + "</textarea></label>" +
         '<div class="pair">' +
           '<label>Широта<input name="lat" inputmode="decimal" value="' + escapeAttr(card.lat || "") + '"></label>' +
@@ -1053,6 +1079,37 @@
     }
     form.coat.addEventListener("input", drawCoatPreview);
     drawCoatPreview();
+    let sourceSuggestAt = 0;
+    function maybeSuggestSourceLabel(force) {
+      const url = form.coaSource.value.trim();
+      const labelField = form.coaSourceLabel;
+      if (!url) return;
+      if (!force && labelField.value.trim()) return;
+      const known = sourceHostLabel(url);
+      if (known === "Викисклад" || known === "Геральдика" || known === "Геральдикум") {
+        if (!labelField.value.trim() || force) labelField.value = known;
+        return;
+      }
+      const stamp = ++sourceSuggestAt;
+      fetch("/api/source-title?" + new URLSearchParams({ url: url }).toString()).then(function (res) {
+        return res.json().then(function (data) { return { ok: res.ok, data: data }; });
+      }).then(function (result) {
+        if (stamp !== sourceSuggestAt) return;
+        if (!force && labelField.value.trim()) return;
+        if (result.data && result.data.label) {
+          labelField.value = result.data.label;
+          return;
+        }
+        const title = result.ok ? (result.data.title || "") : "";
+        labelField.value = suggestSourceLabel(url, title);
+      }).catch(function () {
+        if (stamp !== sourceSuggestAt) return;
+        if (!force && labelField.value.trim()) return;
+        labelField.value = suggestSourceLabel(url, "");
+      });
+    }
+    form.coaSource.addEventListener("change", function () { maybeSuggestSourceLabel(false); });
+    form.coaSource.addEventListener("blur", function () { maybeSuggestSourceLabel(false); });
     els.detail.querySelector(".detail-close").addEventListener("click", closeCard);
     const region = form.region;
     fillRegions(region, countryValue, card.region || "");
@@ -1168,6 +1225,8 @@
           city: form.city.value.trim(),
           notes: form.notes.value.trim(),
           coaWiki: form.coat.value.trim(),
+          coaSource: form.coaSource.value.trim(),
+          coaSourceLabel: form.coaSourceLabel.value.trim(),
           lat: form.lat.value.trim(),
           lng: form.lng.value.trim(),
           photos: encodedPhotos,

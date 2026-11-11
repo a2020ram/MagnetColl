@@ -745,6 +745,70 @@ def apply_place(magnet, country_code, region, city, previous_code):
         magnet["coaPath"] = ""
 
 
+def source_host_label(url):
+    try:
+        host = (urlsplit(url).hostname or "").lower()
+    except Exception:
+        return ""
+    if not host:
+        return ""
+    if "wikipedia.org" in host or "wikimedia.org" in host:
+        return "Викисклад"
+    if host.endswith("geraldika.ru"):
+        return "Геральдика"
+    if host.endswith("heraldicum.ru"):
+        return "Геральдикум"
+    short = host[4:] if host.startswith("www.") else host
+    name = short.split(".")[0]
+    return name[:1].upper() + name[1:] if name else ""
+
+
+def fetch_page_title(url):
+    text = (url or "").strip()
+    if not text.startswith(("http://", "https://")):
+        raise ValueError("Нужна ссылка http(s)")
+    request = urllib.request.Request(
+        text,
+        headers={
+            "User-Agent": "MagnetColl/1.0 (local catalog; source title)",
+            "Accept": "text/html,application/xhtml+xml",
+        },
+    )
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))
+    try:
+        with opener.open(request, timeout=12) as response:
+            raw = response.read(200_000)
+            charset = "utf-8"
+            ctype = response.headers.get_content_charset()
+            if ctype:
+                charset = ctype
+    except urllib.error.HTTPError as error:
+        raise ValueError("Страница не открылась: " + str(error.code)) from error
+    except urllib.error.URLError as error:
+        raise ValueError("Страница не открылась: " + str(error.reason)) from error
+    html = raw.decode(charset, "replace")
+    match = re.search(r"<title[^>]*>(.*?)</title>", html, re.I | re.S)
+    if not match:
+        return ""
+    title = re.sub(r"\s+", " ", match.group(1)).strip()
+    title = re.sub(r"<[^>]+>", "", title)
+    return title
+
+
+def suggest_source_label(url, title=""):
+    known = source_host_label(url)
+    if known in ("Викисклад", "Геральдика", "Геральдикум"):
+        return known
+    raw = re.sub(r"\s+", " ", (title or "")).strip()
+    if not raw:
+        return known or "Источник"
+    short = re.split(r"\s+[|\u2013\u2014\-]\s+", raw, maxsplit=1)[0].strip()
+    short = re.sub(r"\s*[·•].*$", "", short).strip()
+    if len(short) > 40:
+        short = short[:37].rstrip() + "…"
+    return short or known or "Источник"
+
+
 def blank_magnet(name):
     return {
         "id": "",
@@ -766,6 +830,8 @@ def blank_magnet(name):
         "countryCode": "",
         "coaPath": "",
         "coaWiki": "",
+        "coaSource": "",
+        "coaSourceLabel": "",
     }
 
 
@@ -821,8 +887,14 @@ def save_card(data):
         apply_place(current, (data.get("countryCode") or "").strip(), data.get("region"), data.get("city"), previous)
         if typed_coat is not None and (typed_coat or incoming_id):
             current["coaWiki"] = typed_coat
-            if typed_coat != previous_wiki:
-                current["coaSource"] = ""
+        if "coaSource" in data:
+            current["coaSource"] = (data.get("coaSource") or "").strip()
+        elif typed_coat is not None and typed_coat != previous_wiki:
+            current["coaSource"] = ""
+        if "coaSourceLabel" in data:
+            current["coaSourceLabel"] = (data.get("coaSourceLabel") or "").strip()
+        elif typed_coat is not None and typed_coat != previous_wiki:
+            current["coaSourceLabel"] = ""
         for payload in data.get("photos") or []:
             encoded = payload.get("base64") or ""
             if "," in encoded[:80]:
@@ -1220,6 +1292,20 @@ class Handler(SimpleHTTPRequestHandler):
         if path == "/api/regions":
             code = (parse_qs(parts.query).get("code") or [""])[0]
             self.send_json(200, {"regions": regions_for(code)})
+            return
+        if path == "/api/source-title":
+            url = (parse_qs(parts.query).get("url") or [""])[0]
+            try:
+                title = fetch_page_title(url)
+                self.send_json(200, {
+                    "title": title,
+                    "label": suggest_source_label(url, title),
+                })
+            except ValueError as error:
+                self.send_json(400, {
+                    "error": str(error),
+                    "label": suggest_source_label(url, ""),
+                })
             return
         if path.startswith("/photos/"):
             name = path[len("/photos/"):]
