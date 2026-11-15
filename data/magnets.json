@@ -7840,14 +7840,15 @@
     "crimea": false,
     "countryCode": "AT",
     "coaPath": "/media/coats/europe/at/salzburg-stadt/salzburg/coat.png",
-    "coaWiki": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Salzburg_Wappen.svg?uselang=ru",
     "drivePhotos": [
       {
         "name": "Salzburg.jpg",
         "id": "1q9Rp_4MaUvXqeJaUuLY8SM9d3oyJcd0j"
       }
     ],
-    "coaSource": ""
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "san-marino",
