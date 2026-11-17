@@ -284,19 +284,21 @@
     "continent": "Европа",
     "country": "Россия",
     "region": "Архангельская область",
-    "city": "Архангельск",
+    "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/arhangel-skaja-oblast/arhangelsk-urban-okrug/arkhangel-sk/coat.png",
+    "coaPath": "/media/coats/europe/ru/arhangel-skaja-oblast/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20Arms%20of%20Arkhangelsk.svg?width=480",
     "drivePhotos": [
       {
         "name": "Архангельск.jpg",
         "id": "1iXGS2eI_h7VTvaLhdQRDFqb4f-zV0-aS"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "астрахань",
@@ -313,20 +315,22 @@
     "continent": "Европа",
     "country": "Россия",
     "region": "Астраханская область",
-    "city": "Астрахань",
+    "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "RU",
-    "coaPath": "/media/coats/europe/ru/astrahanskaja-oblast/astrahan-urban-okrug/coat.svg",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Astrakhan.svg?width=480",
+    "coaPath": "/media/coats/europe/ru/astrahanskaja-oblast/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Coat_of_Arms_of_Astrakhan.png?uselang=ru",
     "drivePhotos": [
       {
         "name": "Астрахань.jpg",
         "id": "0B4sMW1qgoxAneDNoT2JIZmFRSkk",
         "resourceKey": "0-jBZNuqkFiWRaXrfKmEq52Q"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "балтийск",
