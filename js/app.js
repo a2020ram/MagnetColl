@@ -514,7 +514,11 @@
     return a.localeCompare(b, "ru", { sensitivity: "base" });
   }
 
-  function branch(name, children, forceOpen, titleItem, parts) {
+  function isCountedMagnet(item) {
+    return !!(item && !item.placeOnly);
+  }
+
+  function branch(name, children, forceOpen, titleItem, parts, magnetCount) {
     const key = parts.join("\u0001");
     const opened = forceOpen || state.treeOpen.has(key);
     const wrap = document.createElement("div");
@@ -527,7 +531,9 @@
       (missingTitle ? " missing" : "") +
       (titleItem && !missingTitle ? " has-card" : "") +
       (hasKids ? " has-kids" : "");
-    const label = escapeHtml(name) + (missingTitle ? " · нет" : "");
+    // Counts only on expandable levels, not on the leaf magnet row.
+    const count = hasKids && magnetCount > 0 ? " (" + magnetCount + ")" : "";
+    const label = escapeHtml(name) + (missingTitle ? " · нет" : "") + count;
     if (titleItem) {
       const src = missingTitle ? coatSrc(titleItem) : (markerSrc(titleItem, 96) || coatSrc(titleItem));
       btn.innerHTML = (src ? '<img class="tree-thumb" src="' + escapeAttr(src) + '" alt="">' : '<span class="tree-ph"></span>') +
@@ -579,7 +585,8 @@
     // One magnet for this city and it is the city itself → single leaf with thumb, no extra nest.
     if (cityCard && !items.length) return row(cityCard);
     const kids = items.map(row);
-    return branch(cityName, kids, forceOpen, cityCard, parts);
+    const total = (isCountedMagnet(cityCard) ? 1 : 0) + items.filter(isCountedMagnet).length;
+    return branch(cityName, kids, forceOpen, cityCard, parts, total);
   }
 
   function renderTree(magnets, gaps) {
@@ -624,9 +631,11 @@
       return continents.get(a).order - continents.get(b).order || byRu(a, b);
     }).forEach(function (name) {
       const continent = continents.get(name);
+      let continentTotal = 0;
       const countries = Array.from(continent.countries.keys()).sort(byRu).map(function (countryName) {
         const node = continent.countries.get(countryName);
         const regionBranches = [];
+        let regionsTotal = 0;
         Array.from(node.regions.keys()).sort(byRu).forEach(function (regionName) {
           const region = node.regions.get(regionName);
           const regionMagnets = region.magnets.slice();
@@ -637,6 +646,11 @@
               (emptyPlace(item.city) || sameText(item.city, regionName));
           });
           if (cardAt >= 0) regionCard = regionMagnets.splice(cardAt, 1)[0];
+          let regionTotal = (isCountedMagnet(regionCard) ? 1 : 0) + regionMagnets.filter(isCountedMagnet).length;
+          Array.from(region.cities.keys()).forEach(function (city) {
+            regionTotal += region.cities.get(city).filter(isCountedMagnet).length;
+          });
+          regionsTotal += regionTotal;
           const leaves = regionMagnets.map(row);
           Array.from(region.cities.keys()).sort(byRu).forEach(function (city) {
             leaves.push(cityBranch(city, region.cities.get(city), opened, [name, countryName, regionName, city]));
@@ -646,7 +660,7 @@
             regionBranches.push(row(regionCard));
             return;
           }
-          regionBranches.push(branch(regionName, leaves, opened, regionCard, [name, countryName, regionName]));
+          regionBranches.push(branch(regionName, leaves, opened, regionCard, [name, countryName, regionName], regionTotal));
         });
         const countryMagnets = node.magnets.slice();
         // Matching name → on the country row. Mismatch (Spain / Испания) → first rows inside.
@@ -659,15 +673,20 @@
         else if (gap && (gap.placeOnly || normStatus(gap) === "missing") && sameText(gap.name, countryName)) {
           countryCard = gap;
         }
+        const countryTotal = (isCountedMagnet(countryCard) ? 1 : 0) +
+          countryMagnets.filter(isCountedMagnet).length + regionsTotal;
+        continentTotal += countryTotal;
         const insideCountry = countryMagnets.map(row).concat(regionBranches);
         const top = insideCountry;
-        if (countryCard && !top.length) return branch(countryName, [], opened, countryCard, [name, countryName]);
-        return branch(countryName, top, opened, countryCard, [name, countryName]);
+        if (countryCard && !top.length) return branch(countryName, [], opened, countryCard, [name, countryName], countryTotal);
+        return branch(countryName, top, opened, countryCard, [name, countryName], countryTotal);
       });
-      els.list.appendChild(branch(name, countries, opened, null, [name]));
+      els.list.appendChild(branch(name, countries, opened, null, [name], continentTotal));
     });
     const loose = magnets.filter(function (item) { return !item.country; });
-    if (loose.length) els.list.appendChild(branch("Без места", loose.map(row), opened, null, ["Без места"]));
+    if (loose.length) {
+      els.list.appendChild(branch("Без места", loose.map(row), opened, null, ["Без места"], loose.filter(isCountedMagnet).length));
+    }
   }
 
   function row(item) {

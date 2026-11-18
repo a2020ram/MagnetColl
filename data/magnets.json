@@ -626,7 +626,7 @@
   },
   {
     "id": "булгары",
-    "name": "Булгары",
+    "name": "Болгар",
     "status": "owned",
     "addedAt": "",
     "lat": 54.978,
@@ -653,7 +653,8 @@
         "resourceKey": "0-wDqg14KPQE1FFWt10rMnIQ"
       }
     ],
-    "coaSource": ""
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "валдай",
@@ -2684,7 +2685,7 @@
   },
   {
     "id": "мин-воды",
-    "name": "Мин.воды",
+    "name": "Минеральные Воды",
     "status": "owned",
     "addedAt": "",
     "lat": 44.21,
@@ -2709,7 +2710,9 @@
         "name": "Мин.воды.jpg",
         "id": "1Bk9sGkazxO_ymn0b3LsDGK8_wC8f4DlA"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "можга",
@@ -2950,7 +2953,7 @@
   },
   {
     "id": "набчелны",
-    "name": "НабЧелны",
+    "name": "Набережные Челны",
     "status": "owned",
     "addedAt": "",
     "lat": 55.7436,
@@ -2976,7 +2979,9 @@
         "id": "0B4sMW1qgoxAnRk1YZ2o3eUZMZXM",
         "resourceKey": "0-5Gy7uf7kCjSt5nXNplyjHA"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "некоуз",
@@ -3009,7 +3014,7 @@
   },
   {
     "id": "нижнекамск",
-    "name": "нижнекамск",
+    "name": "Нижнекамск",
     "status": "owned",
     "addedAt": "",
     "lat": 55.6358,
@@ -3022,7 +3027,7 @@
     "continent": "Европа",
     "country": "Россия",
     "region": "Республика Татарстан",
-    "city": "нижнекамск",
+    "city": "Нижнекамск",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
@@ -3035,7 +3040,9 @@
         "id": "0B4sMW1qgoxAnNi1Qc3RERnByNGc",
         "resourceKey": "0-rddoVRK9Z8tKpn8Dxh2I7w"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "нижний-новгород",
@@ -3735,7 +3742,7 @@
   },
   {
     "id": "ростов-на-дону-1",
-    "name": "Ростов на Дону_1",
+    "name": "Ростов-на-Дону",
     "status": "owned",
     "addedAt": "",
     "lat": 47.2357,
@@ -3762,7 +3769,8 @@
         "resourceKey": "0-yP593C4WZGL-4g5tHUNw5g"
       }
     ],
-    "coaSource": ""
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "рязань",
@@ -6027,8 +6035,8 @@
     ],
     "continent": "Азия",
     "country": "Китай",
-    "region": "Шэньси",
-    "city": "Сиань",
+    "region": "Shaanxi Sheng",
+    "city": "Xi'an",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
@@ -6041,7 +6049,8 @@
         "id": "1K_Q-n9eOZ6TjMPQbJdFj43kA0xg83v27"
       }
     ],
-    "coaSource": ""
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "china",
@@ -8540,8 +8549,8 @@
     ],
     "continent": "Азия",
     "country": "Китай",
-    "region": "Шэньси",
-    "city": "Сиань",
+    "region": "Shaanxi Sheng",
+    "city": "Xi'an",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
@@ -8570,7 +8579,7 @@
     "continent": "Азия",
     "country": "Китай",
     "region": "Shaanxi Sheng",
-    "city": "西安",
+    "city": "Xi'an",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
@@ -8583,7 +8592,8 @@
         "id": "1KYJkDDuc-cq6oLeiGmAb67p-47EdpkQz"
       }
     ],
-    "coaSource": ""
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "yerevan",
@@ -8600,7 +8610,7 @@
     "continent": "Азия",
     "country": "Армения",
     "region": "Erevan",
-    "city": "Երևան",
+    "city": "Yerevan",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
