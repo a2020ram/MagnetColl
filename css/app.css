@@ -275,7 +275,17 @@ input, select {
 .meta .place-crumb { color: var(--muted); }
 .tree-node { margin-left: 12px; }
 .tree-btn { font-weight: 600; }
-.tree-btn img { width: 28px; height: 28px; object-fit: contain; flex: none; }
+.tree-btn img, .tree-btn .tree-thumb, .tree-btn .tree-ph {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex: none;
+  border-radius: 50%;
+}
+.tree-btn .tree-ph { background: transparent; }
+.tree-btn .tree-label { min-width: 0; }
+.tree-btn.has-card .tree-thumb { object-fit: cover; cursor: pointer; }
+.tree-btn.has-kids .tree-label { cursor: pointer; }
 .tree-btn.missing { color: var(--want); font-weight: 500; }
 
 .panel-toggle { display: none; }

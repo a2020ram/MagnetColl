@@ -522,28 +522,37 @@
     const btn = document.createElement("button");
     btn.type = "button";
     const missingTitle = !!(titleItem && (titleItem.placeOnly || normStatus(titleItem) === "missing"));
-    btn.className = "tree-btn" + (missingTitle ? " missing" : "") + (titleItem && !missingTitle ? " has-card" : "");
+    const hasKids = !!(children && children.length);
+    btn.className = "tree-btn" +
+      (missingTitle ? " missing" : "") +
+      (titleItem && !missingTitle ? " has-card" : "") +
+      (hasKids ? " has-kids" : "");
+    const label = escapeHtml(name) + (missingTitle ? " · нет" : "");
     if (titleItem) {
       const src = missingTitle ? coatSrc(titleItem) : (markerSrc(titleItem, 96) || coatSrc(titleItem));
-      btn.innerHTML = (src ? '<img class="tree-thumb" src="' + escapeAttr(src) + '" alt="">' : "") +
-        "<span>" + escapeHtml(name) + (missingTitle ? " · нет" : "") + "</span>";
-    } else btn.textContent = name;
+      btn.innerHTML = (src ? '<img class="tree-thumb" src="' + escapeAttr(src) + '" alt="">' : '<span class="tree-ph"></span>') +
+        '<span class="tree-label">' + label + "</span>";
+    } else {
+      btn.innerHTML = '<span class="tree-ph"></span><span class="tree-label">' + label + "</span>";
+    }
     const box = document.createElement("div");
+    box.className = "tree-kids";
     box.hidden = !opened;
-    children.forEach(function (child) { box.appendChild(child); });
+    (children || []).forEach(function (child) { box.appendChild(child); });
     function openTitle() {
       if (!titleItem) return;
       select(titleItem.id);
       syncToggle();
     }
     function toggleOpen() {
-      if (!children.length) return;
+      if (!hasKids) return;
       box.hidden = !box.hidden;
       if (box.hidden) state.treeOpen.delete(key);
       else state.treeOpen.add(key);
     }
+    // Name / row: expand when there are children; otherwise open the level card.
     btn.addEventListener("click", function () {
-      if (children.length) toggleOpen();
+      if (hasKids) toggleOpen();
       else openTitle();
     });
     const thumb = btn.querySelector(".tree-thumb");
@@ -554,8 +563,23 @@
       });
     }
     wrap.appendChild(btn);
-    if (children.length) wrap.appendChild(box);
+    if (hasKids) wrap.appendChild(box);
     return wrap;
+  }
+
+  function pickNamedCard(list, placeName) {
+    const at = list.findIndex(function (item) { return sameText(item.name, placeName); });
+    if (at < 0) return null;
+    return list.splice(at, 1)[0];
+  }
+
+  function cityBranch(cityName, cityItems, forceOpen, parts) {
+    const items = cityItems.slice();
+    const cityCard = pickNamedCard(items, cityName);
+    // One magnet for this city and it is the city itself → single leaf with thumb, no extra nest.
+    if (cityCard && !items.length) return row(cityCard);
+    const kids = items.map(row);
+    return branch(cityName, kids, forceOpen, cityCard, parts);
   }
 
   function renderTree(magnets, gaps) {
@@ -606,31 +630,37 @@
         Array.from(node.regions.keys()).sort(byRu).forEach(function (regionName) {
           const region = node.regions.get(regionName);
           const regionMagnets = region.magnets.slice();
+          // Region title card: name matches region and city empty (or city repeats the region).
           let regionCard = null;
           const cardAt = regionMagnets.findIndex(function (item) {
-            return emptyPlace(item.city) && sameText(item.name, regionName);
+            return sameText(item.name, regionName) &&
+              (emptyPlace(item.city) || sameText(item.city, regionName));
           });
           if (cardAt >= 0) regionCard = regionMagnets.splice(cardAt, 1)[0];
           const leaves = regionMagnets.map(row);
-          // During search the region card is only a branch title otherwise — show it as a row too.
-          if (regionCard && opened) leaves.unshift(row(regionCard));
           Array.from(region.cities.keys()).sort(byRu).forEach(function (city) {
-            leaves.push(branch(city, region.cities.get(city).map(row), opened, null, [name, countryName, regionName, city]));
+            leaves.push(cityBranch(city, region.cities.get(city), opened, [name, countryName, regionName, city]));
           });
+          // Lone region card with no children → leaf.
+          if (regionCard && !leaves.length) {
+            regionBranches.push(row(regionCard));
+            return;
+          }
           regionBranches.push(branch(regionName, leaves, opened, regionCard, [name, countryName, regionName]));
         });
-        let countryCard = node.item;
         const countryMagnets = node.magnets.slice();
-        if (!countryCard) {
-          const cardAt = countryMagnets.findIndex(function (item) {
-            return emptyPlace(item.region) && emptyPlace(item.city) && sameText(item.name, countryName);
-          });
-          if (cardAt >= 0) countryCard = countryMagnets.splice(cardAt, 1)[0];
+        // Matching name → on the country row. Mismatch (Spain / Испания) → first rows inside.
+        let countryCard = null;
+        const gap = node.item;
+        const matchAt = countryMagnets.findIndex(function (item) {
+          return emptyPlace(item.region) && emptyPlace(item.city) && sameText(item.name, countryName);
+        });
+        if (matchAt >= 0) countryCard = countryMagnets.splice(matchAt, 1)[0];
+        else if (gap && (gap.placeOnly || normStatus(gap) === "missing") && sameText(gap.name, countryName)) {
+          countryCard = gap;
         }
-        const top = countryMagnets.map(row).concat(regionBranches);
-        if (countryCard && opened && !countryCard.placeOnly && normStatus(countryCard) !== "missing") {
-          top.unshift(row(countryCard));
-        }
+        const insideCountry = countryMagnets.map(row).concat(regionBranches);
+        const top = insideCountry;
         if (countryCard && !top.length) return branch(countryName, [], opened, countryCard, [name, countryName]);
         return branch(countryName, top, opened, countryCard, [name, countryName]);
       });
