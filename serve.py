@@ -345,7 +345,12 @@ def regions_for(code):
         for item in divisions:
             if item.get("countryCode") != code or item.get("navLevel") != 1:
                 continue
-            name = ((item.get("name") or {}).get("ru") or (item.get("name") or {}).get("en") or "").strip()
+            title = item.get("name") or {}
+            # GB (and similar) store English in both fields; ru sometimes has ugly codes like "Wales [Cymru GB-CYM]".
+            if code == "GB":
+                name = (title.get("en") or title.get("ru") or "").strip()
+            else:
+                name = (title.get("ru") or title.get("en") or "").strip()
             if not name or name in seen:
                 continue
             seen.add(name)
