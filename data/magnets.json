@@ -5719,7 +5719,7 @@
   },
   {
     "id": "barselona",
-    "name": "Barselona",
+    "name": "Барселона",
     "status": "owned",
     "addedAt": "",
     "lat": 41.3851,
@@ -5732,12 +5732,12 @@
     "continent": "Европа",
     "country": "Испания",
     "region": "Barcelona",
-    "city": "Barcelona",
+    "city": "Барселона",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "ES",
-    "coaPath": "/media/coats/europe/es/barcelona-barcelona/barcelona/coat.svg",
+    "coaPath": "/media/coats/europe/es/barcelona-barcelona/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Barcelona.svg?width=480",
     "drivePhotos": [
       {
@@ -5745,7 +5745,9 @@
         "id": "0B4sMW1qgoxAnTFdrMl9mWkMycEU",
         "resourceKey": "0-84WdH4LHE7dsdGWteRpSBg"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "bayern",
@@ -6265,7 +6267,7 @@
   },
   {
     "id": "dusseldorf",
-    "name": "Dusseldorf",
+    "name": "Düsseldorf",
     "status": "owned",
     "addedAt": "",
     "lat": 51.2277,
@@ -7421,7 +7423,7 @@
   },
   {
     "id": "munich",
-    "name": "Munich",
+    "name": "München",
     "status": "owned",
     "addedAt": "",
     "lat": 48.1351,
@@ -7451,7 +7453,9 @@
         "name": "Munich 2.jpg",
         "id": "1yNQO_-tgivJ7o7snoAQkMkadRLZ3F-XL"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "norway",
@@ -7485,7 +7489,7 @@
   },
   {
     "id": "nurnberg",
-    "name": "Nurnberg",
+    "name": "Nürnberg",
     "status": "owned",
     "addedAt": "",
     "lat": 49.4521,
@@ -7510,7 +7514,9 @@
         "name": "Nurnberg.jpg",
         "id": "1o-sGNwrfcH_EvCq5fU8fiRF3hkRJBJ1V"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "oriente",
@@ -8359,7 +8365,7 @@
   },
   {
     "id": "venezia",
-    "name": "Venezia",
+    "name": "Венеция",
     "status": "owned",
     "addedAt": "",
     "lat": 45.4408,
@@ -8378,14 +8384,15 @@
     "crimea": false,
     "countryCode": "IT",
     "coaPath": "/media/coats/europe/it/venezia/coat.wikimedia.svg",
-    "coaWiki": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:CoA_Citt%C3%A0_di_Venezia.png?uselang=ru",
     "drivePhotos": [
       {
         "name": "Venezia.jpg",
         "id": "1QsxvoQmVVyzY5VDGQ_EN7xP3h4eeZSLS"
       }
     ],
-    "coaSource": ""
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "vienna",
@@ -10384,19 +10391,21 @@
     "continent": "Европа",
     "country": "Испания",
     "region": "Pontevedra",
-    "city": "Marín",
+    "city": "Марин",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "ES",
-    "coaPath": "/media/coats/europe/es/pontevedra-pontevedra/marin/coat.svg",
+    "coaPath": "/media/coats/europe/es/pontevedra-pontevedra/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Mar%C3%ADn.svg?width=480",
     "drivePhotos": [
       {
         "name": "Марин.jpg",
         "id": "1AV8Dqwu9J5d7D2-1SCXIZUEOPmh3fZlM"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "порту",
@@ -10647,7 +10656,7 @@
     "continent": "Европа",
     "country": "Ирландия",
     "region": "Waterford",
-    "city": "Waterford",
+    "city": "Уотерфорд",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
@@ -10659,7 +10668,9 @@
         "name": "Уотерфорд.jpg",
         "id": "1Z-eiWDHED78FyIu0tdWcf8fyGqgnAQp_"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "корк",
