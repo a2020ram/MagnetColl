@@ -6857,14 +6857,14 @@
     "resourceKey": "",
     "localPhotos": [],
     "continent": "Азия",
-    "country": "Палестина",
-    "region": "Jerusalem",
-    "city": "",
+    "country": "Израиль",
+    "region": "Иерусалимский округ",
+    "city": "Jerusalem",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
-    "countryCode": "PS",
-    "coaPath": "/media/coats/asia/ps/jerusalem/jerusalem/coat.svg",
+    "countryCode": "IL",
+    "coaPath": "/media/coats/asia/il/jerusalem/jerusalem/coat.svg",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem_emblem.svg?width=480",
     "drivePhotos": [
       {
@@ -11599,7 +11599,7 @@
   },
   {
     "id": "macau",
-    "name": "Macau",
+    "name": "Макао",
     "status": "owned",
     "addedAt": "",
     "lat": 22.198745,
@@ -11612,19 +11612,21 @@
     "continent": "Азия",
     "country": "Макао",
     "region": "",
-    "city": "Macao",
+    "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
     "countryCode": "MO",
-    "coaPath": "/media/coats/asia/mo/cities/macau/coat.svg",
+    "coaPath": "/media/coats/asia/mo/coat.geraldika.gif",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Regional_Emblem_of_Macau.svg?width=480",
     "drivePhotos": [
       {
         "name": "Macau.jpg",
         "id": "1-2IL0jTiu_IPP8yEynIkUEr9n7dr9jkd"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "соединенные-штаты-америки",
