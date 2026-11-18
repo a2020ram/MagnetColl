@@ -5619,7 +5619,9 @@
         "name": "Andorra.jpg",
         "id": "18PJvul-vVTUXeiUPILe-T-2EbjDYKrmn"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "armenia",
@@ -7222,7 +7224,7 @@
     ],
     "continent": "Европа",
     "country": "Великобритания",
-    "region": "London, City of",
+    "region": "",
     "city": "London",
     "coaImageUrl": "",
     "notes": "",
@@ -7236,7 +7238,8 @@
         "id": "17g62Pfy7OYPBsJ4L65Cso96SJPXdbUqh"
       }
     ],
-    "coaSource": ""
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "madrid",
