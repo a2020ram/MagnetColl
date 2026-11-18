@@ -3445,7 +3445,7 @@
   },
   {
     "id": "пермь1",
-    "name": "Пермь1",
+    "name": "Пермь",
     "status": "owned",
     "addedAt": "",
     "lat": 58.0105,
@@ -3471,7 +3471,9 @@
         "id": "0B4sMW1qgoxAnTTV6aVhMWHFIS2c",
         "resourceKey": "0-UmtyxesNWy19ZYNvphKy9Q"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "петергоф",
@@ -6484,7 +6486,7 @@
   },
   {
     "id": "geneve",
-    "name": "Geneve",
+    "name": "Genève",
     "status": "owned",
     "addedAt": "",
     "lat": 46.2044,
@@ -6509,7 +6511,9 @@
         "name": "Geneve.jpg",
         "id": "1KRGGSSIv0SoOP7vsaJE8Er3edvewbE0i"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "georgia",
@@ -6576,7 +6580,7 @@
   },
   {
     "id": "goteborg",
-    "name": "Goteborg",
+    "name": "Гётеборг",
     "status": "owned",
     "addedAt": "",
     "lat": 57.7089,
@@ -7317,7 +7321,7 @@
     "continent": "Африка",
     "country": "Марокко",
     "region": "Souss-Massa",
-    "city": "أكادير",
+    "city": "Agadir",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
@@ -7670,7 +7674,7 @@
   },
   {
     "id": "praha",
-    "name": "Praha",
+    "name": "Прага",
     "status": "owned",
     "addedAt": "",
     "lat": 50.0755,
@@ -7695,7 +7699,9 @@
         "name": "Praha.jpg",
         "id": "1ofJflJytF_eiy_AgfirzTPiZ8w0BpJ-w"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "pula",
@@ -9187,7 +9193,7 @@
     ],
     "continent": "Северная Америка",
     "country": "Канада",
-    "region": "Нью-Брансуик",
+    "region": "New Brunswick",
     "city": "Нью-Брунсвик",
     "coaImageUrl": "",
     "notes": "",
@@ -9200,7 +9206,9 @@
         "name": "Нью-Брунсвик.jpg",
         "id": "1SGh3cGDJtFKu32ZxcqOViQ32QYRYQS9t"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "остров-кейп-бретон",
@@ -10349,7 +10357,7 @@
   },
   {
     "id": "пьештяни",
-    "name": "Пьештяни",
+    "name": "Пьештяны",
     "status": "owned",
     "addedAt": "",
     "lat": 48.5917973,
@@ -10374,7 +10382,9 @@
         "name": "Пьештяни.jpg",
         "id": "1ICWVG3hQ9pk3xW8kE-6b_e6nIBrdcsZn"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "марин",
