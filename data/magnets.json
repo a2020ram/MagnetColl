@@ -9360,7 +9360,9 @@
         "name": "Паттайя.jpg",
         "id": "1ymeKZ7rCqmaFA4E3nxvpcISjOfyWUorx"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "елец",
@@ -11759,8 +11761,7 @@
     "driveFileId": "1Nt_hoGgarScUdtWUmSmAVgeHFyF-CChs",
     "resourceKey": "",
     "localPhotos": [
-      "Индонезия.jpg",
-      "Индонезия 2.jpg"
+      "Индонезия.jpg"
     ],
     "continent": "Азия",
     "country": "Индонезия",
@@ -11776,12 +11777,10 @@
       {
         "name": "Индонезия.jpg",
         "id": "1Nt_hoGgarScUdtWUmSmAVgeHFyF-CChs"
-      },
-      {
-        "name": "Индонезия 2.jpg",
-        "id": "1CbfOEgD7xYqKS0Zic22pRI_aAmR3KK0g"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "нагоя",
@@ -14473,16 +14472,16 @@
     "localPhotos": [
       "Ниуэ.jpg"
     ],
-    "continent": "Океания",
-    "country": "Ниуэ",
+    "continent": "",
+    "country": "",
     "region": "",
     "city": "",
     "coaImageUrl": "",
     "notes": "",
     "crimea": false,
-    "countryCode": "NU",
+    "countryCode": "",
     "coaPath": "",
-    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Seal_of_Niue.svg?width=480",
+    "coaWiki": "https://commons.wikimedia.org/wiki/File:Public_Seal_of_Niue_(1974%E2%80%932021).svg?uselang=ru",
     "coaSource": "",
     "coaSourceLabel": "",
     "drivePhotos": [
@@ -14582,6 +14581,35 @@
       {
         "name": "Антигуа и Барбуда.jpg",
         "id": "1Xygo0RxgsH21JB2IjMi8Fn8Y_3EXhHsm"
+      }
+    ]
+  },
+  {
+    "id": "таиланд",
+    "name": "Таиланд",
+    "status": "owned",
+    "addedAt": "2026-11-22",
+    "lat": 15.87,
+    "lng": 100.9925,
+    "driveFileId": "1CbfOEgD7xYqKS0Zic22pRI_aAmR3KK0g",
+    "resourceKey": "",
+    "localPhotos": [],
+    "continent": "Азия",
+    "country": "Таиланд",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "TH",
+    "coaPath": "/media/coats/asia/th/coat.png",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Thailand.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Таиланд 2.jpg",
+        "id": "1CbfOEgD7xYqKS0Zic22pRI_aAmR3KK0g"
       }
     ]
   }
