@@ -496,9 +496,14 @@
     const scroll = els.list.scrollTop;
     const magnets = sortMagnets(listedMagnets());
     const gaps = els.status.value === "owned" ? [] : missingPlaces().filter(matchesQuery);
-    els.count.textContent = "есть " + state.items.filter(function (item) {
+    const owned = state.items.filter(function (item) {
       return normStatus(item) !== "missing";
-    }).length + " · нет " + missingPlaces().length;
+    });
+    const countriesLeft = missingPlaces().length;
+    const countriesHave = Math.max(0, (state.places || []).length - countriesLeft);
+    els.count.innerHTML =
+      '<span class="count-nums">(' + owned.length + " · " + countriesHave + " · " + countriesLeft + ")</span>" +
+      '<span class="count-hint">магниты · страны · осталось</span>';
     if (els.view.value === "tree") renderTree(magnets, gaps);
     else renderFlat(els.status.value === "missing" ? sortMagnets(gaps.concat(magnets)) : magnets);
     syncMarkers(magnets.filter(function (item) { return normStatus(item) !== "missing"; }));
