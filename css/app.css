@@ -121,8 +121,13 @@ input, select {
 }
 .row { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 6px; margin-top: 8px; }
 .count { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
-.count-nums { display: block; }
-.count-hint { display: block; margin-top: 2px; font-size: 11px; opacity: 0.78; }
+.tree-count-hint {
+  margin: 12px 4px 4px;
+  color: var(--muted);
+  font-size: 11px;
+  opacity: 0.78;
+  line-height: 1.35;
+}
 
 .detail {
   margin: 0 14px 8px;

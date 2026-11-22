@@ -496,14 +496,9 @@
     const scroll = els.list.scrollTop;
     const magnets = sortMagnets(listedMagnets());
     const gaps = els.status.value === "owned" ? [] : missingPlaces().filter(matchesQuery);
-    const owned = state.items.filter(function (item) {
+    els.count.textContent = "есть " + state.items.filter(function (item) {
       return normStatus(item) !== "missing";
-    });
-    const countriesLeft = missingPlaces().length;
-    const countriesHave = Math.max(0, (state.places || []).length - countriesLeft);
-    els.count.innerHTML =
-      '<span class="count-nums">(' + owned.length + " · " + countriesHave + " · " + countriesLeft + ")</span>" +
-      '<span class="count-hint">магниты · страны · осталось</span>';
+    }).length + " · нет " + missingPlaces().length;
     if (els.view.value === "tree") renderTree(magnets, gaps);
     else renderFlat(els.status.value === "missing" ? sortMagnets(gaps.concat(magnets)) : magnets);
     syncMarkers(magnets.filter(function (item) { return normStatus(item) !== "missing"; }));
@@ -523,7 +518,24 @@
     return !!(item && !item.placeOnly);
   }
 
-  function branch(name, children, forceOpen, titleItem, parts, magnetCount) {
+  function continentCountryStats(continentName) {
+    const ownedCodes = new Set();
+    state.items.forEach(function (item) {
+      if (normStatus(item) === "missing") return;
+      if (!sameText(item.continent, continentName)) return;
+      if (item.countryCode) ownedCodes.add(item.countryCode);
+    });
+    let have = 0;
+    let left = 0;
+    (state.places || []).forEach(function (place) {
+      if (!sameText(place.continent, continentName)) return;
+      if (ownedCodes.has(place.countryCode)) have += 1;
+      else left += 1;
+    });
+    return { have: have, left: left };
+  }
+
+  function branch(name, children, forceOpen, titleItem, parts, magnetCount, countLabel) {
     const key = parts.join("\u0001");
     const opened = forceOpen || state.treeOpen.has(key);
     const wrap = document.createElement("div");
@@ -537,7 +549,8 @@
       (titleItem && !missingTitle ? " has-card" : "") +
       (hasKids ? " has-kids" : "");
     // Counts only on expandable levels, not on the leaf magnet row.
-    const count = hasKids && magnetCount > 0 ? " (" + magnetCount + ")" : "";
+    const shown = countLabel || (magnetCount > 0 ? String(magnetCount) : "");
+    const count = hasKids && shown ? " (" + shown + ")" : "";
     const label = escapeHtml(name) + (missingTitle ? " · нет" : "") + count;
     if (titleItem) {
       const src = missingTitle ? coatSrc(titleItem) : (markerSrc(titleItem, 96) || coatSrc(titleItem));
@@ -686,12 +699,20 @@
         if (countryCard && !top.length) return branch(countryName, [], opened, countryCard, [name, countryName], countryTotal);
         return branch(countryName, top, opened, countryCard, [name, countryName], countryTotal);
       });
-      els.list.appendChild(branch(name, countries, opened, null, [name], continentTotal));
+      const stats = continentCountryStats(name);
+      const continentLabel = (stats.have + stats.left) > 0
+        ? continentTotal + " · " + stats.have + " · " + stats.left
+        : "";
+      els.list.appendChild(branch(name, countries, opened, null, [name], continentTotal, continentLabel));
     });
     const loose = magnets.filter(function (item) { return !item.country; });
     if (loose.length) {
       els.list.appendChild(branch("Без места", loose.map(row), opened, null, ["Без места"], loose.filter(isCountedMagnet).length));
     }
+    const hint = document.createElement("p");
+    hint.className = "tree-count-hint";
+    hint.textContent = "у континента: магниты · страны · осталось";
+    els.list.appendChild(hint);
   }
 
   function row(item) {
