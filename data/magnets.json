@@ -8442,10 +8442,9 @@
     "addedAt": "",
     "lat": 14.0583,
     "lng": 108.2772,
-    "driveFileId": "0B4sMW1qgoxAncVhEX2lhX0RjMWc",
+    "driveFileId": "1nDSqVvxLAj9NESftBvhSjeS8W9e0FQhG",
     "resourceKey": "0-cODn_RUlGsXrrt8IzHUfnw",
     "localPhotos": [
-      "Vietnam.jpg",
       "Вьетнам.jpg"
     ],
     "continent": "Азия",
@@ -8460,15 +8459,13 @@
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Vietnam.svg?width=480",
     "drivePhotos": [
       {
-        "name": "Vietnam.jpg",
-        "id": "0B4sMW1qgoxAncVhEX2lhX0RjMWc",
-        "resourceKey": "0-cODn_RUlGsXrrt8IzHUfnw"
-      },
-      {
         "name": "Вьетнам.jpg",
-        "id": "1nDSqVvxLAj9NESftBvhSjeS8W9e0FQhG"
+        "id": "1nDSqVvxLAj9NESftBvhSjeS8W9e0FQhG",
+        "resourceKey": "0-cODn_RUlGsXrrt8IzHUfnw"
       }
-    ]
+    ],
+    "coaSource": "",
+    "coaSourceLabel": ""
   },
   {
     "id": "vilnius",
