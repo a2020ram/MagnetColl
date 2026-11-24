@@ -6123,9 +6123,10 @@
     "addedAt": "",
     "lat": 35.1264,
     "lng": 33.4299,
-    "driveFileId": "0B4sMW1qgoxAnWmxBX0FOa0FiSUE",
-    "resourceKey": "0-elCEW7CGOkiD2m5jbVQ-Kw",
+    "driveFileId": "1_hXQviqpnwRt4dTJGb27g14vDfRAipq7",
+    "resourceKey": "",
     "localPhotos": [
+      "Кипр.jpg",
       "Cyprus.jpg"
     ],
     "continent": "Азия",
@@ -6139,6 +6140,10 @@
     "coaPath": "/media/coats/asia/cy/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Cyprus_%282006%29.svg?width=480",
     "drivePhotos": [
+      {
+        "name": "Кипр.jpg",
+        "id": "1_hXQviqpnwRt4dTJGb27g14vDfRAipq7"
+      },
       {
         "name": "Cyprus.jpg",
         "id": "0B4sMW1qgoxAnWmxBX0FOa0FiSUE",
@@ -10315,9 +10320,10 @@
     "addedAt": "",
     "lat": 52.838164,
     "lng": -2.3274808,
-    "driveFileId": "1P-C52rxXi_LTMYPd_Arc9_V5iYjlIvDg",
+    "driveFileId": "1KMn5e5fuVa197uYZ2ofiz7Yya2AMaj6Q",
     "resourceKey": "",
     "localPhotos": [
+      "Англия 2.jpg",
       "Англия.jpg"
     ],
     "continent": "Европа",
@@ -10331,6 +10337,10 @@
     "coaPath": "/media/coats/europe/gb/england/coat.png",
     "coaWiki": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Royal_Arms_of_England_(1198-1340).svg",
     "drivePhotos": [
+      {
+        "name": "Англия 2.jpg",
+        "id": "1KMn5e5fuVa197uYZ2ofiz7Yya2AMaj6Q"
+      },
       {
         "name": "Англия.jpg",
         "id": "1P-C52rxXi_LTMYPd_Arc9_V5iYjlIvDg"
@@ -12199,9 +12209,10 @@
     "addedAt": "",
     "lat": 32.427908,
     "lng": 53.688046,
-    "driveFileId": "1XAZAlUIIoXKohEiculFhyz3S71H8SkzH",
+    "driveFileId": "1hpvY3tIBo7SQojaAO_Mti0iTRgc3TaeL",
     "resourceKey": "",
     "localPhotos": [
+      "Иран 2.jpg",
       "Иран.jpg"
     ],
     "continent": "Азия",
@@ -12215,6 +12226,10 @@
     "coaPath": "/media/coats/asia/ir/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Iran.svg?width=480",
     "drivePhotos": [
+      {
+        "name": "Иран 2.jpg",
+        "id": "1hpvY3tIBo7SQojaAO_Mti0iTRgc3TaeL"
+      },
       {
         "name": "Иран.jpg",
         "id": "1XAZAlUIIoXKohEiculFhyz3S71H8SkzH"
@@ -13532,7 +13547,7 @@
   },
   {
     "id": "цар",
-    "name": "ЦАР",
+    "name": "Центральноафриканская Республика",
     "status": "owned",
     "addedAt": "2026-11-22",
     "lat": 6.6111,
@@ -13550,7 +13565,7 @@
     "notes": "",
     "crimea": false,
     "countryCode": "CF",
-    "coaPath": "",
+    "coaPath": "/media/coats/africa/cf/coat.png",
     "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Central_African_Republic.svg?width=480",
     "coaSource": "",
     "coaSourceLabel": "",
@@ -14610,6 +14625,1184 @@
       {
         "name": "Таиланд 2.jpg",
         "id": "1CbfOEgD7xYqKS0Zic22pRI_aAmR3KK0g"
+      }
+    ]
+  },
+  {
+    "id": "малави",
+    "name": "Малави",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -13.2543,
+    "lng": 34.3015,
+    "driveFileId": "1Ny7oH0htFLvyiKAC0qkrd7LcONdR-7zk",
+    "resourceKey": "",
+    "localPhotos": [
+      "Малави.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Малави",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "MW",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Malawi.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Малави.jpg",
+        "id": "1Ny7oH0htFLvyiKAC0qkrd7LcONdR-7zk"
+      }
+    ]
+  },
+  {
+    "id": "ботсвана",
+    "name": "Ботсвана",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -22.3285,
+    "lng": 24.6849,
+    "driveFileId": "1aBLjLBJPFYmxIb60Y2EybEBFrvZbh-Fb",
+    "resourceKey": "",
+    "localPhotos": [
+      "Ботсвана.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Ботсвана",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "BW",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Botswana.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Ботсвана.jpg",
+        "id": "1aBLjLBJPFYmxIb60Y2EybEBFrvZbh-Fb"
+      }
+    ]
+  },
+  {
+    "id": "сан-томе-и-принсипи",
+    "name": "Сан-Томе и Принсипи",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 0.1864,
+    "lng": 6.6131,
+    "driveFileId": "1Y6UkOMW9J9Uixei9SnTaGnWhmk2ql-J3",
+    "resourceKey": "",
+    "localPhotos": [
+      "Сан-Томе и Принсипи.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Сан-Томе и Принсипи",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "ST",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Сан-Томе и Принсипи.jpg",
+        "id": "1Y6UkOMW9J9Uixei9SnTaGnWhmk2ql-J3"
+      }
+    ]
+  },
+  {
+    "id": "эсватини",
+    "name": "Эсватини",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -26.5225,
+    "lng": 31.4659,
+    "driveFileId": "15g4JFqU0Jcpw2AetU5kk2YlqeAUFPWAH",
+    "resourceKey": "",
+    "localPhotos": [
+      "Эсватини.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Свазиленд",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "SZ",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Eswatini.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Эсватини.jpg",
+        "id": "15g4JFqU0Jcpw2AetU5kk2YlqeAUFPWAH"
+      }
+    ]
+  },
+  {
+    "id": "сомали",
+    "name": "Сомали",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 5.1521,
+    "lng": 46.1996,
+    "driveFileId": "1YLjCKCs1eLVtZK6VQGqlM8kkDv7fA1jE",
+    "resourceKey": "",
+    "localPhotos": [
+      "Сомали.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Сомали",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "SO",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Somalia.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Сомали.jpg",
+        "id": "1YLjCKCs1eLVtZK6VQGqlM8kkDv7fA1jE"
+      }
+    ]
+  },
+  {
+    "id": "южный-судан",
+    "name": "Южный Судан",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 6.877,
+    "lng": 31.307,
+    "driveFileId": "14rovHZA5KZh70qeYeG2VE9KOPcsg7MPO",
+    "resourceKey": "",
+    "localPhotos": [
+      "Южный Судан.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Южный Судан",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "SS",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_South_Sudan.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Южный Судан.jpg",
+        "id": "14rovHZA5KZh70qeYeG2VE9KOPcsg7MPO"
+      }
+    ]
+  },
+  {
+    "id": "багамы",
+    "name": "Багамы",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 25.0343,
+    "lng": -77.3963,
+    "driveFileId": "1BcyuRuAlNtgMjcXKqgykR241hhZ1khjt",
+    "resourceKey": "",
+    "localPhotos": [
+      "Багамы.jpg"
+    ],
+    "continent": "Северная Америка",
+    "country": "Багамские Острова",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "BS",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Bahamas.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Багамы.jpg",
+        "id": "1BcyuRuAlNtgMjcXKqgykR241hhZ1khjt"
+      }
+    ]
+  },
+  {
+    "id": "фиджи",
+    "name": "Фиджи",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -16.5782,
+    "lng": 179.4144,
+    "driveFileId": "1S5dDDQriPHtHZUWY3Z1Fz0AZfBzs7JcQ",
+    "resourceKey": "",
+    "localPhotos": [
+      "Фиджи.jpg"
+    ],
+    "continent": "Океания",
+    "country": "Фиджи",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "FJ",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Fiji.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Фиджи.jpg",
+        "id": "1S5dDDQriPHtHZUWY3Z1Fz0AZfBzs7JcQ"
+      }
+    ]
+  },
+  {
+    "id": "габон",
+    "name": "Габон",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -0.8037,
+    "lng": 11.6094,
+    "driveFileId": "13Wj7wN4G_z7LivETLxyvQk_Il774XND1",
+    "resourceKey": "",
+    "localPhotos": [
+      "Габон.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Габон",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "GA",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Gabon.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Габон.jpg",
+        "id": "13Wj7wN4G_z7LivETLxyvQk_Il774XND1"
+      }
+    ]
+  },
+  {
+    "id": "сингапур",
+    "name": "Сингапур",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 1.3521,
+    "lng": 103.8198,
+    "driveFileId": "17SVyYCMDRRzrXfeWZqY8r-m_La77aiBi",
+    "resourceKey": "",
+    "localPhotos": [
+      "Сингапур.jpg"
+    ],
+    "continent": "Азия",
+    "country": "Сингапур",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "SG",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Singapore.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Сингапур.jpg",
+        "id": "17SVyYCMDRRzrXfeWZqY8r-m_La77aiBi"
+      }
+    ]
+  },
+  {
+    "id": "бутан",
+    "name": "Бутан",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 27.5142,
+    "lng": 90.4336,
+    "driveFileId": "1ehrIyoWHx1MvWdUyqBpS8DsZ8XF1J8ZQ",
+    "resourceKey": "",
+    "localPhotos": [
+      "Бутан.jpg"
+    ],
+    "continent": "Азия",
+    "country": "Бутан",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "BT",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Bhutan.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Бутан.jpg",
+        "id": "1ehrIyoWHx1MvWdUyqBpS8DsZ8XF1J8ZQ"
+      }
+    ]
+  },
+  {
+    "id": "гватемала",
+    "name": "Гватемала",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 15.7835,
+    "lng": -90.2308,
+    "driveFileId": "1E9BPv9EADqVesE8NGGMndAraX22ibxSB",
+    "resourceKey": "",
+    "localPhotos": [
+      "Гватемала.jpg"
+    ],
+    "continent": "Северная Америка",
+    "country": "Гватемала",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "GT",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Guatemala.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Гватемала.jpg",
+        "id": "1E9BPv9EADqVesE8NGGMndAraX22ibxSB"
+      }
+    ]
+  },
+  {
+    "id": "тонга",
+    "name": "Тонга",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -21.179,
+    "lng": -175.1982,
+    "driveFileId": "1q5M6mnhSblm5tMGZF1gBi58TH5iXHeah",
+    "resourceKey": "",
+    "localPhotos": [
+      "Тонга.jpg"
+    ],
+    "continent": "Океания",
+    "country": "Тонга",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "TO",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Tonga.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Тонга.jpg",
+        "id": "1q5M6mnhSblm5tMGZF1gBi58TH5iXHeah"
+      }
+    ]
+  },
+  {
+    "id": "каймановы-острова",
+    "name": "Каймановы острова",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 19.3133,
+    "lng": -81.2546,
+    "driveFileId": "1Qp017ox2Nd-OdBz0UmT_mt08Dyj2WTf_",
+    "resourceKey": "",
+    "localPhotos": [
+      "Каймановы острова.jpg"
+    ],
+    "continent": "Северная Америка",
+    "country": "Каймановы острова",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "KY",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Cayman_Islands.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Каймановы острова.jpg",
+        "id": "1Qp017ox2Nd-OdBz0UmT_mt08Dyj2WTf_"
+      }
+    ]
+  },
+  {
+    "id": "уганда",
+    "name": "Уганда",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 1.3733,
+    "lng": 32.2903,
+    "driveFileId": "1wWI16-c4Fw8RNH3buWA35h9KIhxQ62Ma",
+    "resourceKey": "",
+    "localPhotos": [
+      "Уганда.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Уганда",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "UG",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Uganda.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Уганда.jpg",
+        "id": "1wWI16-c4Fw8RNH3buWA35h9KIhxQ62Ma"
+      }
+    ]
+  },
+  {
+    "id": "теркс-и-кайкос",
+    "name": "Теркс и Кайкос",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 21.694,
+    "lng": -71.7979,
+    "driveFileId": "1FPofVQC-LBo96YgChlcPybYZS8aQdLUW",
+    "resourceKey": "",
+    "localPhotos": [
+      "Теркс и Кайкос.jpg"
+    ],
+    "continent": "Северная Америка",
+    "country": "Теркс и Кайкос",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "TC",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Turks_and_Caicos_Islands.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Теркс и Кайкос.jpg",
+        "id": "1FPofVQC-LBo96YgChlcPybYZS8aQdLUW"
+      }
+    ]
+  },
+  {
+    "id": "лаос",
+    "name": "Лаос",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 19.8563,
+    "lng": 102.4955,
+    "driveFileId": "1bsxoPO2JYUXKbSC6KJ5MaTftPZbRil08",
+    "resourceKey": "",
+    "localPhotos": [
+      "Лаос.jpg"
+    ],
+    "continent": "Азия",
+    "country": "Лаос",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "LA",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Laos_%281991-2025%29.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Лаос.jpg",
+        "id": "1bsxoPO2JYUXKbSC6KJ5MaTftPZbRil08"
+      }
+    ]
+  },
+  {
+    "id": "коста-рика",
+    "name": "Коста-Рика",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 9.7489,
+    "lng": -83.7534,
+    "driveFileId": "1mS7mrmnRJ7d2Z0rXYzr7HG8MBEClUnvT",
+    "resourceKey": "",
+    "localPhotos": [
+      "Коста-Рика.jpg"
+    ],
+    "continent": "Северная Америка",
+    "country": "Коста-Рика",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "CR",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Costa_Rica.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Коста-Рика.jpg",
+        "id": "1mS7mrmnRJ7d2Z0rXYzr7HG8MBEClUnvT"
+      }
+    ]
+  },
+  {
+    "id": "намибия",
+    "name": "Намибия",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -22.9576,
+    "lng": 18.4904,
+    "driveFileId": "1MHya4eT3Dh4kjvCxrTVe39CZ8vDemywc",
+    "resourceKey": "",
+    "localPhotos": [
+      "Намибия.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Намибия",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "NA",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Namibia.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Намибия.jpg",
+        "id": "1MHya4eT3Dh4kjvCxrTVe39CZ8vDemywc"
+      }
+    ]
+  },
+  {
+    "id": "замбия",
+    "name": "Замбия",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -13.1339,
+    "lng": 27.8493,
+    "driveFileId": "1j4ECDQaO1lsgzC8v_opuxpl1uyd1BMFP",
+    "resourceKey": "",
+    "localPhotos": [
+      "Замбия.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Замбия",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "ZM",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Zambia.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Замбия.jpg",
+        "id": "1j4ECDQaO1lsgzC8v_opuxpl1uyd1BMFP"
+      }
+    ]
+  },
+  {
+    "id": "папуа-новая-гвинея",
+    "name": "Папуа — Новая Гвинея",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -6.315,
+    "lng": 143.9555,
+    "driveFileId": "1CMoYIsiPpGwviBLJMmLbx9t99ZWkOGwJ",
+    "resourceKey": "",
+    "localPhotos": [
+      "Папуа _ Новая Гвинея.jpg"
+    ],
+    "continent": "Океания",
+    "country": "Папуа — Новая Гвинея",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "PG",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_emblem_of_Papua_New_Guinea.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Папуа _ Новая Гвинея.jpg",
+        "id": "1CMoYIsiPpGwviBLJMmLbx9t99ZWkOGwJ"
+      }
+    ]
+  },
+  {
+    "id": "либерия",
+    "name": "Либерия",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 6.4281,
+    "lng": -9.4295,
+    "driveFileId": "1F37CuGOxj0yYYY6fhFAClfjZ_K-Lqfjc",
+    "resourceKey": "",
+    "localPhotos": [
+      "Либерия.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Либерия",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "LR",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Liberia.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Либерия.jpg",
+        "id": "1F37CuGOxj0yYYY6fhFAClfjZ_K-Lqfjc"
+      }
+    ]
+  },
+  {
+    "id": "аруба",
+    "name": "Аруба",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 12.5211,
+    "lng": -69.9683,
+    "driveFileId": "1p6zy798CUjpmvaayezxWiUvEaU1JALKF",
+    "resourceKey": "",
+    "localPhotos": [
+      "Аруба.jpg"
+    ],
+    "continent": "Северная Америка",
+    "country": "Аруба",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "AW",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Aruba.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Аруба.jpg",
+        "id": "1p6zy798CUjpmvaayezxWiUvEaU1JALKF"
+      }
+    ]
+  },
+  {
+    "id": "ямайка",
+    "name": "Ямайка",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 18.1096,
+    "lng": -77.2975,
+    "driveFileId": "1OsLE7QRfcCfKpAdkrurP1EKKchHogwu7",
+    "resourceKey": "",
+    "localPhotos": [
+      "Ямайка.jpg"
+    ],
+    "continent": "Северная Америка",
+    "country": "Ямайка",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "JM",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Jamaica.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Ямайка.jpg",
+        "id": "1OsLE7QRfcCfKpAdkrurP1EKKchHogwu7"
+      }
+    ]
+  },
+  {
+    "id": "мальдивы",
+    "name": "Мальдивы",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 3.2028,
+    "lng": 73.2207,
+    "driveFileId": "174WlYlrHNVSDfUNdmwfUwBS8NjwzwU8l",
+    "resourceKey": "",
+    "localPhotos": [
+      "Мальдивы.jpg"
+    ],
+    "continent": "Азия",
+    "country": "Мальдивы",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "MV",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Maldives.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Мальдивы.jpg",
+        "id": "174WlYlrHNVSDfUNdmwfUwBS8NjwzwU8l"
+      }
+    ]
+  },
+  {
+    "id": "гайана",
+    "name": "Гайана",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 4.8604,
+    "lng": -58.9302,
+    "driveFileId": "1oiLKVdDQ6O3eLrYbHtaF2WIq7mPHDooR",
+    "resourceKey": "",
+    "localPhotos": [
+      "Гайана.jpg"
+    ],
+    "continent": "Южная Америка",
+    "country": "Гайана",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "GY",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Guyana.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Гайана.jpg",
+        "id": "1oiLKVdDQ6O3eLrYbHtaF2WIq7mPHDooR"
+      }
+    ]
+  },
+  {
+    "id": "танзания",
+    "name": "Танзания",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -6.369,
+    "lng": 34.8888,
+    "driveFileId": "1_gl3xR-sl8E5Nu535l9IWOfEcKUnw0M7",
+    "resourceKey": "",
+    "localPhotos": [
+      "Танзания.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Танзания",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "TZ",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Tanzania.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Танзания.jpg",
+        "id": "1_gl3xR-sl8E5Nu535l9IWOfEcKUnw0M7"
+      }
+    ]
+  },
+  {
+    "id": "парагвай",
+    "name": "Парагвай",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -23.4425,
+    "lng": -58.4438,
+    "driveFileId": "1eZzATnZZj9tbi6No8ge1wUGl4BCyRdLa",
+    "resourceKey": "",
+    "localPhotos": [
+      "Парагвай.jpg"
+    ],
+    "continent": "Южная Америка",
+    "country": "Парагвай",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "PY",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Paraguay.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Парагвай.jpg",
+        "id": "1eZzATnZZj9tbi6No8ge1wUGl4BCyRdLa"
+      }
+    ]
+  },
+  {
+    "id": "камбоджа",
+    "name": "Камбоджа",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 12.5657,
+    "lng": 104.991,
+    "driveFileId": "1nZZTn3-ZAkuOIPJt4Wg3NBbPRN72v-MO",
+    "resourceKey": "",
+    "localPhotos": [
+      "Камбоджа.jpg"
+    ],
+    "continent": "Азия",
+    "country": "Камбоджа",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "KH",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal_arms_of_Cambodia.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Камбоджа.jpg",
+        "id": "1nZZTn3-ZAkuOIPJt4Wg3NBbPRN72v-MO"
+      }
+    ]
+  },
+  {
+    "id": "сейшелы",
+    "name": "Сейшелы",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -4.6796,
+    "lng": 55.492,
+    "driveFileId": "1GnSklHZQBigvSAuFo_12niEWGIDc7Lrr",
+    "resourceKey": "",
+    "localPhotos": [
+      "Сейшелы.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Сейшельские Острова",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "SC",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Seychelles.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Сейшелы.jpg",
+        "id": "1GnSklHZQBigvSAuFo_12niEWGIDc7Lrr"
+      }
+    ]
+  },
+  {
+    "id": "эфиопия",
+    "name": "Эфиопия",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 9.145,
+    "lng": 40.4897,
+    "driveFileId": "1J3ZEZk6qoM0YRc9LJOLI9fZbZpTIeNDa",
+    "resourceKey": "",
+    "localPhotos": [
+      "Эфиопия.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Эфиопия",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "ET",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_Ethiopia.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Эфиопия.jpg",
+        "id": "1J3ZEZk6qoM0YRc9LJOLI9fZbZpTIeNDa"
+      }
+    ]
+  },
+  {
+    "id": "лесото",
+    "name": "Лесото",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -29.61,
+    "lng": 28.2336,
+    "driveFileId": "1pae9EM4WTuX9tNaZyhsEv3JXE6VhiVis",
+    "resourceKey": "",
+    "localPhotos": [
+      "Лесото.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Лесото",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "LS",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Lesotho.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Лесото.jpg",
+        "id": "1pae9EM4WTuX9tNaZyhsEv3JXE6VhiVis"
+      }
+    ]
+  },
+  {
+    "id": "острова-питкэрн",
+    "name": "Острова Питкэрн",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -24.3768,
+    "lng": -128.3242,
+    "driveFileId": "1v-qXE2SVYHgRLW-flU-H10iRKyuvi0WA",
+    "resourceKey": "",
+    "localPhotos": [
+      "Острова Питкэрн.jpg"
+    ],
+    "continent": "Океания",
+    "country": "Острова Питкэрн",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "PN",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Pitcairn_Islands.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Острова Питкэрн.jpg",
+        "id": "1v-qXE2SVYHgRLW-flU-H10iRKyuvi0WA"
+      }
+    ]
+  },
+  {
+    "id": "малайзия",
+    "name": "Малайзия",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 4.2105,
+    "lng": 101.9758,
+    "driveFileId": "125KaOYMjVhROocXen_WYa8TPc6CdLrlB",
+    "resourceKey": "",
+    "localPhotos": [
+      "Малайзия.jpg"
+    ],
+    "continent": "Азия",
+    "country": "Малайзия",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "MY",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Malaysia.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Малайзия.jpg",
+        "id": "125KaOYMjVhROocXen_WYa8TPc6CdLrlB"
+      }
+    ]
+  },
+  {
+    "id": "суринам",
+    "name": "Суринам",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 3.9193,
+    "lng": -56.0278,
+    "driveFileId": "1pSoBq-ppk9StLkN2UzmHsI6zaPdXQR5J",
+    "resourceKey": "",
+    "localPhotos": [
+      "Суринам.jpg"
+    ],
+    "continent": "Южная Америка",
+    "country": "Суринам",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "SR",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Suriname.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Суринам.jpg",
+        "id": "1pSoBq-ppk9StLkN2UzmHsI6zaPdXQR5J"
+      }
+    ]
+  },
+  {
+    "id": "фолклендские-острова",
+    "name": "Фолклендские острова",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": -51.7963,
+    "lng": -59.5236,
+    "driveFileId": "1ZqczmUjslywLqQgScyBIWLJGTf60FrgI",
+    "resourceKey": "",
+    "localPhotos": [
+      "Фолклендские острова.jpg"
+    ],
+    "continent": "Южная Америка",
+    "country": "Фолклендские острова",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "FK",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_the_Falkland_Islands.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Фолклендские острова.jpg",
+        "id": "1ZqczmUjslywLqQgScyBIWLJGTf60FrgI"
+      }
+    ]
+  },
+  {
+    "id": "мавритания",
+    "name": "Мавритания",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 21.0079,
+    "lng": -10.9408,
+    "driveFileId": "1-K6AC5RC5ObWqEsUcYr2IQs4gG5_elq3",
+    "resourceKey": "",
+    "localPhotos": [
+      "Мавритания.jpg"
+    ],
+    "continent": "Африка",
+    "country": "Мавритания",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "MR",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/National_Seal_of_Mauritania.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Мавритания.jpg",
+        "id": "1-K6AC5RC5ObWqEsUcYr2IQs4gG5_elq3"
+      }
+    ]
+  },
+  {
+    "id": "сент-люсия",
+    "name": "Сент-Люсия",
+    "status": "owned",
+    "addedAt": "2026-11-24",
+    "lat": 13.9094,
+    "lng": -60.9789,
+    "driveFileId": "1AK98PNd651fImI8OGhs58NrQ_m39runC",
+    "resourceKey": "",
+    "localPhotos": [
+      "Сент-Люсия.jpg"
+    ],
+    "continent": "Северная Америка",
+    "country": "Сент-Люсия",
+    "region": "",
+    "city": "",
+    "coaImageUrl": "",
+    "notes": "",
+    "crimea": false,
+    "countryCode": "LC",
+    "coaPath": "",
+    "coaWiki": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Saint_Lucia.svg?width=480",
+    "coaSource": "",
+    "coaSourceLabel": "",
+    "drivePhotos": [
+      {
+        "name": "Сент-Люсия.jpg",
+        "id": "1AK98PNd651fImI8OGhs58NrQ_m39runC"
       }
     ]
   }
